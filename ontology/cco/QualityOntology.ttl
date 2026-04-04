@@ -62,7 +62,7 @@ cco:ont00000042 rdf:type owl:Class ;
                  cco:ont00001760 "https://www.commoncoreontologies.org/QualityOntology"^^xsd:anyURI .
 
 
-###  https://www.commoncoreontologies.org/ont00000082
+###  https://purl.org/cco/ont00000082
 cco:ont00000082 rdf:type owl:Class ;
                  rdfs:subClassOf cco:ont00000378 ;
                  rdfs:label "Green"@en ;
@@ -512,7 +512,7 @@ cco:ont00000787 rdf:type owl:Class ;
                  cco:ont00001760 "https://www.commoncoreontologies.org/QualityOntology"^^xsd:anyURI .
 
 
-###  https://www.commoncoreontologies.org/ont00000797
+###  https://purl.org/cco/ont00000797
 cco:ont00000797 rdf:type owl:Class ;
                  rdfs:subClassOf cco:ont00000378 ;
                  rdfs:label "Hazel"@en ;
@@ -579,7 +579,7 @@ cco:ont00000861 rdf:type owl:Class ;
                  cco:ont00001760 "https://www.commoncoreontologies.org/QualityOntology"^^xsd:anyURI .
 
 
-###  https://www.commoncoreontologies.org/ont00000872
+###  https://purl.org/cco/ont00000872
 cco:ont00000872 rdf:type owl:Class ;
                  rdfs:subClassOf cco:ont00000378 ;
                  rdfs:label "Brown"@en ;
@@ -805,7 +805,7 @@ cco:ont00001186 rdf:type owl:Class ;
                  cco:ont00001760 "https://www.commoncoreontologies.org/QualityOntology"^^xsd:anyURI .
 
 
-###  https://www.commoncoreontologies.org/ont00001189
+###  https://purl.org/cco/ont00001189
 cco:ont00001189 rdf:type owl:Class ;
                  rdfs:subClassOf cco:ont00000378 ;
                  rdfs:label "Blue"@en ;
@@ -920,7 +920,7 @@ cco:ont00001333 rdf:type owl:Class ;
                  cco:ont00001760 "https://www.commoncoreontologies.org/QualityOntology"^^xsd:anyURI .
 
 
-###  https://www.commoncoreontologies.org/ont00001349
+###  https://purl.org/cco/ont00001349
 cco:ont00001349 rdf:type owl:Class ;
                  rdfs:subClassOf cco:ont00000378 ;
                  rdfs:label "Grey"@en ;
