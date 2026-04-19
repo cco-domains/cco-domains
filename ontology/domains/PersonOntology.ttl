@@ -1,388 +1,77 @@
+@prefix : <https://purl.org/cco/person/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix cco: <https://purl.org/cco/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://purl.org/cco/person#> .
+@base <https://purl.org/cco/person/> .
 
 <https://purl.org/cco/person> rdf:type owl:Ontology ;
-    owl:versionIRI <https://purl.org/cco/person/2026-03-16> ;
-    owl:imports <http://purl.obolibrary.org/obo/bfo.owl> ,
-                <https://purl.org/cco/InformationEntityOntology> ,
-                <https://purl.org/cco/AgentOntology> ,
-                <https://purl.org/cco/ArtifactOntology> ,
-                <https://purl.org/cco/CurrencyUnitOntology> ,
-                <https://purl.org/cco/EventOntology> ,
-                <https://purl.org/cco/ExtendedRelationOntology> ,
-                <https://purl.org/cco/FacilityOntology> ,
-                <https://purl.org/cco/GeospatialOntology> ,
-                <https://purl.org/cco/QualityOntology> ,
-                <https://purl.org/cco/TimeOntology> ,
-                <https://purl.org/cco/UnitsOfMeasureOntology> ;
-    dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-    dc:date "2026-03-16"^^xsd:date ;
-    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
-    owl:versionInfo "Version 2026-03-16 - Switched to opaque ent IRIs. Copyright © 2026 Global Research, Inc."@en ;
-    rdfs:label "Person Ontology"@en ;
-    rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO)."@en .
+                               owl:versionIRI <https://purl.org/cco/person/2026-04-19> ;
+                               owl:imports obo:bfo.owl ,
+                                           cco:AgentOntology ,
+                                           cco:ArtifactOntology ,
+                                           cco:CurrencyUnitOntology ,
+                                           cco:EventOntology ,
+                                           cco:ExtendedRelationOntology ,
+                                           cco:FacilityOntology ,
+                                           cco:GeospatialOntology ,
+                                           cco:InformationEntityOntology ,
+                                           cco:QualityOntology ,
+                                           cco:TimeOntology ,
+                                           cco:UnitsOfMeasureOntology ;
+                               dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
+                               dc:date "2026-04-19"^^xsd:date ;
+                               dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+                               rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) posted on the open Internet at https://opensource.ieee.org/cco/CommonCoreOntologies/-/tree/cameronmore-master-patch-e888/CCO-2.0/cco-modules?ref_type=heads (commit 1def0253fb90f9c5eb71f08f55f48a9ac221f0f1, accessed early 2026)."@en ;
+                               rdfs:label "Person Ontology"@en ;
+                               owl:versionInfo "First entity (Birthdate) added.   Copyright © 2026 Global Research, Inc."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Classes - Name Types
+#    Object Properties
 #################################################################
 
-###  https://purl.org/cco/ent00000001  (Full Name)
-
-cco:ent00000001 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Full Name"@en ;
-    skos:altLabel "Complete Name"@en ;
-    skos:definition """A Designative Name consisting of a person's complete name as self-reported 
-                       or recorded, which may vary in completeness and format (e.g., may include 
-                       or omit middle names, use initials)."""@en ;
-    skos:example "Schema.org 'name: John Paul Doe, Jr.' represents a FullName instance."@en ;
-    skos:scopeNote """FullName is how a person writes or presents their complete name. It may differ 
-                      from simple concatenation of name components. For example, a person with 
-                      GivenName='John', AdditionalName='Paul', FamilyName='Doe', Suffix='Jr.' might 
-                      represent their FullName as: 'John Paul Doe, Jr.' (complete), 'J. P. Doe' 
-                      (initials), 'John Doe' (omit middle/suffix), or 'J. Paul Doe, Jr.' (mixed). 
-                      All are different FullName values for the same person. FullName and structured 
-                      name components are peers, not part/whole relationships. Data models: Schema.org, 
-                      FHIR, SEMIC, Google Takeout, ChatGPT, IANA, vCard (10+ sources)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/name> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000002  (Given Name)
-
-cco:ent00000002 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    owl:disjointWith cco:ent00000004 ;  # Family Name
-    rdfs:label "Given Name"@en ;
-    skos:altLabel "First Name"@en ,
-                  "Forename"@en ;
-    skos:definition """A Designative Name assigned to distinguish an individual within a family, 
-                       typically the first name in Western naming conventions."""@en ;
-    skos:example "OpenID Connect 'given_name: John' or Schema.org 'givenName: John' represent GivenName instances."@en ;
-    skos:scopeNote """GivenName is the primary personal name that distinguishes an individual within 
-                      a family or social context. In Western naming conventions, it typically appears 
-                      first (hence alternate label 'First Name'), but position varies by culture 
-                      (e.g., family name first in East Asian naming conventions). GivenName is distinct 
-                      from AdditionalName (middle names or additional forenames). Data models: OpenID 
-                      Connect, FHIR, Schema.org, SEMIC, Google Takeout, IANA, ISO mDOC (14+ sources)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/givenName> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000003  (Additional Name)
-
-cco:ent00000003 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Additional Name"@en ;
-    skos:altLabel "Middle Name"@en ,
-                  "Middle Name(s)"@en ,
-                  "Second Given Name"@en ;
-    skos:definition """A Designative Name representing middle names, additional given names, or 
-                       other name elements beyond primary given and family names (IANA: 'Middle name(s)')."""@en ;
-    skos:example "IANA JWT 'middle_name: Paul' or Schema.org 'additionalName: Paul' represent AdditionalName instances."@en ;
-    skos:scopeNote """AdditionalName is IANA's standard term (per RFC 7519 JWT Claims). The alternate 
-                      label 'Middle Name' accommodates common usage in Western cultures where additional 
-                      names appear between given name and family name. However, AdditionalName is more 
-                      culturally neutral and flexible: it covers middle names (Western), additional 
-                      given names (some cultures use multiple forenames), matronymics, patronymics, 
-                      and other naming patterns. AdditionalName may be absent, singular, or plural. 
-                      Data models: IANA (RFC 7519), Mydex, Schema.org, SEMIC (4+ sources)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://datatracker.ietf.org/doc/html/rfc7519"^^xsd:anyURI ;
-    skos:exactMatch <https://schema.org/additionalName> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000004  (Family Name)
-
-cco:ent00000004 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    owl:disjointWith cco:ent00000002 ;  # Given Name
-    rdfs:label "Family Name"@en ;
-    skos:altLabel "Surname"@en ,
-                  "Last Name"@en ;
-    skos:definition """A Designative Name representing the surname or last name inherited from 
-                       family lineage, typically shared among family members."""@en ;
-    skos:example "Schema.org 'familyName: Doe' or Google Takeout 'family_name: Doe' represent FamilyName instances."@en ;
-    skos:scopeNote """FamilyName is the surname or last name inherited from family lineage and typically 
-                      shared among family members. In Western naming conventions, it usually appears 
-                      last (hence alternate label 'Last Name'), but position varies by culture. 
-                      FamilyName may change through life events (marriage, adoption, legal name change). 
-                      Some cultures use compound family names (hyphenated or multiple surnames). 
-                      Data models: OpenID Connect, FHIR, Schema.org, SEMIC, Google Takeout, IANA, 
-                      ISO mDOC (14+ sources)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/familyName> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000005  (Suffix)
-
-cco:ent00000005 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Suffix"@en ;
-    skos:altLabel "Name Suffix"@en ,
-                  "Honorific Suffix"@en ;
-    skos:definition """A Designative Name component following the family name, such as generational 
-                       indicators (Jr., Sr., III), professional credentials (MD, PhD), or honorifics (Esq.)."""@en ;
-    skos:example "VCARD 'honorific-suffix: Jr.' or in the name 'John Paul Doe, Jr.' where 'Jr.' is the Suffix."@en ;
-    skos:scopeNote """Suffix follows the family name and may indicate: (1) Generational designation 
-                      (Jr., Sr., III, IV), (2) Professional credentials (MD, PhD, JD, CPA), 
-                      (3) Honorifics (Esq., KBE), or (4) Academic or religious titles (OP, SJ). 
-                      A person may have multiple suffixes ('John Doe, Jr., MD, PhD'). Suffix is 
-                      distinct from Prefix/Title which precedes the name (Dr., Mr., Prof.). 
-                      Generational suffixes indicate lineage position within a family line. 
-                      Data models: VCARD, Schema.org (implied in examples), IANA."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/honorificSuffix> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000006  (Alternate Name)
-
-cco:ent00000006 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Alternate Name"@en ;
-    skos:altLabel "Alternative Name"@en ;
-    skos:definition """A Designative Name used as an alternative designation for a person, such as 
-                       preferred name, stage name, pen name, or informal name, distinct from their 
-                       legal or primary name."""@en ;
-    skos:example "Schema.org 'alternateName: Jack Doe' for a person whose full name is John Paul Doe, Jr."@en ;
-    skos:scopeNote """AlternateName is an umbrella term covering any non-primary name by which a person 
-                      is known, including: preferred names (person prefers 'Jack' over legal 'John'), 
-                      stage names (professional/performance names), pen names (authorial pseudonyms), 
-                      nicknames (informal/affectionate names), former names (maiden names, previous legal 
-                      names), and cultural names (names used in specific cultural contexts). AlternateName 
-                      is broader than Nickname (which specifically connotes familiar/humorous usage per 
-                      CCO definition). A person may have multiple alternate names for different contexts. 
-                      Data models: Schema.org, SEMIC, IANA, ChatGPT, Privacy Engineering Repository 
-                      (7+ sources)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/alternateName> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
+###  https://purl.org/cco/ent00000061
+cco:ent00000061 rdf:type owl:ObjectProperty ;
+                rdfs:domain cco:ont00001262 ;
+                rdfs:range cco:ent00000046 ;
+                dcterms:created "2026-04-18"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "has birthdate"@en ;
+                skos:altLabel "hasBirthdate"@en ;
+                skos:definition "Each instance of Person has an instance of Birthdate."@en .
 
 
 #################################################################
-#    Classes - Person-Specific Identifiers
+#    Classes
 #################################################################
 
-###  https://purl.org/cco/ent00000007  (National Person Identifier)
-
-cco:ent00000007 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000077 ;  # Code Identifier
-    rdfs:label "National Person Identifier"@en ;
-    skos:altLabel "National ID Number"@en ,
-                  "National Identification Number"@en ;
-    skos:definition """A Code Identifier issued by a national government that designates a Person 
-                       within that nation's administrative systems, following an encoding system 
-                       that typically includes validation rules, checksums, or structured components."""@en ;
-    skos:example "Social Security Number (USA), National Insurance Number (UK), Social Insurance Number (Canada), Personnummer (Sweden), Aadhaar (India)."@en ;
-    skos:scopeNote """National person identifiers typically encode metadata such as: issuance location, 
-                      issuance date, birth date, gender, or administrative groupings. This structural 
-                      encoding enables validation, fraud detection, and cross-system coordination. 
-                      NationalPersonIdentifier is a Code Identifier (not arbitrary) because these 
-                      systems use encoding rules from which information can be derived. Originally 
-                      created for specific purposes (tax, social security), these identifiers often 
-                      expand to become de facto universal identifiers within their jurisdictions. 
-                      This class is designed for international extensibility - country-specific 
-                      subclasses (SocialSecurityNumber for USA, etc.) should be created as needed."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000008  (Social Security Number)
-
-cco:ent00000008 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ent00000007 ;  # National Person Identifier
-    rdfs:label "Social Security Number"@en ;
-    skos:altLabel "SSN"@en ;
-    skos:definition """A National Person Identifier issued by the United States Social Security 
-                       Administration that designates a Person, formatted as NNN-NN-NNNN."""@en ;
-    skos:example "The string '123-45-6789' formatted as NNN-NN-NNNN represents a Social Security Number."@en ;
-    skos:scopeNote """Social Security Number was originally created in 1936 exclusively for Social Security 
-                      program administration. The SSN has undergone significant scope expansion and now 
-                      serves as a de facto universal identifier throughout United States systems including: 
-                      tax collection (IRS), healthcare (Medicare/Medicaid), financial services (banking, 
-                      credit reporting), employment verification, and numerous other governmental and 
-                      private sector applications. This expansion beyond original intent is documented 
-                      but not normatively prescribed by this definition. 
-                      
-                      Format: NNN-NN-NNNN where historically the first 3 digits (Area Number) encoded 
-                      issuance location, middle 2 (Group Number) encoded administrative batching, and 
-                      last 4 (Serial Number) were sequential. Since 2011 'randomization', geographic 
-                      correlation was removed but structure remains enforced. SSN is a Code Identifier 
-                      because metadata can still be derived (issuance era, validity ranges, reserved codes)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.ssa.gov/history/ssn/geocard.html"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000057  (Title)
-
-cco:ent00000057 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Title"@en ;
-    skos:altLabel "Honorific Prefix"@en ,
-                  "Name Prefix"@en ,
-                  "Salutation"@en ;
-    skos:definition """A Designative Name component that precedes a person's given name, 
-        expressing honorific status, professional role, or social rank."""@en ;
-    skos:example "'Dr.' in 'Dr. Alice Walker', 'Prof.' in 'Prof. John Smith', 'Mr.' in 'Mr. James Schoening'."@en ;
-    skos:scopeNote """Title precedes the given name and is distinct from Suffix (ent00000005) 
-        which follows the family name. Expresses: (1) academic/professional credentials 
-        used as prefixes (Dr., Prof., Eng.), (2) social honorifics (Mr., Mrs., Ms., Mx.), 
-        (3) military or noble rank (Capt., Sir, Dame). A person may have multiple Titles. 
-        RFC 9553 JSContact represents this as a NameComponent of kind 'title'. 
-        Data models: Schema.org (honorificPrefix), vCard (HONORIFIC-PREFIX), 
-        FOAF (title), IANA JWT (salutation / "End-User's salutation, e.g., Mr."), 
-        MyData Dictionary (my-salutation), MyDex (Title), 
-        Person-Ontology-Dev (Salutation) — 8+ sources."""@en ;
-    dcterms:created "2026-03-17"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.rfc-editor.org/rfc/rfc9553"^^xsd:anyURI ;
-    skos:exactMatch <https://schema.org/honorificPrefix> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-###  https://purl.org/cco/ent00000058  (Surname2)
-
-cco:ent00000058 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Surname2"@en ;
-    skos:altLabel "Second Surname"@en ,
-                  "Maternal Surname"@en ,
-                  "Second Family Name"@en ;
-    skos:definition """A Designative Name representing a secondary surname used in 
-        naming conventions where a person bears two family names, typically one from 
-        each parent."""@en ;
-    skos:example "In 'Diego Rivera Barrientos', 'Barrientos' is the Surname2 (maternal surname)."@en ;
-    skos:scopeNote """Surname2 is used in Spanish, Portuguese, and some other naming 
-        conventions where a person bears both a paternal surname (FamilyName, ent00000004) 
-        and a maternal surname (Surname2). It is distinct from FamilyName — the two are 
-        peers, not a hierarchy. Surname2 is not the same as a hyphenated compound surname, 
-        which is a single FamilyName. RFC 9553 JSContact represents this as a NameComponent 
-        of kind 'surname2'. SEMIC Core Person Vocabulary includes 'matronymic name' covering 
-        the same concept. Person-Ontology-Dev also includes 'matronymic name'. 
-        Data models: RFC 9553, SEMIC Core Person Vocabulary (matronymic name), 
-        Person-Ontology-Dev — 3+ sources."""@en ;
-    dcterms:created "2026-03-17"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.rfc-editor.org/rfc/rfc9553"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-#################################################################
-#    Classes - Person Life Events
-#################################################################
-
-###  https://purl.org/cco/ent00000046  (Birthdate)
-
+###  https://purl.org/cco/ent00000046
 cco:ent00000046 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00001340 ;  # Calendar Date Identifier
-    rdfs:label "Birthdate"@en ;
-    skos:altLabel "Date of Birth"@en ,
-                  "Birthday"@en ;
-    skos:definition """A Calendar Date Identifier that designates the date on which 
-        a Person was born."""@en ;
-    skos:example "The string '1985-06-15' in ISO 8601 format designates a Birthdate."@en ;
-    skos:scopeNote """Birthdate designates the calendar date of birth — it is information 
-        (a designator), not a quality inhering in the person. Follows ISO 8601 date format 
-        (YYYY-MM-DD). Distinct from Age (a measurement derived from Birthdate). 
-        RFC 9553 JSContact represents this as an Anniversary of kind 'birth'. 
-        Data models with this concept (10+ sources): Schema.org (birthDate), 
-        HL7 FHIR (birthdate), SEMIC Core Person Vocabulary (date of birth), 
-        MyDex (Birth-Details: Date of Birth), IANA JWT (birthdate / "Birthday"), 
-        ISO mDOC (birth_date), ISO 18013-5 (Date of birth), 
-        ChatGPT common fields, MyData Dictionary (my-birthdate), 
-        Person-Ontology-Dev (Birthdate)."""@en ;
-    dcterms:created "2026-03-17"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.rfc-editor.org/rfc/rfc9553"^^xsd:anyURI ;
-    skos:exactMatch <https://schema.org/birthDate> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
+                rdfs:subClassOf cco:ont00001340 ;
+                dcterms:created "2026-04-14"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Birthdate"@en ;
+                skos:altLabel "DOB"@en ,
+                              "date of birth"@en ;
+                skos:definition "A Calendar Date Identifier designating when a Person was born."@en .
 
 
-#################################################################
-#    Classes - Person-Organization Relationships
-#################################################################
-
-###  https://purl.org/cco/ent00000047  (Organization Name)
-
-cco:ent00000047 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Organization Name"@en ;
-    skos:altLabel "Company Name"@en ,
-                  "Employer Name"@en ;
-    skos:definition """A Designative Name that designates an Organization, 
-        typically the company or institution a Person is affiliated with."""@en ;
-    skos:example "The string 'Mee Foundation' designates the organization Paul Trevithick is affiliated with."@en ;
-    skos:scopeNote """OrganizationName designates an Organization entity (CCO ont00001180). 
-        In the context of a Person record it typically represents the person's employer 
-        or primary organizational affiliation. A person may be affiliated with multiple 
-        organizations simultaneously. OrganizationName is the designator (information); 
-        the Organization is the entity being designated. 
-        RFC 9553 JSContact represents this in the 'organizations' property. 
-        Data models: Schema.org (worksFor/affiliation), HL7 FHIR, OpenID Connect, 
-        vCard (ORG), MyDex (Host Organisation, Establishment Name), FOAF (Organization) — 8+ sources."""@en ;
-    dcterms:created "2026-03-17"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.rfc-editor.org/rfc/rfc9553"^^xsd:anyURI ;
-    skos:closeMatch <https://schema.org/worksFor> ;
-    rdfs:isDefinedBy <https://purl.org/cco/person> .
-
-
-#################################################################
-#    Annotation - Dropped Terms Documentation
-#################################################################
-
-# PersonNickname was nominated but dropped by working group decision 2026-02-19.
-# Rationale: CCO already has Nickname (<https://purl.org/cco/ont00000990>) 
-# defined as "A Designative Name that is a familiar or humorous substitute for an 
-# entity's Proper Name." This is sufficient for person nicknames. Creating 
-# PersonNickname as person-specific subclass adds no semantic value since 
-# no person-specific axioms are needed. Applications should use CCO Nickname 
-# directly. Working group may reconsider if person-specific axioms emerge.
-
-
-#################################################################
-#    Deprecated IRI Aliases (label-based IRIs — version 2026-02-22)
-#    These redirect to their opaque ent replacements.
-#    Safe to remove after all downstream consumers have updated.
-#################################################################
-
-<https://purl.org/cco/person/FullName>       owl:deprecated true ; rdfs:seeAlso cco:ent00000001 .
-<https://purl.org/cco/person/GivenName>      owl:deprecated true ; rdfs:seeAlso cco:ent00000002 .
-<https://purl.org/cco/person/AdditionalName> owl:deprecated true ; rdfs:seeAlso cco:ent00000003 .
-<https://purl.org/cco/person/FamilyName>     owl:deprecated true ; rdfs:seeAlso cco:ent00000004 .
-<https://purl.org/cco/person/Suffix>         owl:deprecated true ; rdfs:seeAlso cco:ent00000005 .
-<https://purl.org/cco/person/AlternateName>  owl:deprecated true ; rdfs:seeAlso cco:ent00000006 .
-<https://purl.org/cco/person/NationalPersonIdentifier> owl:deprecated true ; rdfs:seeAlso cco:ent00000007 .
-<https://purl.org/cco/person/SocialSecurityNumber>     owl:deprecated true ; rdfs:seeAlso cco:ent00000008 .
-
-
-#################################################################
-#    General Axioms
-#################################################################
-
-# Disjointness between GivenName and FamilyName declared above
-# Other name types (FullName, AdditionalName, Suffix, AlternateName) 
-# can coexist and overlap - no disjointness enforced
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
