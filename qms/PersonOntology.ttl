@@ -1,0 +1,112 @@
+@prefix : <https://purl.org/cco/person/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix cco: <https://purl.org/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://purl.org/cco/person/> .
+
+<https://purl.org/cco/person> rdf:type owl:Ontology ;
+                               owl:versionIRI <https://purl.org/cco/person/2026-04-23> ;
+                               owl:imports obo:bfo.owl ,
+                                           cco:AgentOntology ,
+                                           cco:ArtifactOntology ,
+                                           cco:CurrencyUnitOntology ,
+                                           cco:EventOntology ,
+                                           cco:ExtendedRelationOntology ,
+                                           cco:FacilityOntology ,
+                                           cco:GeospatialOntology ,
+                                           cco:InformationEntityOntology ,
+                                           cco:QualityOntology ,
+                                           cco:TimeOntology ,
+                                           cco:UnitsOfMeasureOntology ;
+                               dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
+                               dc:date "2026-04-23"^^xsd:date ;
+                               dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+                               rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) posted on the open Internet at https://opensource.ieee.org/cco/CommonCoreOntologies/-/tree/cameronmore-master-patch-e888/CCO-2.0/cco-modules?ref_type=heads (commit 1def0253fb90f9c5eb71f08f55f48a9ac221f0f1, accessed early 2026)."@en ;
+                               rdfs:label "Person Ontology"@en ;
+                               owl:versionInfo "Added Full Name.   Copyright © 2026 Global Research, Inc."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://purl.org/cco/ent00000061
+cco:ent00000061 rdf:type owl:ObjectProperty ;
+                rdfs:domain cco:ont00001262 ;
+                rdfs:range cco:ent00000046 ;
+                dcterms:created "2026-04-18"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "has birthdate"@en ;
+                skos:altLabel "hasBirthdate"@en ;
+                skos:definition "Each instance of Person has an instance of Birthdate."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cco/ent00000001
+cco:ent00000001 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000003 ;
+                dcterms:created "2026-04-23"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Full Name"@en ;
+                skos:definition "A Designative Name comprising all or most of a person's various names, e.g. Given Name, Alternate Name, Family Name, etc. but may include initials for some names, as presented by the individual, who may give different versions at different times."@en .
+
+
+###  https://purl.org/cco/ent00000008
+cco:ent00000008 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000062 ;
+                dcterms:created "2026-04-20"^^xsd:date ;
+                dcterms:source <https://www.ssa.gov/employer/ssnvshandbk/glossary.htm> ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Social Security Number"@en ;
+                skos:altLabel "SSN"@en ;
+                skos:definition "A Person Identifier issued by the U.S. Social Security Administration."@en ;
+                skos:example "123-45-6789 (dashes common but not required)"@en .
+
+
+###  https://purl.org/cco/ent00000046
+cco:ent00000046 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00001340 ;
+                dcterms:created "2026-04-14"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Birthdate"@en ;
+                skos:altLabel "DOB"@en ,
+                              "date of birth"@en ;
+                skos:definition "A Calendar Date Identifier designating when a Person was born."@en .
+
+
+###  https://purl.org/cco/ent00000062
+cco:ent00000062 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000649 ;
+                dcterms:created "2026-04-20"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Person Identifier"@en ;
+                skos:altLabel "PersonIdentifier"@en ;
+                skos:definition "A non-Name Identifier for a person."@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
