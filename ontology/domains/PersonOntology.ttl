@@ -12,7 +12,7 @@
 @base <https://purl.org/cco/person/> .
 
 <https://purl.org/cco/person> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://purl.org/cco/person/2026-04-21> ;
+                               owl:versionIRI <https://purl.org/cco/person/2026-04-23> ;
                                owl:imports obo:bfo.owl ,
                                            cco:AgentOntology ,
                                            cco:ArtifactOntology ,
@@ -26,11 +26,11 @@
                                            cco:TimeOntology ,
                                            cco:UnitsOfMeasureOntology ;
                                dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                               dc:date "2026-04-21"^^xsd:date ;
+                               dc:date "2026-04-23"^^xsd:date ;
                                dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
                                rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) posted on the open Internet at https://opensource.ieee.org/cco/CommonCoreOntologies/-/tree/cameronmore-master-patch-e888/CCO-2.0/cco-modules?ref_type=heads (commit 1def0253fb90f9c5eb71f08f55f48a9ac221f0f1, accessed early 2026)."@en ;
                                rdfs:label "Person Ontology"@en ;
-                               owl:versionInfo "Added Person Identifier and SSN.   Copyright © 2026 Global Research, Inc."@en .
+                               owl:versionInfo "Added Full Name.   Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
@@ -66,6 +66,15 @@ cco:ent00000061 rdf:type owl:ObjectProperty ;
 #################################################################
 #    Classes
 #################################################################
+
+###  https://purl.org/cco/ent00000001
+cco:ent00000001 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000003 ;
+                dcterms:created "2026-04-23"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Full Name"@en ;
+                skos:definition "A Designative Name comprising all or most of a person's various names, e.g. Given Name, Alternate Name, Family Name, etc. but may include initials for some names, as presented by the individual, who may give different versions at different times."@en .
+
 
 ###  https://purl.org/cco/ent00000008
 cco:ent00000008 rdf:type owl:Class ;
