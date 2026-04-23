@@ -1,5 +1,0 @@
-ent ID,IRI,Label,OWL Type,Source Ontology,Parent IRI,Definition,Status,Date Added,Notes
-ent00000008,https://purl.org/cco/ent00000008,Social Security Number,owl:Class,PersonOntology,https://purl.org/cco/ent00000062,A Person Identifier issued by the U.S. Social Security Administration. ,Active,4/21/26,
-ent00000046,https://purl.org/cco/ent00000046,Birthdate,owl:Class,PersonOntology,https://purl.org/cco/ont00001340,A Calendar Date Identifier that designates the date on which a Person was born.,Active,3/17/26,RFC 9553 §2.8.1; corrects Claude Code's wrong parent (Quality)
-ent00000061,https://purl.org/cco/ent00000061,Has Birthdate,owl:ObjectProperty,PersonOntology,,Each instance of Person has an instance of Birthdate,Active,4/18/26,
-ent00000062,https://purl.org/cco/ent00000062,Person Identifier,owl:Class,PersonOntology,https://purl.org/cco/ont00000649 ; Non-Name Identifier ,,Active,4/21/26,
