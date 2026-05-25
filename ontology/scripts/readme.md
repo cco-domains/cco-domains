@@ -23,3 +23,17 @@ Validates that all IRIs in the ontology modules:
 
 Run with:
 
+
+### 2. check_imports.py
+Validates that:
+
+- All imports reference actual ontology modules
+- No module imports itself
+- No module imports a nonexistent ontology
+- No circular imports exist
+
+Run with:
+
+
+## Expected Directory Layout
+
