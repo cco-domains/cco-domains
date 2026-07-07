@@ -1,532 +1,254 @@
+@prefix : <https://purl.org/cco/address#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix cco: <https://purl.org/cco/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://purl.org/cco/address#> .
 
 <https://purl.org/cco/address> rdf:type owl:Ontology ;
-    owl:versionIRI <https://purl.org/cco/address/2026-03-22> ;
-    owl:imports <http://purl.obolibrary.org/obo/bfo.owl> ,
-                <https://purl.org/cco/InformationEntityOntology> ,
-                <https://purl.org/cco/GeospatialOntology> ;
-    owl:priorVersion <https://purl.org/cco/postal-address/2026-03-16> ;
-    dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-    dc:date "2026-03-22"^^xsd:date ;
-    dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
-    owl:versionInfo "Version 2026-03-22 - Supersedes PostalAddressOntology. Added Address (ent00000310) as superclass of PostalAddress; added EmergencyAddress (ent00000311). All prior ent IRIs preserved. Copyright © 2026 Global Research, Inc."@en ;
-    rdfs:label "Address Ontology"@en ;
-    rdfs:comment """Supersedes PostalAddressOntology (https://purl.org/cco/postal-address).
+                                owl:versionIRI <https://purl.org/cco/address/2026-07-07> ;
+                                owl:imports obo:bfo.owl ,
+                                            cco:GeospatialOntology ,
+                                            cco:InformationEntityOntology ;
+                                dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
+                                dc:date "2026-07-07" ;
+                                dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+                                dcterms:source "https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions"^^xsd:anyURI ;
+                                rdfs:comment """Supersedes PostalAddressOntology (https://purl.org/cco/postal-address).
                     All ent IRIs from that ontology are preserved unchanged.
                     The PURL https://purl.org/cco/postal-address is deprecated and
                     redirects to https://purl.org/cco/address."""@en ;
-    dcterms:source "https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions"^^xsd:anyURI .
+                                rdfs:label "Address Ontology"@en ;
+                                owl:priorVersion <https://purl.org/cco/postal-address/2026-03-16> ;
+                                owl:versionInfo "Added Country Name, Country Code and data properties.  Updated City and State labels.   Copyright © 2026 Global Research, Inc."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/date
+dc:date rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+skos:exactMatch rdf:type owl:AnnotationProperty .
 
 
 #################################################################
-#    Classes - Address (top level)
+#    Object Properties
 #################################################################
 
-###  https://purl.org/cco/ent00000310  (Address)
+###  https://purl.org/cco/ent00000316
+cco:ent00000316 rdf:type owl:ObjectProperty ;
+                owl:inverseOf cco:ent00000317 ;
+                rdfs:domain cco:ent00000310 ;
+                rdfs:range cco:ent00000312 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has address component"@en ;
+                skos:altLabel "hasAddressComponent"@en ;
+                skos:definition "An object property that connects an Address instance to an AddressComponent instance that is a part of that address."@en .
 
-cco:ent00000310 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000649 ;  # Non-Name Identifier
-    rdfs:label "Address"@en ;
-    skos:definition """A Non-Name Identifier that designates a physical site, the format and 
-                       required components of which are governed by an issuing authority."""@en ;
-    skos:example """'123 Main Street, Boston, MA 02101, US' is a postal address governed by 
-                    UPU S42 and USPS. '4471 County Road F42, Glenwood, IA 51534' is an 
-                    emergency address governed by a county 911 authority. An Amazon Locker 
-                    code designates a pickup site governed by Amazon Logistics."""@en ;
-    skos:scopeNote """Address is the superclass of all structured identifiers that designate 
-                      a physical site or location, regardless of purpose or governing authority. 
-                      Subclasses are distinguished by their governing standard and issuing 
-                      authority, not by the role the address happens to play in a given context 
-                      (delivery, legal registration, billing, emergency dispatch, etc.).
 
-                      The same address string may serve multiple roles simultaneously — 
-                      residential, mailing, billing, legal domicile — without being a different 
-                      kind of Address. Roles are captured by AddressDesignation (ent00000016) 
-                      and its subclasses, not by Address subclasses.
-
-                      Named subclasses are warranted only when a governing authority publishes 
-                      a stable, referenceable standard: PostalAddress (UPU S42), 
-                      EmergencyAddress (NENA 02-010). Commercial carrier addresses 
-                      (Amazon, UPS, FedEx, DHL) that lack a published standard are 
-                      represented as Address instances with a hasDeliveryAuthority relation 
-                      to the relevant carrier named individual.
-
-                      International address systems not conforming to UPU S42 — including 
-                      Japan's block-and-lot system (住居表示), South Korea's road-name 
-                      addresses (도로명주소), UK UPRN numeric identifiers, what3words codes, 
-                      and India Post landmark-based addresses — are subsumed under Address 
-                      until standard-specific subclasses are warranted."""@en ;
-    dcterms:created "2026-03-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:closeMatch <https://schema.org/PostalAddress> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+###  https://purl.org/cco/ent00000317
+cco:ent00000317 rdf:type owl:ObjectProperty ;
+                rdfs:domain cco:ent00000312 ;
+                rdfs:range cco:ent00000310 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "is address component of"@en ;
+                skos:altLabel "isAddressComponentOf"@en ;
+                skos:definition "An object property that connects an Address instance to an AddressComponent instance that is an inverse of ent00000316."@en .
 
 
 #################################################################
-#    Classes - Postal Address (UPU S42 Standardized Subclass)
+#    Data properties
 #################################################################
 
-###  https://purl.org/cco/ent00000009  (Postal Address)
+###  https://purl.org/cco/ent00000318
+cco:ent00000318 rdf:type owl:DatatypeProperty ;
+                rdfs:domain cco:ent00000011 ;
+                rdfs:range xsd:string ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has street address value"@en ;
+                skos:altLabel "hasStreetAddressValue"@en ;
+                skos:definition "A datatype property that associates a Street Address instance with its string value."@en .
 
+
+###  https://purl.org/cco/ent00000319
+cco:ent00000319 rdf:type owl:DatatypeProperty ;
+                rdfs:domain cco:ent00000012 ;
+                rdfs:range xsd:string ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has city value"@en ;
+                skos:altLabel "hasCityValue"@en ;
+                skos:definition "A datatype property that associates a City instance with its string value."@en .
+
+
+###  https://purl.org/cco/ent00000320
+cco:ent00000320 rdf:type owl:DatatypeProperty ;
+                rdfs:domain cco:ent00000013 ;
+                rdfs:range xsd:string ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has state value"@en ;
+                skos:altLabel "hasStateValue"@en ;
+                skos:definition "A datatype property that associates a State instance with its string value."@en .
+
+
+###  https://purl.org/cco/ent00000321
+cco:ent00000321 rdf:type owl:DatatypeProperty ;
+                rdfs:domain cco:ent00000015 ;
+                rdfs:range xsd:string ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has postal code value"@en ;
+                skos:altLabel "hasPostalCodeValue"@en ;
+                skos:definition "A datatype property that associates a Postal Code instance with its string value."@en .
+
+
+###  https://purl.org/cco/ent00000322
+cco:ent00000322 rdf:type owl:DatatypeProperty ;
+                rdfs:domain cco:ent00000059 ;
+                rdfs:range xsd:string ;
+                dcterms:created "2026-07-06" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has country code value"@en ;
+                skos:altLabel "hasCountryCodeValue"@en ;
+                skos:definition "A datatype property that associates a Country Code instance with its string value."@en .
+
+
+###  https://purl.org/cco/ent00000323
+cco:ent00000323 rdf:type owl:DatatypeProperty ;
+                rdfs:domain cco:ent00000014 ;
+                rdfs:range xsd:string ;
+                dcterms:created "2026-07-07" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "has country name value"@en ;
+                skos:altLabel "hasCountryNameValue"@en ;
+                skos:definition "A datatype property that associates a Country Name instance with its string value."@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://purl.org/cco/ent00000009
 cco:ent00000009 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ent00000310 ;  # Address
-    rdfs:label "Postal Address"@en ;
-    skos:altLabel "Mailing Address"@en ;
-    skos:definition """A structured Address consisting of geographic components (street address,
-                       city, state, postal code, country) designating a specific location for
-                       mail or parcel delivery, conforming to UPU Standard S42."""@en ;
-    skos:example "The structured address '123 Main Street, Boston, MA 02101, United States' designates a location for mail delivery."@en ;
-    skos:scopeNote """PostalAddress is the UPU S42-standardized subclass of Address, administered
-                      by government postal services worldwide. It is a structured identifier 
-                      typically composed of: street address, city name, state/province name, 
-                      postal code, and country name. The specific structure and required 
-                      components vary by country according to Universal Postal Union (UPU) 
-                      Standard S42.
-
-                      PostalAddress designates a location (site), not an entity; the same 
-                      address applies whether occupied by a person, family, organization, or 
-                      vacant. Format and component requirements are country-specific.
-
-                      Country-specific subclasses (USPostalAddress, UKPostalAddress, etc.) 
-                      should be created to capture national formatting rules and validation 
-                      requirements.
-
-                      For commercial carrier addresses (Amazon, UPS, FedEx) use Address 
-                      (ent00000310) directly. For emergency dispatch addresses governed by 
-                      NENA or national equivalents, use EmergencyAddress (ent00000311)."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dcterms:modified "2026-03-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.upu.int/UPU/media/upu/documents/PostCode/S42_International-Addressing-Standards.pdf"^^xsd:anyURI ;
-    skos:exactMatch <https://schema.org/PostalAddress> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000310 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "Postal Address"@en ;
+                skos:altLabel "Mailing Address"@en ;
+                skos:definition "An address that designates a place where physical mail or packages can be sent via the postal service."@en ;
+                skos:exactMatch <https://schema.org/PostalAddress> .
 
 
-###  https://purl.org/cco/ent00000010  (US Postal Address)
-
+###  https://purl.org/cco/ent00000010
 cco:ent00000010 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ent00000009 ;  # Postal Address
-    rdfs:label "US Postal Address"@en ;
-    skos:altLabel "United States Postal Address"@en ,
-                  "USPS Address"@en ;
-    skos:definition """A Postal Address conforming to United States Postal Service (USPS)
-                       Publication 28 addressing standards and UPU S42 USA template."""@en ;
-    skos:example """Standard format:
-                    RECIPIENT NAME
-                    123 MAIN ST APT 4
-                    BOSTON MA 02101-1234"""@en ;
-    skos:scopeNote """USPostalAddress follows USPS Publication 28 (October 2024) specifications:
-
-                      STRUCTURE (3 lines required):
-                      1. Recipient Line: Person or organization name
-                      2. Delivery Address Line: Street address with optional secondary unit
-                      3. Last Line: City, State abbreviation, ZIP Code
-
-                      REQUIRED COMPONENTS:
-                      - Street Address: Building number + street name
-                      - City Name: Official USPS city name
-                      - State Name: USPS 2-letter abbreviation (MA, CA, NY, etc.)
-                      - ZIP Code: 5-digit (NNNNN) or ZIP+4 (NNNNN-NNNN)
-
-                      OPTIONAL COMPONENTS:
-                      - Secondary Unit Designator: APT, STE, UNIT, RM, etc.
-                      - Secondary Unit Number: Apartment/suite number
-
-                      FORMAT RULES: Uppercase preferred, no punctuation, left-justified
-
-                      STANDARDS: UPU S42 (USA template), USPS Publication 28"""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://pe.usps.com/text/pub28/welcome.htm"^^xsd:anyURI ,
-                   "https://www.upu.int/UPU/media/upu/PostalEntitiesFiles/s42/usaEn.pdf"^^xsd:anyURI ;
-    skos:closeMatch <https://schema.org/PostalAddress> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000009 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "US Postal Address"@en ;
+                skos:altLabel "United States Postal Address"@en ;
+                skos:definition "A postal address that complies with USPS addressing requirements and includes the delivery location line, city, dual-letter state identifier, and ZIP code."@en ;
+                skos:example "210 Pennsylvania Ave NW, Washington, DC 20500"@en .
 
 
-#################################################################
-#    Classes - Emergency Address (NENA Standardized Subclass)
-#################################################################
-
-###  https://purl.org/cco/ent00000311  (Emergency Address)
-
-cco:ent00000311 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ent00000310 ;  # Address
-    rdfs:label "Emergency Address"@en ;
-    skos:altLabel "E911 Address"@en ,
-                  "Emergency Service Address"@en ,
-                  "Dispatchable Address"@en ;
-    skos:definition """An Address that designates a physical location for emergency service 
-                       dispatch, governed by NENA Standard 02-010 or a national equivalent, 
-                       and resolvable by emergency communications centers."""@en ;
-    skos:example """'4471 County Road F42, Glenwood, IA 51534' assigned by a county 911 
-                    authority to a rural property that has no USPS postal address. 
-                    In urban areas, the Emergency Address typically coincides with the 
-                    Postal Address for the same site."""@en ;
-    skos:scopeNote """EmergencyAddress is the NENA-standardized subclass of Address, 
-                      administered by public safety authorities (county 911 centers, 
-                      national emergency services). Its primary purpose is to enable 
-                      emergency responders to locate a site; it is not a delivery address.
-
-                      In urban and suburban areas, the Emergency Address typically 
-                      coincides with the PostalAddress for the same site — same string, 
-                      different designation. In rural areas the two may differ: USPS may 
-                      route to a Rural Route or PO Box, while the 911 authority assigns 
-                      a road-number address specifically for locatability.
-
-                      NENA 02-010 (Civic Location Data Exchange Format) defines the 
-                      authoritative structure for US emergency addresses. International 
-                      equivalents include UK BS 7666 (AddressBase), EU Emergency Location 
-                      (ETSI TS 103 625), and ITU-T E.164 location extensions.
-
-                      An EmergencyAddress is assigned to a site, not to an agent. The 
-                      same site retains its EmergencyAddress regardless of occupancy. 
-                      Use AddressDesignation (ent00000016) to associate an agent with 
-                      their EmergencyAddress."""@en ;
-    dcterms:created "2026-03-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.nena.org/page/Standards"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
-
-
-#################################################################
-#    Classes - Address Components
-#    (Components of PostalAddress per UPU S42)
-#################################################################
-
-###  https://purl.org/cco/ent00000011  (Street Address)
-
+###  https://purl.org/cco/ent00000011
 cco:ent00000011 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000003 ;  # Designative Name
-    rdfs:label "Street Address"@en ;
-    skos:altLabel "Street-Level Address"@en ;
-    skos:definition """A Designative Name representing the street-level component of a Postal 
-                       Address, including building number, street name, and optionally 
-                       unit/apartment."""@en ;
-    skos:example "The string '123 Main Street, Apt 4B' designates a street-level location."@en ;
-    skos:scopeNote """StreetAddress is the first line of a postal address in most countries. It 
-                      typically includes: building number (required), street name (required), 
-                      street type (Avenue, Street, Road - optional), and unit/apartment designation 
-                      (optional). StreetAddress is a Designative Name (rather than Proper Name) 
-                      because it is a structured designation combining proper names (street name), 
-                      numbers (building number), and optional identifiers (unit number). International 
-                      postal standards (UPU S42, ISO 19160-4, OASIS CIQ) treat it as a structured 
-                      address component or data field, not a simple name. The same street address 
-                      can designate residential, commercial, or institutional locations."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/streetAddress> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000312 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "Street Address"@en ;
+                skos:altLabel "Delivery Address Line"@en ;
+                skos:definition "An Address Component that cites the street name plus facility number, unit number, and any other details."@en .
 
 
-###  https://purl.org/cco/ent00000012  (City Name)
-
+###  https://purl.org/cco/ent00000012
 cco:ent00000012 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00001014 ;  # Proper Name
-    owl:disjointWith cco:ent00000013 ,  # State Name
-                     cco:ent00000014 ;  # Country Name
-    rdfs:label "City Name"@en ;
-    skos:altLabel "Town Name"@en ,
-                  "Municipality Name"@en ;
-    skos:definition """A Proper Name representing the name of an urban settlement, typically a 
-                       local administrative region with municipal governance."""@en ;
-    skos:example "The string 'Boston' in the address 'Boston, MA 02101' designates the city of Boston."@en ;
-    skos:scopeNote """CityName designates a City entity (defined in CCO AgentOntology as 
-                      <https://purl.org/cco/ont00000887>). CityName is information (designator), 
-                      while City is the geopolitical entity being designated. The same city may have 
-                      multiple name representations ('NYC' vs 'New York City'). CityName is a 
-                      component of PostalAddress per UPU Standard S42."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/addressLocality> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000312 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "City"@en ;
+                skos:altLabel "Locality"@en ;
+                skos:definition "An Address Component that cites the city or town name."@en .
 
 
-###  https://purl.org/cco/ent00000013  (State Name)
-
+###  https://purl.org/cco/ent00000013
 cco:ent00000013 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00001014 ;  # Proper Name
-    owl:disjointWith cco:ent00000012 ,  # City Name
-                     cco:ent00000014 ;  # Country Name
-    rdfs:label "State Name"@en ;
-    skos:altLabel "Province Name"@en ,
-                  "State/Province Name"@en ,
-                  "First-Order Administrative Region Name"@en ;
-    skos:definition """A Proper Name representing the name of a primary administrative subdivision 
-                       of a country, such as a state, province, or autonomous region."""@en ;
-    skos:example "The string 'Massachusetts' or 'MA' in the address 'Boston, MA 02101' designates the state of Massachusetts."@en ;
-    skos:scopeNote """StateName designates a Constituent State entity (defined in CCO AgentOntology 
-                      as <https://purl.org/cco/ont00000934>). StateName is information (designator), 
-                      while Constituent State is the geopolitical entity. States may have official 
-                      names ('Commonwealth of Massachusetts') and common abbreviations ('MA'). 
-                      The term 'State' in US context, 'Province' in Canadian context, 'Land' in 
-                      German context all map to first-order administrative region. Component of 
-                      PostalAddress per UPU Standard S42."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/addressRegion> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000312 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "State"@en ;
+                skos:altLabel "Administrative Area"@en ;
+                skos:definition "An Address Component that cites the state name."@en .
 
 
-###  https://purl.org/cco/ent00000014  (Country Name)
-
+###  https://purl.org/cco/ent00000014
 cco:ent00000014 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00001014 ;  # Proper Name
-    owl:disjointWith cco:ent00000013 ,  # State Name
-                     cco:ent00000012 ;  # City Name
-    rdfs:label "Country Name"@en ;
-    skos:altLabel "Nation Name"@en ;
-    skos:definition """A Proper Name representing the name of a sovereign geopolitical entity, 
-                       typically corresponding to an ISO 3166-1 country code."""@en ;
-    skos:example "The string 'United States' or 'USA' or 'US' in a postal address designates the United States of America."@en ;
-    skos:scopeNote """CountryName designates a Domain of a Country entity (defined in CCO AgentOntology). 
-                      CCO deliberately avoids defining 'Country' as an entity class due to semantic 
-                      ambiguity (does 'country' refer to government, people, site, or domain?), 
-                      instead defining 'Domain of a Country'. CountryName is the designator 
-                      (information) that refers to this domain. Countries have multiple name 
-                      representations: official names ('United States of America'), common names 
-                      ('United States'), and ISO 3166-1 codes ('US', 'USA'). Component of 
-                      PostalAddress per UPU Standard S42. Should map to ISO 3166-1 standard."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.iso.org/iso-3166-country-codes.html"^^xsd:anyURI ;
-    skos:exactMatch <https://schema.org/addressCountry> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000312 ;
+                dcterms:created "2026-07-06" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "Country Name"@en ;
+                rdfs:seeAlso <https://schema.org/addressCountry> ;
+                skos:definition "An Address Component that cites the country name."@en .
 
 
-###  https://purl.org/cco/ent00000015  (Postal Code)
-
+###  https://purl.org/cco/ent00000015
 cco:ent00000015 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000077 ;  # Code Identifier
-    rdfs:label "Postal Code"@en ;
-    skos:altLabel "ZIP Code"@en ,
-                  "Postcode"@en ,
-                  "Post Code"@en ;
-    skos:definition """A structured Code of alphanumeric characters designating a postal delivery 
-                       zone, format varying by country (5-digit ZIP in US, alphanumeric postcode 
-                       in UK)."""@en ;
-    skos:example "The string '02101' in US ZIP code format designates a postal delivery zone in Boston, MA."@en ;
-    skos:scopeNote """PostalCode designates a postal delivery zone (geographic region). The code 
-                      itself is information; the delivery zone is the geographic area being 
-                      designated. Format is country-specific: US uses 5-digit ZIP (NNNNN) or 
-                      ZIP+4 (NNNNN-NNNN), UK uses alphanumeric postcode (e.g., 'SW1A 1AA'), 
-                      Canada uses 6-character postal code (e.g., 'K1A 0B1'). PostalCode is a 
-                      Code Identifier because it follows an encoding system from which metadata 
-                      (geographic area) can be derived. Component of PostalAddress per UPU 
-                      Standard S42."""@en ;
-    dcterms:created "2026-02-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    skos:exactMatch <https://schema.org/postalCode> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000312 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "Postal Code"@en ;
+                skos:altLabel "ZIP Code"@en ;
+                skos:definition "An Address Component that cites a geographic area defined by a postal authority."@en .
 
 
-#################################################################
-#    Classes - Address-Related Processes
-#################################################################
-
-###  https://purl.org/cco/ent00000016  (Address Designation)
-
-cco:ent00000016 rdf:type owl:Class ;
-    rdfs:subClassOf obo:BFO_0000015 ;  # Process
-    rdfs:label "Address Designation"@en ;
-    skos:altLabel "Address Assignment"@en ,
-                  "Address Association"@en ;
-    skos:definition """A Process in which an Agent is associated with an Address for a specified 
-                       Temporal Interval, representing the administrative or legal association 
-                       between an Agent and an address, distinct from physical relocation 
-                       or occupancy."""@en ;
-    skos:example """Alice Walker's residence at 123 Main St, Boston MA from September 2025 to 
-                    present is an Address Designation. A corporation's registered agent address 
-                    is an Address Designation of type LegalAddressDesignation. A credit card 
-                    holder's billing address is an Address Designation of type 
-                    BillingAddressDesignation."""@en ;
-    skos:scopeNote """AddressDesignation is the mechanism for recording the role an Address 
-                      plays for a given Agent at a given time. The Address class hierarchy 
-                      captures what kind of identifier the address is (governed by which 
-                      authority, in which format); AddressDesignation captures what purpose 
-                      it serves for a specific agent.
-
-                      Because the same physical address string can simultaneously serve as 
-                      a residential address, a legal domicile, a billing address, and a 
-                      delivery address for the same agent, roles are modeled here rather 
-                      than as subclasses of Address.
-
-                      Recommended subclasses (not yet minted):
-                        DeliveryAddressDesignation — for mail and parcel receipt
-                        LegalAddressDesignation    — for jurisdiction, tax, registration
-                        BillingAddressDesignation  — for financial instrument verification
-                        ServiceAddressDesignation  — for utility/service installation
-                        EmergencyAddressDesignation — for 911 / emergency dispatch
-
-                      Use BFO 'occupies temporal region' (BFO_0000153) to specify when the 
-                      designation is valid. An open-ended temporal interval (no end date) 
-                      indicates the designation is still current. Use BFO 'has participant' 
-                      (BFO_0000139) to connect the agent. Use CCO 'designated by' 
-                      (ont00001879) to connect the address.
-
-                      Supports address history tracking: an agent can have multiple Address 
-                      Designations over time, each with different temporal bounds and roles. 
-                      Works for both persons and organizations."""@en ;
-    dcterms:created "2026-02-27"^^xsd:date ;
-    dcterms:modified "2026-03-22"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
-
-
-#################################################################
-#    Datatype Properties - Temporal Bounds
-#################################################################
-
-###  https://purl.org/cco/ent00000017  (has start date)
-
-cco:ent00000017 rdf:type owl:DatatypeProperty ;
-    rdfs:domain obo:BFO_0000038 ;  # One-Dimensional Temporal Region
-    rdfs:range xsd:date ;
-    rdfs:label "has start date"@en ;
-    skos:definition """A datatype property that associates a Temporal Interval with the calendar 
-                       date on which that interval begins."""@en ;
-    skos:example "The temporal interval 'September 2025 to present' has start date '2025-09-01'."@en ;
-    skos:scopeNote """Use this property to specify when a temporal interval begins. The value 
-                      should be an xsd:date in ISO 8601 format (YYYY-MM-DD). Typically used 
-                      with AddressDesignation to indicate when an agent became associated 
-                      with an address."""@en ;
-    dcterms:created "2026-02-27"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
-
-
-###  https://purl.org/cco/ent00000018  (has end date)
-
-cco:ent00000018 rdf:type owl:DatatypeProperty ;
-    rdfs:domain obo:BFO_0000038 ;  # One-Dimensional Temporal Region
-    rdfs:range xsd:date ;
-    rdfs:label "has end date"@en ;
-    skos:definition """A datatype property that associates a Temporal Interval with the calendar 
-                       date on which that interval ends."""@en ;
-    skos:example "The temporal interval 'January 2020 to December 2025' has end date '2025-12-31'."@en ;
-    skos:scopeNote """Use this property to specify when a temporal interval ends. The value 
-                      should be an xsd:date in ISO 8601 format (YYYY-MM-DD). Absence of this 
-                      property on a temporal interval indicates the interval is ongoing (still 
-                      current). Typically used with AddressDesignation to indicate when an 
-                      agent's association with an address ended."""@en ;
-    dcterms:created "2026-02-27"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
-
-
-#################################################################
-#    Geographic Support Classes
-#################################################################
-
-###  https://purl.org/cco/ent00000056  (Postal Zone)
-
-cco:ent00000056 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000460 ;  # Local Administrative Region
-    rdfs:label "Postal Zone"@en ;
-    skos:definition """A Local Administrative Region that delimits a set of delivery points 
-                       within a postal system of some government."""@en ;
-    skos:example "US ZIP code 02101 designates a postal zone in Boston, MA."@en ;
-    skos:scopeNote """PostalZone is the geographic region that a PostalCode (ent00000015) 
-                      designates. PostalCode is the identifier (information); PostalZone is 
-                      the geographic area being designated. A PostalZone is defined and 
-                      maintained by a postal authority (e.g., USPS in the USA)."""@en ;
-    skos:exactMatch <http://www.ontologyrepository.com/CommonCoreOntologies/PostalZone> ;
-    dcterms:created "2026-03-17"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
-
-
-###  https://purl.org/cco/ent00000059  (Country Code)
-
+###  https://purl.org/cco/ent00000059
 cco:ent00000059 rdf:type owl:Class ;
-    rdfs:subClassOf cco:ont00000077 ;  # Code Identifier
-    rdfs:label "Country Code"@en ;
-    skos:altLabel "ISO Country Code"@en ,
-                  "ISO 3166-1 Alpha-2 Code"@en ;
-    skos:definition """A Code Identifier that designates a country using a standardized 
-                       abbreviation, typically the ISO 3166-1 alpha-2 two-letter code."""@en ;
-    skos:example "The string 'US' designates the United States. 'DE' designates Germany."@en ;
-    skos:scopeNote """CountryCode is distinct from CountryName (ent00000014) — both designate 
-                      the same country domain but CountryCode uses a structured ISO encoding 
-                      while CountryName uses a natural language proper name. ISO 3166-1 defines 
-                      three code forms: alpha-2 (US), alpha-3 (USA), and numeric (840). This 
-                      class covers all three forms. RFC 9553 JSContact uses countryCode as a 
-                      separate field from the country name component in addresses. Data models: 
-                      RFC 9553, ISO 3166-1, vCard (COUNTRY), FHIR, EU Digital Identity 
-                      Wallet — 8+ sources."""@en ;
-    dcterms:created "2026-03-17"^^xsd:date ;
-    dc:creator "Global Research, Inc."@en ;
-    dcterms:source "https://www.iso.org/iso-3166-country-codes.html"^^xsd:anyURI ;
-    skos:closeMatch <https://schema.org/addressCountry> ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+                rdfs:subClassOf cco:ent00000312 ;
+                dcterms:created "2026-07-06" ;
+                rdfs:comment "Value is an ISO 3166-1 alpha-2 code, e.g. 'US', 'PK'. Alpha-3 forms exist in ISO 3166-1 but are not the selected form of this address component."@en ;
+                rdfs:label "Country Code"@en ;
+                rdfs:seeAlso <https://schema.org/addressCountry> ;
+                skos:definition "An Address Component that cites the ISO 3166-1 alpha-2 code of a country."@en .
 
 
-#################################################################
-#    Named Individuals - Country Codes
-#    (Full ISO 3166-1 list deferred; ent00000061–309 reserved)
-#################################################################
-
-###  https://purl.org/cco/ent00000060  (US — United States country code)
-
-cco:ent00000060 rdf:type owl:NamedIndividual ,
-                         cco:ent00000059 ;  # Country Code
-    rdfs:label "US"@en ;
-    skos:altLabel "USA"@en ,
-                  "840"@en ;
-    skos:definition """The ISO 3166-1 alpha-2 code designating the United States of America."""@en ;
-    skos:scopeNote """ISO 3166-1 defines three forms for the United States: alpha-2 'US', 
-                      alpha-3 'USA', numeric '840'. This individual represents all three as 
-                      alternative labels. Additional country code individuals will be added 
-                      as requirements emerge. Full list at 
-                      https://www.iso.org/iso-3166-country-codes.html.
-                      Block ent00000061–309 reserved for remaining 248 ISO 3166-1 country 
-                      codes."""@en ;
-    dcterms:source "https://www.iso.org/iso-3166-country-codes.html"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://purl.org/cco/address> .
+###  https://purl.org/cco/ent00000310
+cco:ent00000310 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000958 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "Address"@en ;
+                skos:altLabel "Geospatial Address"@en ,
+                              "Location Address"@en ;
+                skos:definition "An Information Content Entity (ICE) that identifies a physical location of a person, facility or an organization for the purpose of communication or service."@en .
 
 
-#################################################################
-#    Deprecated IRI Aliases
-#
-#    ONTOLOGY-LEVEL ALIAS:
-#    https://purl.org/cco/postal-address is a deprecated PURL
-#    redirect to https://purl.org/cco/address. The owl:Ontology
-#    declaration below ensures reasoners treat it as deprecated.
-#
-#    TERM-LEVEL ALIASES (label-based IRIs from version 1.1.0):
-#    Safe to remove after all downstream consumers have updated.
-#################################################################
-
-<https://purl.org/cco/postal-address> rdf:type owl:Ontology ;
-    owl:deprecated true ;
-    rdfs:seeAlso <https://purl.org/cco/address> ;
-    rdfs:comment """Deprecated 2026-03-22. Superseded by https://purl.org/cco/address 
-                    (AddressOntology). All ent IRIs from this ontology are preserved 
-                    unchanged in the successor."""@en .
-
-<https://purl.org/cco/postal-address/PostalAddress>       owl:deprecated true ; rdfs:seeAlso cco:ent00000009 .
-<https://purl.org/cco/postal-address/USPostalAddress>     owl:deprecated true ; rdfs:seeAlso cco:ent00000010 .
-<https://purl.org/cco/postal-address/StreetAddress>       owl:deprecated true ; rdfs:seeAlso cco:ent00000011 .
-<https://purl.org/cco/postal-address/CityName>            owl:deprecated true ; rdfs:seeAlso cco:ent00000012 .
-<https://purl.org/cco/postal-address/StateName>           owl:deprecated true ; rdfs:seeAlso cco:ent00000013 .
-<https://purl.org/cco/postal-address/CountryName>         owl:deprecated true ; rdfs:seeAlso cco:ent00000014 .
-<https://purl.org/cco/postal-address/PostalCode>          owl:deprecated true ; rdfs:seeAlso cco:ent00000015 .
-<https://purl.org/cco/postal-address/AddressDesignation>  owl:deprecated true ; rdfs:seeAlso cco:ent00000016 .
-<https://purl.org/cco/postal-address/hasStartDate>        owl:deprecated true ; rdfs:seeAlso cco:ent00000017 .
-<https://purl.org/cco/postal-address/hasEndDate>          owl:deprecated true ; rdfs:seeAlso cco:ent00000018 .
+###  https://purl.org/cco/ent00000312
+cco:ent00000312 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000958 ;
+                dcterms:created "2026-06-15" ;
+                rdfs:isDefinedBy <https://purl.org/cco/address> ;
+                rdfs:label "Address Component"@en ;
+                skos:definition "An Information Content Entity (ICE) that is a part of an address and provides a specific piece of information needed to locate or identify the address target."@en .
 
 
-#################################################################
-#    General Axioms
-#################################################################
-
-# Disjointness between geographic name levels declared above
-# (CityName, StateName, CountryName are mutually disjoint)
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
