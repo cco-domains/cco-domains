@@ -9,10 +9,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://purl.org/cco/person> .
+@base <https://purl.org/cco/person/> .
 
 <https://purl.org/cco/person> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://purl.org/cco/person/2026-05-05> ;
+                               owl:versionIRI <https://purl.org/cco/person/2026-07-11> ;
                                owl:imports obo:bfo.owl ,
                                            cco:AgentOntology ,
                                            cco:ArtifactOntology ,
@@ -26,11 +26,11 @@
                                            cco:TimeOntology ,
                                            cco:UnitsOfMeasureOntology ;
                                dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                               dc:date "2026-05-05"^^xsd:date ;
+                               dc:date "2026-07-11"^^xsd:date ;
                                dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
                                rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) posted on the open Internet at https://opensource.ieee.org/cco/CommonCoreOntologies/-/tree/cameronmore-master-patch-e888/CCO-2.0/cco-modules?ref_type=heads (commit 1def0253fb90f9c5eb71f08f55f48a9ac221f0f1, accessed early 2026)."@en ;
                                rdfs:label "Person Ontology"@en ;
-                               owl:versionInfo "Added Alternate Name, Additional Name, Suffix, Title and Surname2.   Copyright © 2026 Global Research, Inc."@en .
+                               owl:versionInfo "Added Eye Colors.   Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
@@ -60,6 +60,10 @@ dcterms:source rdf:type owl:AnnotationProperty .
 skos:altLabel rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#definition
 skos:definition rdf:type owl:AnnotationProperty .
 
@@ -79,6 +83,17 @@ xsd:date rdf:type rdfs:Datatype .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://purl.org/cco/ent00000038
+cco:ent00000038 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf obo:BFO_0000196 ;
+                rdfs:domain cco:ont00001262 ;
+                rdfs:range cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "has Eye Color" ;
+                skos:definition "Relates a Person to the Eye Color that inheres in their iris."@en .
+
 
 ###  https://purl.org/cco/ent00000061
 cco:ent00000061 rdf:type owl:ObjectProperty ;
@@ -168,6 +183,74 @@ cco:ent00000008 rdf:type owl:Class ;
                 skos:example "123-45-6789 (dashes common but not required)"@en .
 
 
+###  https://purl.org/cco/ent00000037
+cco:ent00000037 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000378 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Eye Color"@en ;
+                skos:definition "A Color inhering in the iris of a person's eyes manifesting as a perceived color."@en .
+
+
+###  https://purl.org/cco/ent00000039
+cco:ent00000039 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Amber Eye Color"@en ;
+                skos:definition "An Eye Color that appears golden or copper."@en .
+
+
+###  https://purl.org/cco/ent00000040
+cco:ent00000040 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Blue Eye Color"@en ;
+                skos:closeMatch cco:ont00001189 ;
+                skos:definition "an Eye Color that appears light to medium blue."@en .
+
+
+###  https://purl.org/cco/ent00000041
+cco:ent00000041 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Brown Eye Color"@en ;
+                skos:closeMatch cco:ont00000872 ;
+                skos:definition "An Eye Color that appears brown."@en .
+
+
+###  https://purl.org/cco/ent00000042
+cco:ent00000042 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Grey Eye Color"@en ;
+                skos:closeMatch cco:ont00001349 ;
+                skos:definition "An Eye Color that appears grey."@en .
+
+
+###  https://purl.org/cco/ent00000043
+cco:ent00000043 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Green Eye Color"@en ;
+                skos:closeMatch cco:ont00000082 ;
+                skos:definition "An Eye Color that appears dark green."@en .
+
+
+###  https://purl.org/cco/ent00000044
+cco:ent00000044 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Hazel Eye Color"@en ;
+                skos:closeMatch cco:ont00000797 ;
+                skos:definition "An Eye Color that appears as a combination of green and brown."@en .
+
+
 ###  https://purl.org/cco/ent00000046
 cco:ent00000046 rdf:type owl:Class ;
                 rdfs:subClassOf cco:ont00001340 ;
@@ -213,6 +296,26 @@ cco:ent00000062 rdf:type owl:Class ;
                 skos:definition "A non-Name Identifier for a person."@en .
 
 
+###  https://purl.org/cco/ent00000063
+cco:ent00000063 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Maroon Eye Color"@en ;
+                skos:closeMatch cco:ont00000913 ;
+                skos:definition "An Eye Color that appears maroon."@en .
+
+
+###  https://purl.org/cco/ent00000064
+cco:ent00000064 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000037 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Pink/Red Eye Color"@en ;
+                skos:closeMatch cco:ont00001277 ;
+                skos:definition "An Eye Color that appears pink or light red due to lack of pigment."@en .
+
+
 ###  https://purl.org/cco/ont00000003
 cco:ont00000003 rdf:type owl:Class .
 
@@ -229,4 +332,4 @@ cco:ont00001262 rdf:type owl:Class .
 cco:ont00001340 rdf:type owl:Class .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
