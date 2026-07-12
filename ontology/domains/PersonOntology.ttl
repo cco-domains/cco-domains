@@ -12,7 +12,7 @@
 @base <https://purl.org/cco/person/> .
 
 <https://purl.org/cco/person> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://purl.org/cco/person/2026-07-11> ;
+                               owl:versionIRI <https://purl.org/cco/person/2026-07-12> ;
                                owl:imports obo:bfo.owl ,
                                            cco:AgentOntology ,
                                            cco:ArtifactOntology ,
@@ -26,11 +26,11 @@
                                            cco:TimeOntology ,
                                            cco:UnitsOfMeasureOntology ;
                                dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                               dc:date "2026-07-11"^^xsd:date ;
+                               dc:date "2026-07-12" ;
                                dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
                                rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) posted on the open Internet at https://opensource.ieee.org/cco/CommonCoreOntologies/-/tree/cameronmore-master-patch-e888/CCO-2.0/cco-modules?ref_type=heads (commit 1def0253fb90f9c5eb71f08f55f48a9ac221f0f1, accessed early 2026)."@en ;
                                rdfs:label "Person Ontology"@en ;
-                               owl:versionInfo "Added Eye Colors.   Copyright © 2026 Global Research, Inc."@en .
+                               owl:versionInfo "Added Driver License, Passport Number, Place of Birth and Issuing Jursitiction.   Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
@@ -314,6 +314,42 @@ cco:ent00000064 rdf:type owl:Class ;
                 rdfs:label "Pink/Red Eye Color"@en ;
                 skos:closeMatch cco:ont00001277 ;
                 skos:definition "An Eye Color that appears pink or light red due to lack of pigment."@en .
+
+
+###  https://purl.org/cco/ent00000065
+cco:ent00000065 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000062 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Drivers License Number"@en ;
+                skos:definition "A Person Identifier issued to a person by a driver-licensing authority."@en .
+
+
+###  https://purl.org/cco/ent00000066
+cco:ent00000066 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ent00000062 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Passport Number"@en ;
+                skos:definition "A Person Identifier issued to a person by a passport-issuing authority."@en .
+
+
+###  https://purl.org/cco/ent00000067
+cco:ent00000067 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000686 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Place of Birth"@en ;
+                skos:definition "A Designative Information Content Entity that cites the civil jurisdiction in which a person's birth was registered as taking place, as recorded on an identity document. The registering jurisdiction may differ from the geographic location of the birth."@en .
+
+
+###  https://purl.org/cco/ent00000068
+cco:ent00000068 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000686 ;
+                dcterms:created "2026-07-11"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/person> ;
+                rdfs:label "Issuing Jurisdiction"@en ;
+                skos:definition "A Designative Information Content Entity that cites the governmental jurisdiction that issued an identity document, as recorded on that document. Designates a governing authority (e.g., national, state, provincial, agency, county, municipal, utility, etc.), not a postal address component."@en .
 
 
 ###  https://purl.org/cco/ont00000003
