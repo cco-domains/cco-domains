@@ -13,19 +13,18 @@
 @base <https://purl.org/cco/staging#> .
 
 <https://purl.org/cco/staging> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://purl.org/cco/staging/2026-07-09> ;
-                                owl:priorVersion <https://purl.org/cco/staging/2026-05-05> ;
+                                owl:versionIRI <https://purl.org/cco/staging/2026-07-13> ;
                                 owl:imports obo:bfo.owl ,
                                             cco:AgentOntology ,
                                             cco:ArtifactOntology ,
                                             cco:InformationEntityOntology ;
                                 dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                                dc:date "2026-07-09"^^xsd:date ;
-                                dcterms:modified "2026-07-09"^^xsd:date ;
                                 dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
-                                rdfs:comment "Staging Ontology extends from the open source Common Core Ontologies (CCO). It holds domain terms in active use by adopters that are not yet promoted to a balloted domain ontology; terms migrate out to CCO or a domain ontology under human review at the promotion boundary."@en ;
+                                dcterms:modified "2026-07-13"^^xsd:date ;
+                                rdfs:comment "Staging Ontology extends from the open source Common Core Ontologies (CCO). It holds domain terms in active use by adopters that are not yet either migrated to a  draft domain ontology or promoted to CCO.  The intent is for the entities to have stable IRIs (if possible) even after migration, to enable trial use of them, but there is no intent for Staging Ontology to be proposed as standard domain ontology."@en ;
                                 rdfs:label "Staging Ontology"@en ;
-                                owl:versionInfo "2026-07-09: Added Organization Name (ent00000047); User Account hierarchy and Online Service Account with service properties (ent00000025-036, 045); Payment Card hierarchy (ent00000049-054); Telecommunication Network Identifier (ent00000055). Relocated has start date / has end date (ent00000017-018) from AddressOntology. Removed Person Note (ent00000048) as redundant with Descriptive ICE. Fixed EmailAddress label syntax and normalized source IRIs. Copyright © 2026 Global Research, Inc."@en .
+                                owl:priorVersion <https://purl.org/cco/staging/2026-07-09> ;
+                                owl:versionInfo "Added has issue data and has experation date as Object Properties (no subclasses). Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
@@ -39,12 +38,40 @@ dc:creator rdf:type owl:AnnotationProperty .
 dc:date rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/created
+dcterms:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/source
 dcterms:source rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#exactMatch
 skos:exactMatch rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
 
 
 ###  https://purl.org/cco/ent00000019
@@ -80,6 +107,14 @@ cco:ent00000022 rdf:type owl:AnnotationProperty ;
 
 
 #################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
 #    Object Properties
 #################################################################
 
@@ -105,9 +140,57 @@ cco:ent00000045 rdf:type owl:ObjectProperty ;
                 cco:ent00000022 "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"@en .
 
 
+###  https://purl.org/cco/ent00000069
+cco:ent00000069 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf cco:ont00001879 ;
+                rdfs:range cco:ont00001340 ;
+                dcterms:created "2026-07-13"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/staging> ;
+                rdfs:label "has issue date"@en ;
+                skos:definition "Relates a document, credential, or other issued thing to the Calendar Date Identifier designating the date on which it was issued."@en .
+
+
+###  https://purl.org/cco/ent00000070
+cco:ent00000070 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf cco:ont00001879 ;
+                rdfs:range cco:ont00001340 ;
+                dcterms:created "2026-07-13"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/staging> ;
+                rdfs:label "has expiration date"@en ;
+                skos:definition "Relates a thing (document, credential, etc.)  with a validity period to the Calendar Date Identifier designating the date after which it is no longer valid."@en .
+
+
+###  https://purl.org/cco/ont00001879
+cco:ont00001879 rdf:type owl:ObjectProperty .
+
+
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://purl.org/cco/ent00000017
+cco:ent00000017 rdf:type owl:DatatypeProperty ;
+                rdfs:domain obo:BFO_0000038 ;
+                rdfs:range xsd:date ;
+                dcterms:created "2026-07-09"^^xsd:date ;
+                dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
+                rdfs:isDefinedBy <https://purl.org/cco/staging> ;
+                rdfs:label "has start date"@en ;
+                skos:definition "Relates a Temporal Interval to the date on which it begins."@en ;
+                cco:ent00000019 "Relocated from AddressOntology 2026-07-09; generic temporal property, not address-specific"@en .
+
+
+###  https://purl.org/cco/ent00000018
+cco:ent00000018 rdf:type owl:DatatypeProperty ;
+                rdfs:domain obo:BFO_0000038 ;
+                rdfs:range xsd:date ;
+                dcterms:created "2026-07-09"^^xsd:date ;
+                dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
+                rdfs:isDefinedBy <https://purl.org/cco/staging> ;
+                rdfs:label "has end date"@en ;
+                skos:definition "Relates a Temporal Interval to the date on which it ends. Absence of this property on an interval indicates an open-ended (ongoing) interval."@en ;
+                cco:ent00000019 "Relocated from AddressOntology 2026-07-09; generic temporal property, not address-specific"@en .
+
 
 ###  https://purl.org/cco/ent00000034
 cco:ent00000034 rdf:type owl:DatatypeProperty ;
@@ -146,30 +229,8 @@ cco:ent00000036 rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  https://purl.org/cco/ent00000017  (has start date)
-
-cco:ent00000017 rdf:type owl:DatatypeProperty ;
-    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000038> ;  # Temporal Interval
-    rdfs:range xsd:date ;
-    rdfs:label "has start date"@en ;
-    skos:definition "Relates a Temporal Interval to the date on which it begins."@en ;
-    dcterms:created "2026-07-09"^^xsd:date ;
-    cco:ent00000019 "Relocated from AddressOntology 2026-07-09; generic temporal property, not address-specific"@en ;  # migration/provenance note
-    dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
-    rdfs:isDefinedBy <https://purl.org/cco/staging> .
-
-
-###  https://purl.org/cco/ent00000018  (has end date)
-
-cco:ent00000018 rdf:type owl:DatatypeProperty ;
-    rdfs:domain <http://purl.obolibrary.org/obo/BFO_0000038> ;  # Temporal Interval
-    rdfs:range xsd:date ;
-    rdfs:label "has end date"@en ;
-    skos:definition "Relates a Temporal Interval to the date on which it ends. Absence of this property on an interval indicates an open-ended (ongoing) interval."@en ;
-    dcterms:created "2026-07-09"^^xsd:date ;
-    cco:ent00000019 "Relocated from AddressOntology 2026-07-09; generic temporal property, not address-specific"@en ;  # migration/provenance note
-    dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
-    rdfs:isDefinedBy <https://purl.org/cco/staging> .
+###  http://purl.obolibrary.org/obo/BFO_0000038
+obo:BFO_0000038 rdf:type owl:Class .
 
 
 ###  https://purl.org/cco/ent00000023
@@ -523,6 +584,34 @@ cco:ent00000055 rdf:type owl:Class ;
                 cco:ent00000020 "Migrated from Orphan-Ontology-Dev CCO 1.x."@en ;
                 cco:ent00000021 "2026-03-17"^^xsd:date ;
                 cco:ent00000022 "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"@en .
+
+
+###  https://purl.org/cco/ont00000003
+cco:ont00000003 rdf:type owl:Class .
+
+
+###  https://purl.org/cco/ont00000077
+cco:ont00000077 rdf:type owl:Class .
+
+
+###  https://purl.org/cco/ont00000686
+cco:ont00000686 rdf:type owl:Class .
+
+
+###  https://purl.org/cco/ont00000798
+cco:ont00000798 rdf:type owl:Class .
+
+
+###  https://purl.org/cco/ont00000938
+cco:ont00000938 rdf:type owl:Class .
+
+
+###  https://purl.org/cco/ont00001017
+cco:ont00001017 rdf:type owl:Class .
+
+
+###  https://purl.org/cco/ont00001340
+cco:ont00001340 rdf:type owl:Class .
 
 
 #################################################################
