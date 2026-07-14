@@ -13,18 +13,18 @@
 @base <https://purl.org/cco/staging#> .
 
 <https://purl.org/cco/staging> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://purl.org/cco/staging/2026-07-13> ;
+                                owl:versionIRI <https://purl.org/cco/staging/2026-07-14> ;
                                 owl:imports obo:bfo.owl ,
                                             cco:AgentOntology ,
                                             cco:ArtifactOntology ,
                                             cco:InformationEntityOntology ;
                                 dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
                                 dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
-                                dcterms:modified "2026-07-13"^^xsd:date ;
+                                dcterms:modified "2026-07-14" ;
                                 rdfs:comment "Staging Ontology extends from the open source Common Core Ontologies (CCO). It holds domain terms in active use by adopters that are not yet either migrated to a  draft domain ontology or promoted to CCO.  The intent is for the entities to have stable IRIs (if possible) even after migration, to enable trial use of them, but there is no intent for Staging Ontology to be proposed as standard domain ontology."@en ;
                                 rdfs:label "Staging Ontology"@en ;
-                                owl:priorVersion <https://purl.org/cco/staging/2026-07-09> ;
-                                owl:versionInfo "Added has issue data and has experation date as Object Properties (no subclasses). Copyright © 2026 Global Research, Inc."@en .
+                                owl:priorVersion <https://purl.org/cco/staging/2026-07-13> ;
+                                owl:versionInfo "Added Checking Account Number and Routing Number. Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
@@ -584,6 +584,28 @@ cco:ent00000055 rdf:type owl:Class ;
                 cco:ent00000020 "Migrated from Orphan-Ontology-Dev CCO 1.x."@en ;
                 cco:ent00000021 "2026-03-17"^^xsd:date ;
                 cco:ent00000022 "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"@en .
+
+
+###  https://purl.org/cco/ent00000071
+cco:ent00000071 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000077 ;
+                dc:date "2026-07-14T18:42:19Z"^^xsd:dateTime ;
+                dcterms:created "2026-07-14"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/staging> ;
+                rdfs:label "Checking Account Number"@en ;
+                skos:altLabel "Bank Account Number"@en ;
+                skos:definition "A Code Identifier that designates a checking account within a financial institution's system of record."@en .
+
+
+###  https://purl.org/cco/ent00000072
+cco:ent00000072 rdf:type owl:Class ;
+                rdfs:subClassOf cco:ont00000077 ;
+                dc:date "2026-07-14T18:43:14Z"^^xsd:dateTime ;
+                dcterms:created "2026-07-14"^^xsd:date ;
+                rdfs:isDefinedBy <https://purl.org/cco/staging> ;
+                rdfs:label "Routing Number"@en ;
+                skos:altLabel "ABA Routing Transit Number"@en ;
+                skos:definition "A Code Identifier that designates a financial institution within a payment clearing network for routing payments."@en .
 
 
 ###  https://purl.org/cco/ont00000003
