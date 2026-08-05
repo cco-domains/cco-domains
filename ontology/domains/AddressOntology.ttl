@@ -12,21 +12,20 @@
 @base <https://purl.org/cco/address#> .
 
 <https://purl.org/cco/address> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://purl.org/cco/address/2026-07-08> ;
+                                owl:versionIRI <https://purl.org/cco/address/2026-08-05> ;
                                 owl:imports obo:bfo.owl ,
                                             cco:GeospatialOntology ,
                                             cco:InformationEntityOntology ;
                                 dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                                dc:date "2026-07-08"^^xsd:date ;
-                                dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+                                dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                 dcterms:source "https://www.upu.int/en/Postal-Solutions/Programmes-Services/Addressing-Solutions"^^xsd:anyURI ;
-                                rdfs:comment """Supersedes PostalAddressOntology (https://purl.org/cco/postal-address).
+                                rdfs:comment """Address Ontology extends from the open source Common Core Ontologies. Supersedes PostalAddressOntology (https://purl.org/cco/postal-address).
                     All ent IRIs from that ontology are preserved unchanged.
                     The PURL https://purl.org/cco/postal-address is deprecated and
                     redirects to https://purl.org/cco/address."""@en ;
                                 rdfs:label "Address Ontology"@en ;
-                                owl:priorVersion <https://purl.org/cco/address/2026-07-07> ;
-                                owl:versionInfo "Added Address Designation.   Copyright © 2026 Global Research, Inc."@en .
+                                owl:priorVersion <https://purl.org/cco/address/2026-07-08> ;
+                                owl:versionInfo "Changed open source license from BSD-3 Clause to CC BY 4.0.   Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
