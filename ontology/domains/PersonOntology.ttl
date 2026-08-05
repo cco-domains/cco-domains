@@ -12,7 +12,7 @@
 @base <https://purl.org/cco/person/> .
 
 <https://purl.org/cco/person> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://purl.org/cco/person/2026-07-12> ;
+                               owl:versionIRI <https://purl.org/cco/person/2026-08-05> ;
                                owl:imports obo:bfo.owl ,
                                            cco:AgentOntology ,
                                            cco:ArtifactOntology ,
@@ -26,11 +26,11 @@
                                            cco:TimeOntology ,
                                            cco:UnitsOfMeasureOntology ;
                                dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                               dc:date "2026-07-12" ;
-                               dcterms:license <https://opensource.org/licenses/BSD-3-Clause> ;
+                               dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) posted on the open Internet at https://opensource.ieee.org/cco/CommonCoreOntologies/-/tree/cameronmore-master-patch-e888/CCO-2.0/cco-modules?ref_type=heads (commit 1def0253fb90f9c5eb71f08f55f48a9ac221f0f1, accessed early 2026)."@en ;
                                rdfs:label "Person Ontology"@en ;
-                               owl:versionInfo "Added Driver License, Passport Number, Place of Birth and Issuing Jursitiction.   Copyright © 2026 Global Research, Inc."@en .
+                               owl:priorVersion <https://purl.org/cco/person/2026-07-12> ;
+                               owl:versionInfo "Changed open source license from BSD-3 Clause to CC BY 4.0.   Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
