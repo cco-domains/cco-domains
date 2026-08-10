@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001384",
+  "@type": "owl:Class",
+  "cco:ont00001754": "https://en.wikipedia.org/wiki/Opacity_(optics)",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/QualityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Opacity"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000628"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Disposition to Interact with Electromagnetic Radiation that inheres in a bearer in virtue of that bearer's capacity to transmit electromagnetic radiation of a given frequency through the bearer instead of reflecting, scattering, or absorbing electromangentic radiation of that frequency."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Note that it is important to specify the frequency of electromagnetic radiation when representing a bearer's Opacity since a bearer may be Opaque with respect to electromagnetic radiation of one frequency, but be transparent with respect to electromagnetic radiation of another frequency. Unless otherwise stated, statements about a bearer's Opacity are assumed to be about electromagnetic radiation with a frequency in the visible spectrum."
+  }
+}

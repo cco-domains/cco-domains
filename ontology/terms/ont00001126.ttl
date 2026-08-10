@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001126 a owl:Class ;
+    rdfs:label "Luminescent Property"@en ;
+    rdfs:subClassOf cco:ont00000784 ;
+    skos:definition "An Optical Property that inheres in a bearer in virtue of that bearer's capacity to emit visible light, but which isn't the result of the bearer being heated."@en ;
+    skos:scopeNote "There are a variety of photometric measurements, such as luminous flux/power or luminous intensity, whose units are lumen and candela respectively, which attempt to describe properties associated with the perception of light. These are weighted measurements, typically by the luminosity function, as thus exist on the side of information content. It is a point of further development to add the needed intrinsic properties of radiation that such measurements are about."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Luminescence&oldid=1050169944"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/QualityOntology"^^xsd:anyURI .
+

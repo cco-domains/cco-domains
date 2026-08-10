@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001165 a owl:Class ;
+    rdfs:label "Terrorist Training Camp"@en ;
+    rdfs:subClassOf cco:ont00000332 ;
+    skos:definition "A Training Camp designed to teach students methods of terrorism."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Terrorist_training_camp&oldid=1037856600"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FacilityOntology"^^xsd:anyURI .
+

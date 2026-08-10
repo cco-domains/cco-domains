@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000092 a owl:Class ;
+    rdfs:label "Bidirectional Transducer"@en ;
+    rdfs:subClassOf cco:ont00000736 ;
+    skos:definition "A Transducer that is designed to receive a signal in the form of physical phenomena and convert it into an electrical signal, and vice versa."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Transducer&oldid=1053290948"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

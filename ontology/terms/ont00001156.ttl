@@ -1,0 +1,20 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001156 a owl:Class ;
+    rdfs:label "Material Copy of a Information Line"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000101 ;
+            owl:someValuesFrom cco:ont00002037 ],
+        cco:ont00000798 ;
+    skos:altLabel "Information Line"@en ;
+    skos:definition "An Information Bearing Artifact that consists of a single line or row of some larger Information Bearing Artifact of which it is a part."@en ;
+    skos:example "a line in a computer file that bears a portion of code for some computer program",
+        "a line of data in a database",
+        "a line of text in a book" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

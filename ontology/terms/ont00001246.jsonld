@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001777"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000566"
+      }
+    },
+    {
+      "@id": "cco:ont00001246",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Under Active Control"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000847"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An Active Stasis during which a Material Artifact participates in an Act of Artifact Employment."
+      }
+    }
+  ]
+}

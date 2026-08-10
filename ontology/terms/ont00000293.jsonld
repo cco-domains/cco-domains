@@ -1,0 +1,82 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00001163"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001868"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000001"
+      }
+    },
+    {
+      "@id": "cco:ont00000293",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "cco:ont00001010"
+        },
+        {
+          "@id": "cco:ont00001022"
+        },
+        {
+          "@id": "cco:ont00001364"
+        }
+      ],
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Nominal Measurement Information Content Entity"
+      },
+      "rdfs:subClassOf": {
+        "@id": "cco:ont00001163"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Measurement Information Content Entity that consists of a symbol that classifies Entities according to some shared, possibly arbitrary, characteristic."
+      },
+      "skos:example": [
+        "a measurement that classifies automobiles as sedans, coupes, hatchbacks, or convertibles",
+        "a measurement that classifies military intelligence as strategic, operational, or tactical",
+        "a measurement that classifies rocks as igneous, sedimentary, or metamorphic",
+        {
+          "@language": "en",
+          "@value": "The sentence \"January 20, 1985 was a cold day in Chicago, IL\" is the carrier of a nominal measurement."
+        }
+      ],
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Four of the subtypes of measurements used here (Interval, Nominal, Ordinal, and Ratio) were originally defined by S.S. Stevens in the article \"On the Theory of Scales of Measurement\" in Science, Vol. 103 No. 2684 on June 7, 1946. For an introductory article with links to additional content including criticisms and alternate classifications of measurements see https://en.wikipedia.org/wiki/Level_of_measurement"
+      }
+    }
+  ]
+}

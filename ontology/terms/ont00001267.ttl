@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001267 a owl:Class ;
+    rdfs:label "Act of Propaganda"@en ;
+    rdfs:subClassOf cco:ont00000971 ;
+    skos:definition "An Act of Deceptive Communication Propaganda intended to influence the attitude of a mass audience toward some cause or position by presenting facts selectively (thus possibly lying by omission) or by using loaded messages to produce an emotional rather than rational response to the information presented."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Propaganda&oldid=1062472484"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

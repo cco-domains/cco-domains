@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001714",
+  "@type": [
+    "cco:ont00001290",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Foot Measurement Unit"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "ft"
+  }
+}

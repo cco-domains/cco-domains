@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000132"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000498"
+      }
+    },
+    {
+      "@id": "cco:ont00000359",
+      "@type": "owl:Class",
+      "cco:ont00001753": "JD",
+      "cco:ont00001754": "https://www.defit.org/julian-date/",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/TimeOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Julian Date"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000223"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Time of Day as specified according to the Julian Calendar using the Julian Date epoch."
+      }
+    }
+  ]
+}

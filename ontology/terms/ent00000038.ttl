@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000038 a owl:ObjectProperty ;
+    rdfs:label "has Eye Color" ;
+    dcterms:created "2026-07-11"^^xsd:date ;
+    rdfs:domain cco:ont00001262 ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/PersonOntology> ;
+    rdfs:range cco:ent00000037 ;
+    rdfs:subPropertyOf obo:BFO_0000196 ;
+    skos:definition "Relates a Person to the Eye Color that inheres in their iris."@en .
+

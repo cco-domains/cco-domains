@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000133 a owl:Class ;
+    rdfs:label "Act of Directive Communication"@en ;
+    rdfs:subClassOf cco:ont00000402 ;
+    skos:definition "An Act of Communication that is intended to cause the hearer to take a particular action."@en ;
+    skos:scopeNote "Examples: advising, admonishing, asking, begging, dismissing, excusing, forbidding, instructing, ordering, permitting, requesting, requiring, suggesting, urging, warning"@en ;
+    cco:ont00001754 "Derived (loosely) from: John Searle's Speech Acts: An Essay in the Philosophy of Language" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

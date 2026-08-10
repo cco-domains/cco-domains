@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000477 a owl:Class ;
+    rdfs:label "Fuel Cell"@en ;
+    rdfs:subClassOf cco:ont00001049 ;
+    skos:definition "An Electrical Power Source that consists in part of an anode, a cathode, and an electrolyte; converts chemical energy from a fuel into electricity through a chemical reaction of positively charged hydrogen ions with an oxidizing agent (typically oxygen); and, if given a continuous source of fuel and oxidizing agent, can continuously produce electricity."@en ;
+    skos:scopeNote "A Fuel Cell differs from a Battery in that it requires a continuous source of fuel and oxygen to sustain the chemical reaction, whereas a Battery only uses chemicals already stored inside it."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Fuel_cell&oldid=1063586731"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

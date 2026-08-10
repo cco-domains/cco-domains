@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000276 a owl:Class ;
+    rdfs:label "Solar Calendar System"@en ;
+    rdfs:subClassOf cco:ont00000891 ;
+    skos:definition "A Calendar System that is designed to organize and identify dates based on the cycles of an Astronomical Body's Orbit around the Sun."@en ;
+    skos:scopeNote "Unless otherwise specified, a Solar Calendar System is assumed to be relative to the Orbit of the Earth around the Sun."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Solar_calendar&oldid=1058016588"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

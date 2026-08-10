@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001907",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000027"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "aggregate has quality"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000019"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001836"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x aggregate_has_quality y iff x is an instance of Object Aggregate and y is an instance of Quality, such that x aggregate_bearer_of y."
+  }
+}

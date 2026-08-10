@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001101 a owl:Class ;
+    rdfs:label "Interval Estimate Information Content Entity"@en ;
+    rdfs:subClassOf cco:ont00001176 ;
+    skos:altLabel "Interval Estimate"@en,
+        "Interval Estimate Measurement Information Content Entity"@en ;
+    skos:definition "An Estimate Information Content Entity that consists of an interval of possible (or probable) values for the measured entity."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

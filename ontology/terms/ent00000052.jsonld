@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000052",
+  "@type": "owl:Class",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "A future Financial domain ontology (IEEE P3195.1.x)"
+  },
+  "cco:ent00000020": {
+    "@language": "en",
+    "@value": "Migrated from Orphan-Ontology-Dev CCO 1.x."
+  },
+  "cco:ent00000022": {
+    "@language": "en",
+    "@value": "Proposed to Financial Domain Ontology WG when formed 2026-Q4"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-03-17"
+  },
+  "http://purl.org/dc/elements/1.1/creator": {
+    "@language": "en",
+    "@value": "Global Research, Inc."
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Credit Card Number"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000077"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "PAN"
+    },
+    {
+      "@language": "en",
+      "@value": "Primary Account Number"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Code Identifier that designates a payment card account, \n        formatted as a sequence of digits following ISO/IEC 7812."
+  },
+  "skos:example": {
+    "@language": "en",
+    "@value": "The 16-digit number embossed on a Visa card designates the card account."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "CreditCardNumber (also PAN / Primary Account Number) is the sequence of digits per ISO/IEC 7812 that designates the card account. Data models: Mee Foundation Requirements (Credit Card Number), Orphan-Ontology-Dev — 2+ sources."
+  }
+}

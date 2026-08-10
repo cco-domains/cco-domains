@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000919 a owl:Class ;
+    rdfs:label "Parts List"@en ;
+    rdfs:subClassOf cco:ont00000575 ;
+    skos:definition "A Quality Specification that prescribes the Amount of some type of Material Artifact that are part of or located on another Material Artifact."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

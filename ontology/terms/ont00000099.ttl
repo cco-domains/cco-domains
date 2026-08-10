@@ -1,0 +1,20 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000099 a owl:Class ;
+    rdfs:label "Wave Process"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000062 ;
+            owl:someValuesFrom cco:ont00000765 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom cco:ont00000752 ],
+        cco:ont00000007 ;
+    skos:definition "A Natural Process that involves Oscillation accompanied by a transfer of energy that travels through a portion of matter or spatial region."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Wave&oldid=1062648180"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

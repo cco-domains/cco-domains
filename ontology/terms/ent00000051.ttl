@@ -1,0 +1,25 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000051 a owl:Class ;
+    rdfs:label "Debit Card"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-17"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ent00000049 ;
+    skos:definition """A Payment Card that authorizes purchases by drawing directly 
+        on funds held in a linked bank account."""@en ;
+    skos:exactMatch <http://www.ontologyrepository.com/CommonCoreOntologies/DebitCard> ;
+    skos:example "A Chase debit card linked to a checking account."@en ;
+    skos:scopeNote """DebitCard parent has been corrected from BankAccount (Orphan-Ontology-Dev 
+        CCO 1.x) to PaymentCard. A DebitCard is not itself a BankAccount — it is an 
+        artifact function that provides access to a BankAccount."""@en ;
+    cco:ent00000019 "A future Financial domain ontology (IEEE P3195.1.x)"@en ;
+    cco:ent00000020 "Migrated from Orphan-Ontology-Dev CCO 1.x. Parent corrected from BankAccount to PaymentCard."@en ;
+    cco:ent00000022 "Proposed to Financial Domain Ontology WG when formed 2026-Q4"@en .
+

@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001863",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "owl:inverseOf": {
+    "@id": "cco:ont00001961"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00000253"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "uses measurement unit"
+  },
+  "rdfs:range": {
+    "@id": "cco:ont00000120"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "obo:BFO_0000101"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x uses measurement unit y =Def y is measurement unit of x"
+  }
+}

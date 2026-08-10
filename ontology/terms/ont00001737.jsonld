@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001737",
+  "@type": "owl:AnnotationProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "doctrinal definition"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "skos:definition"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Definition that is taken directly from a Doctrinal Source."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "There is only one definition for any given term in an ontology; however, a Doctrinal Definition may be provided in addition to the asserted Definition if the preservation of this information is important. When both a Definition and a Doctrinal Definition are provided for a term, the Definition takes precedence."
+  }
+}

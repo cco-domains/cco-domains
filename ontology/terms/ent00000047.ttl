@@ -1,0 +1,20 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000047 a owl:Class ;
+    rdfs:label "Organization Name"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-17"^^xsd:date ;
+    dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ont00000003 ;
+    skos:definition "A Designative Name that cites an institutional entity."@en ;
+    cco:ent00000019 "Future Organization Ontology"@en ;
+    cco:ent00000020 "Placed in Staging per 2026-07 alignment decision; RFC 9553 JSContact requires this on Person contact records."@en ;
+    cco:ent00000022 "Active — used directly by Mee Foundation JSContactCard; promotion to PersonOntology pending"@en .
+

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000654 a owl:Class ;
+    rdfs:label "Act of Terrorism"@en ;
+    rdfs:subClassOf cco:ont00001147 ;
+    skos:definition "An Act of Violence which creates fear and which is prescribed by religious, political or ideological objectives, and which deliberately target or disregard the safety of civilians and are committed by members of non-government organizations."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Terrorism&oldid=1063471352"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001915 a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "interval met by"@en ;
+    rdfs:domain obo:BFO_0000202 ;
+    rdfs:range obo:BFO_0000202 ;
+    rdfs:subPropertyOf cco:ont00001862 ;
+    skos:definition "x interval_met_by y iff x and y are both instances of Temporal Interval and y interval_meets x."@en ;
+    cco:ont00001754 "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/TimeOntology"^^xsd:anyURI .
+

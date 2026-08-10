@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001178",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Railway Crossing"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001326"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Level Crossing"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Land Transportation Artifact that is designed to enable Persons or Ground Vehicles to cross a Railway when traveling along a road or path that is perpendicular to and at the same elevation as the Railway at the point where they overlap."
+  }
+}

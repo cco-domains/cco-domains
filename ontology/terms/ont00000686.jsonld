@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00000958"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001916"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000001"
+      }
+    },
+    {
+      "@id": "cco:ont00000686",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "cco:ont00000853"
+        },
+        {
+          "@id": "cco:ont00000965"
+        }
+      ],
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Designative Information Content Entity"
+      },
+      "rdfs:subClassOf": {
+        "@id": "cco:ont00000958"
+      },
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Designative ICE"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An Information Content Entity that consists of a set of symbols that designate some Entity."
+      }
+    }
+  ]
+}

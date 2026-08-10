@@ -1,0 +1,43 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001966",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00001163"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is a measurement of"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000001"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001982"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x is_a_measurement_of y iff x is an instance of Measurement Information Content Entity and y is an instance of Entity, such that x describes some attribute of y relative to some scale or classification scheme."
+  },
+  "skos:scopeNote": [
+    {
+      "@language": "en",
+      "@value": "Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions."
+    },
+    {
+      "@language": "en",
+      "@value": "This object property, as well as all of its children are typified as functional properties. This means that for instances x, y, and z if x is a measurement of y and x is a measurement of z, then y = z."
+    }
+  ]
+}

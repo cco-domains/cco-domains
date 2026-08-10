@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000281 a owl:Class ;
+    rdfs:label "Albedo"@en ;
+    rdfs:subClassOf cco:ont00001137 ;
+    skos:definition "A Radiation Reflectivity that inheres in a bearer in virtue of the capacity of its surface to reflect incident electromagnetic radiation of a particular wavelength."@en ;
+    skos:scopeNote "Albedo is a reflection coefficient and is measured as the ratio of radiation reflected from the surface to the incident radiation. Albedo is dimensionless, can be expressed as a percentage, and is measured on a scale from 0 for no reflection to 1 for perfect reflection of a surface. Albedo depends on the wavelength of the radiation; when no wavelength is specified, it typically refers to some appropriate average across the spectrum of visible light."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Albedo&oldid=1063352646"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/QualityOntology"^^xsd:anyURI .
+

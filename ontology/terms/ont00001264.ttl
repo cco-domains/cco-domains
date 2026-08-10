@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001264 a owl:Class ;
+    rdfs:label "Material Copy of a Code 128 Barcode"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000101 ;
+            owl:someValuesFrom cco:ont00002033 ],
+        cco:ont00000258 ;
+    skos:altLabel "Code 128 Barcode"@en ;
+    skos:definition "A Material Copy of a One-Dimensional Barcode that consists of up to 128 ASCII characters and is used primarily in supply chains."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/BarcodeOntology"^^xsd:anyURI .
+

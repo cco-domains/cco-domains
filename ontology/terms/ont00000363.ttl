@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000363 a owl:Class ;
+    rdfs:label "Wireless Telecommunication Network"@en ;
+    rdfs:subClassOf cco:ont00000998 ;
+    skos:altLabel "Wireless Network"@en ;
+    skos:definition "A Telecommunication Network that uses wireless connections to connect Telecommunication Network Nodes."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Wireless_network&oldid=1060257041"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

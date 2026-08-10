@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000514",
+  "@type": "owl:Class",
+  "cco:ont00001754": "http://www.acs.psu.edu/drussell/Demos/waves/wavemotion.html",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Transverse Wave Profile"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000752"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Transverse Wave"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Wave Process Profile in which the displacement of participating particles is perpendicular to the direction of the Wave Process' propogation."
+  }
+}

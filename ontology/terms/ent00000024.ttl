@@ -1,0 +1,32 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000024 a owl:Class ;
+    rdfs:label "Email Address"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-02-19"^^xsd:date ;
+    dcterms:source <https://datatracker.ietf.org/doc/html/rfc5322> ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ent00000055 ;
+    skos:altLabel "Electronic Mail Address"@en ;
+    skos:definition """A Code Identifier designating electronic mailbox for receiving email messages, 
+                       formatted according to RFC 5322 as local-part@domain."""@en ;
+    skos:exactMatch schema:email ;
+    skos:example "The string 'john.doe@example.com' designates an email address."@en ;
+    skos:scopeNote """EmailAddress designates an Email Box (artifact defined in CCO ArtifactOntology). 
+                      The address itself is information; the mailbox is the artifact being designated. 
+                      EmailAddresses are not person-specific; they can designate mailboxes for persons, 
+                      organizations, departments, or automated systems. Format must conform to RFC 5322 
+                      (local part is case-sensitive, domain is case-insensitive). EmailAddress follows 
+                      encoding rules (structured format with @ separator, domain resolution) making it 
+                      a Code Identifier rather than arbitrary."""@en ;
+    cco:ent00000019 "Primary: Cyber Ontology (IEEE P3195.1.1) - EmailAddress fits with existing IP Address, URI, Email Message Header patterns. Awaiting Cyber Ontology working group acceptance."@en ;
+    cco:ent00000020 "Cyber Ontology already has Email Software Application and Email Message Header. EmailAddress would complete the cyber communication pattern. Proposed to Cyber WG for inclusion."@en ;
+    cco:ent00000022 "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q2"@en .
+

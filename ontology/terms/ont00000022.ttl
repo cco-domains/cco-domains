@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000022 a owl:Class ;
+    rdfs:label "Radio Communication Reception Artifact Function"@en ;
+    rdfs:subClassOf cco:ont00000422 ;
+    skos:definition "A Communication Reception Artifact Function that is realized during events in which a Material Artifact receives information transmitted from another Material Artifact, where the transmission of information occurs using radio waves."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

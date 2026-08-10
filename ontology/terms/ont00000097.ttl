@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000097 a owl:Class ;
+    rdfs:label "Complex Optical Lens"@en ;
+    rdfs:subClassOf cco:ont00001207 ;
+    skos:altLabel "Lens System"@en ;
+    skos:definition "An Optical Lens consisting of more than one Simple Optical Lenses."@en ;
+    cco:ont00001754 "Hecht, Eugene (1987). Optics (2nd ed.). Addison Wesley. ISBN 978-0-201-11609-0. Chapters 5 & 6."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

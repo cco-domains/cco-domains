@@ -1,0 +1,30 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000049 a owl:Class ;
+    rdfs:label "Payment Card"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-17"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ont00000938 ;
+    skos:definition """A Financial Artifact Function that is a physical or virtual 
+        card used to authorize payment transactions, either by drawing on a line of 
+        credit or on funds held in a linked account."""@en ;
+    skos:exactMatch schema:PaymentCard ;
+    skos:example "A Visa credit card and a Chase debit card are both Payment Cards."@en ;
+    skos:scopeNote """PaymentCard is a superclass covering all card-based payment instruments. 
+        Subclasses distinguish credit-based (CreditCard) from account-based (DebitCard) 
+        instruments. A PaymentCard is identified by a CreditCardNumber, secured by a CVV, 
+        and has an ExpirationDateIdentifier. 
+        Data models: Schema.org (PaymentCard), MyDex (Dataset: Credit Card), 
+        Mee Foundation Requirements (Credit Card), Orphan-Ontology-Dev — 4+ sources."""@en ;
+    cco:ent00000019 "A future Financial domain ontology (IEEE P3195.1.x)"@en ;
+    cco:ent00000020 "No CCO mid-level payment card class exists. Staging pending financial domain ontology formation."@en ;
+    cco:ent00000022 "Proposed to Financial Domain Ontology WG when formed 2026-Q4"@en .
+

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000546 a owl:Class ;
+    rdfs:label "Unplanned Act"@en ;
+    rdfs:subClassOf cco:ont00000005 ;
+    skos:altLabel "Unintentional Act"@en ;
+    skos:definition "An Act in which at least one Agent plays a causative role and which is not prescribed by some Objective held by any of the Agents."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

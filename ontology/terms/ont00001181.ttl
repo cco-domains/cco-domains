@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001181 a owl:Class ;
+    rdfs:label "Triple Inertial Navigation System"@en ;
+    rdfs:subClassOf cco:ont00000287 ;
+    skos:altLabel "Triple INS"@en ;
+    skos:definition "An Inertial Navigation System that is designed to use three redundant computers to continuously calculate via dead reckoning the position, orientation, and velocity of a moving object without the need for external references, in such a way that eliminates the need for a navigator."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

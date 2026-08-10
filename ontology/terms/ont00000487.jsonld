@@ -1,0 +1,103 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b10",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000124"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b7"
+      }
+    },
+    {
+      "@id": "_:b11",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000183"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000015"
+      }
+    },
+    {
+      "@id": "_:b6",
+      "@type": "owl:Class",
+      "owl:complementOf": {
+        "@id": "obo:BFO_0000006"
+      }
+    },
+    {
+      "@id": "_:b7",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000004"
+          },
+          {
+            "@id": "_:b6"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b8",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00000472"
+          },
+          {
+            "@id": "_:b9"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b9",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "_:b10"
+          },
+          {
+            "@id": "_:b11"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "cco:ont00000487",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/GeospatialOntology"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b8"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Geospatial Location"
+      },
+      "rdfs:subClassOf": {
+        "@id": "cco:ont00000472"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Geospatial Region that is the location of an Independent Continuant (that is not a Spatial Region) or that environs some Process."
+      }
+    }
+  ]
+}

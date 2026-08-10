@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001009 a owl:Class ;
+    rdfs:label "Optical Telescope"@en ;
+    rdfs:subClassOf cco:ont00000547 ;
+    skos:definition "A Telescope that is designed to aid in the observation of spatially distant Objects by means of collecting and focusing visible light to form an enhanced image of the Object."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Optical_telescope&oldid=1062201329"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

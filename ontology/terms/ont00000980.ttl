@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000980 a owl:Class ;
+    rdfs:label "Portion of Waste Material"@en ;
+    rdfs:subClassOf cco:ont00001084 ;
+    skos:definition "A Portion of Processed Material that serves no further use in terms of the initial user's own purposes of production, transformation, or consumption such that the Agent wants to dispose of it."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

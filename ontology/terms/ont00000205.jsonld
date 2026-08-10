@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001855"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000170"
+      }
+    },
+    {
+      "@id": "cco:ont00000205",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/GeospatialOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Object Track"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "obo:BFO_0000026"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A One-Dimensional Spatial Region that consists of the idealized line along which an Object has traversed during some motion."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "The exact line of the Object Track may be drawn based on the Center of Mass of the Object or another reference point, such as the location of a transponder beacon or the center of a radar cross-section, depending on the Object being tracked."
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000779 a owl:Class ;
+    rdfs:label "Portion of Cryosphere"@en ;
+    rdfs:subClassOf obo:BFO_0000024 ;
+    skos:definition "A fiat object part of the frozen part of a natural satellite's hydosphere"@en ;
+    cco:ont00001754 "NOAA. “What Is the Cryosphere?” National Ocean Service, 16 June 2024, oceanservice.noaa.gov/facts/cryosphere.html. Accessed 24 Mar. 2026."^^xsd:string ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/GeospatialOntology"^^xsd:anyURI .
+

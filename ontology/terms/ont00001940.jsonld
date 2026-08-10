@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001940",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001754": {
+    "@language": "en",
+    "@value": "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/TimeOntology"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000202"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "interval is before"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000202"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001862"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x interval_is_before y iff x and y are both instances of Temporal Interval and there exist instances of Temporal Instant w, z such that w is the ending instant of x and z is the starting instant of y and w is before z."
+  }
+}

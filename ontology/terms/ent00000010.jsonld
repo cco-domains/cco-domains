@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000010",
+  "@type": "owl:Class",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-06-15"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/AddressOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "US Postal Address"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ent00000009"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "United States Postal Address"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A postal address that complies with USPS addressing requirements and includes the delivery location line, city, dual-letter state identifier, and ZIP code."
+  },
+  "skos:example": {
+    "@language": "en",
+    "@value": "210 Pennsylvania Ave NW, Washington, DC 20500"
+  }
+}

@@ -1,0 +1,31 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000023 a owl:Class ;
+    rdfs:label "Telephone Number"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-02-18"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ent00000055 ;
+    owl:disjointWith cco:ent00000024 ;
+    skos:altLabel "Phone Number"@en ;
+    skos:definition """A Code Identifier representing numeric sequence designating telecommunications 
+                       endpoint, formatted per international standards such as E.164."""@en ;
+    skos:exactMatch schema:telephone ;
+    skos:example "The string '+15551234567' in E.164 format designates a telephone number."@en ;
+    skos:scopeNote """TelephoneNumber designates a Telecommunication Endpoint (an artifact 
+                      defined in CCO ArtifactOntology). The number itself is information; 
+                      the endpoint is the physical/cyber infrastructure being designated. 
+                      TelephoneNumbers are not person-specific; they can designate endpoints 
+                      for persons, organizations, or locations. Format typically follows E.164 
+                      international standard (+[country code][subscriber number])."""@en ;
+    cco:ent00000019 "Communication/Contact Ontology (proposed IEEE P3195.1.x). Alternative: CCO InformationEntityOntology as subclass of CodeIdentifier."@en ;
+    cco:ent00000020 "No existing domain ontology covers telecommunications identifiers. CCO has Telecommunication Endpoint (artifact) in ArtifactOntology but lacks the identifier class. Awaiting Communication/Contact domain ontology formation."@en ;
+    cco:ent00000022 "Awaiting Communication/Contact working group formation 2026-Q2"@en .
+

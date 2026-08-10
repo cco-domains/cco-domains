@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000018",
+  "@type": "owl:DatatypeProperty",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "Relocated from AddressOntology 2026-07-09; generic temporal property, not address-specific"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-07-09"
+  },
+  "dcterms:source": {
+    "@id": "https://www.rfc-editor.org/rfc/rfc9553"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000038"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "has end date"
+  },
+  "rdfs:range": {
+    "@id": "http://www.w3.org/2001/XMLSchema#date"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "Relates a Temporal Interval to the date on which it ends. Absence of this property on an interval indicates an open-ended (ongoing) interval."
+  }
+}

@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001179 a owl:Class ;
+    rdfs:label "Digital Storage Device"@en ;
+    rdfs:subClassOf cco:ont00000893 ;
+    skos:definition "An Information Medium Artifact that is designed to bear some Information Content Entity by means of recording that information in digital (binary) format."@en ;
+    skos:example "A computer's Hard Disk Drive",
+        "A portable USB Drive" ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Data_storage&oldid=1060116427"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

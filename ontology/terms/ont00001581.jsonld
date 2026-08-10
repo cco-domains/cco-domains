@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001581",
+  "@type": [
+    "cco:ont00000469",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001753": "ITRS",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "International Terrestrial Reference System"
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "The ITRS definition fulfills the following conditions:\n1. It is geocentric, the center of mass being defined for the whole earth, including oceans and atmosphere.\n2. The unit of length is the metre (SI). This scale is consistent with the TCG time coordinate for a geocentric local frame, in agreement with IAU and IUGG (1991) resolutions. This is obtained by appropriate relativistic modelling.\n3. Its orientation was initially given by the BIH orientation at 1984.0.\n4. The time evolution of the orientation is ensured by using a no-net-rotation condition with regards to horizontal tectonic motions over the whole earth.\nFrom: (https://www.iers.org/IERS/EN/Science/ITRS/ITRS.html)"
+  }
+}

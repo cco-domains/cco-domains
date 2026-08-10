@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00002073 a owl:Class ;
+    rdfs:label "Sensor Role"@en ;
+    rdfs:subClassOf obo:BFO_0000023 ;
+    skos:definition "A Role that inheres in an entity in virtue of it being used in a process wherein an attribute of its bearer acts as a proxy for some aspect of its sensing environment."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

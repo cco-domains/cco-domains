@@ -1,0 +1,33 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000033 a owl:Class ;
+    rdfs:label "Online Service Account"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-16"^^xsd:date ;
+    dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ent00000026 ;
+    skos:definition """A User Account that represents a person's account at a named 
+        online service provider, characterized by a service name, user handle, and URI, 
+        consistent with the JSContact specification (RFC 9553 Section 2.6.3)."""@en ;
+    skos:example "A LinkedIn account with user handle 'alice-walker' and URI https://linkedin.com/in/alice-walker"@en,
+        "A Mastodon account at example2.com with user handle @alice@example2.com and URI https://example2.com/@alice"@en,
+        "An XMPP account identified by the URI xmpp:alice@example.com"@en ;
+    skos:scopeNote """OnlineServiceAccount is distinguished from the more general UserAccount 
+        by its association with a publicly named external service provider (e.g., Mastodon, 
+        LinkedIn, GitHub) and the RFC 9553 triple of service name, user handle, and URI. 
+        Not all three components need be present; the URI alone is sufficient to identify 
+        the account. Compare SocialNetworkingSite (the site artifact) vs OnlineServiceAccount 
+        (the account a person holds at that site)."""@en ;
+    cco:ent00000019 "Cyber Ontology (IEEE P3195.1.1)"@en ;
+    cco:ent00000020 """CyberOntology v1.5 has UserAccount but no subclass for 
+        named-service accounts with the RFC 9553 service/handle/URI pattern. 
+        RFC 9553 JSContact establishes this as a standard representation."""@en ;
+    cco:ent00000022 "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"@en .
+

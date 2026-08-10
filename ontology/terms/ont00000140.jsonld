@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000140",
+  "@type": "owl:Class",
+  "cco:ont00001760": "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology",
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Measurement Unit of Amount of Substance"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000120"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Measurement Unit of Chemical Amount"
+    },
+    {
+      "@language": "en",
+      "@value": "Measurement Unit of Enplethy"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Measurement Unit that is used as a standard for measurement of the number of a specified type of particle in a portion of matter."
+  },
+  "skos:example": "mole, pound-mole",
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "The type of particle quantified is typically either atoms or molecules, but may also be protons, neutrons, electrons, quarks, or other particles. The type of particle being measured should always be specified along with the measurement and its unit."
+  }
+}

@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000669 a owl:Class ;
+    rdfs:label "Distance Measurement Information Content Entity"@en ;
+    rdfs:subClassOf cco:ont00001022 ;
+    skos:definition "A Ratio Measurement Information Content Entity that is a measurement of a One-Dimensional Extent inhering in some Site that is externally connected to two Independent Continuants."@en ;
+    skos:scopeNote "Displacement (vector) is the shortest possible distance (scalar) between two points. Further thought is needed to adequately handle measurements of distance traveled along a path, e.g., a circuitous path or an arc (such as the surface of a planet), versus the simple case of a direct, straight line between two points."@en,
+        "Distance is a measure between two reference points, which are located on or in, or in some manner part of, the two obejcts for which the length of the extent between is sought. For exmple, the center point of the indentation of a ball in the sand and the edge of the foul line, the forwardmost point on a car's bumper and the closest point on the 2-dimensional plane that serves as the fiat boundary of a crosswalk, the center of an antenna array and closest point on ground."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

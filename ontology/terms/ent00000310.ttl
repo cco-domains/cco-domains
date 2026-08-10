@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000310 a owl:Class ;
+    rdfs:label "Address"@en ;
+    dcterms:created "2026-06-15"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/AddressOntology> ;
+    rdfs:subClassOf cco:ont00000958 ;
+    skos:altLabel "Geospatial Address"@en,
+        "Location Address"@en ;
+    skos:definition "An Information Content Entity (ICE) that identifies a physical location of a person, facility or an organization for the purpose of communication or service."@en .
+

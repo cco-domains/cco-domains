@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000179 a owl:Class ;
+    rdfs:label "Thrust"@en ;
+    rdfs:subClassOf cco:ont00000570 ;
+    skos:definition "A Force that is equal in magnitude to but in the opposite direction of an exerted Force and which is used to describe the forward Force of a Jet or Rocket Engine in reaction to the Acceleration of its Reaction Mass in the opposite direction."@en ;
+    skos:scopeNote "More generally, Thrust is the propulsive Force of a Rocket."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

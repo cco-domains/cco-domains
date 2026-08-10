@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000592",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Veracity Measurement Information Content Entity"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001163"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Accuracy of Information"
+    },
+    {
+      "@language": "en",
+      "@value": "Trueness Measurement"
+    },
+    {
+      "@language": "en",
+      "@value": "Veracity Measurement"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Measurement Information Content Entity that is a measurement of the extent to which a description conforms to the reality it describes."
+  },
+  "skos:scopeNote": [
+    {
+      "@language": "en",
+      "@value": "'Deviation Measurement Information Content Entity' and 'Veracity Measurement Information Content Entity' are complementary notions. Deviation is a measure of whether reality conforms to an ICE (e.g., a plan or prediction), whereas Veracity is a measure of whether a Descriptive ICE conforms to reality."
+    },
+    {
+      "@language": "en",
+      "@value": "Note, the term 'accuracy' is avoided due to its ambiguity between: correctness-of-performance (see: 'Reliability Measurement Information Content Entity'), correctness-of-information ('Veracity Measurement Information Content Entity'), and adherance-to-expectations (see: 'Deviation Measurement Information Content Entity')."
+    }
+  ]
+}

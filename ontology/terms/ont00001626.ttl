@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001626 a owl:NamedIndividual,
+        cco:ont00000263 ;
+    rdfs:label "Twelve-Hour Clock Time System"@en ;
+    skos:altLabel "12-Hour Clock"@en,
+        "12-Hour Clock Time System"@en,
+        "Twelve Hour Clock"@en,
+        "Twelve Hour Clock Time System"@en,
+        "Twelve-Hour Clock"@en ;
+    skos:definition "A Clock Time System for keeping the Time of Day in which the Day runs from midnight to midnight and is divided into two intervals of 12 Hours each, where: the first interval begins at midnight, ends at noon, and is indicated by the suffix 'a.m.'; the second interval begins at noon, ends at midnight, and is indicated by the suffix 'p.m.'; and the midnight and noon Hours are numbered 12 with subsequent Hours numbered 1-11."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=12-hour_clock&oldid=1057602523"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000703 a owl:Class ;
+    rdfs:label "Material Copy of a System Clock"@en ;
+    rdfs:subClassOf cco:ont00000159 ;
+    skos:altLabel "System Clock"@en ;
+    skos:definition "A Material Copy of a Timekeeping Instrument that is part of a computer and is designed to issue a steady high-frequency signal that is used to synchronize all of the computer's internal components."@en ;
+    cco:ont00001754 "http://www.thefreedictionary.com/system+clock" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

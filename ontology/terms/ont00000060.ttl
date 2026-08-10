@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000060 a owl:Class ;
+    rdfs:label "Open Pit Mine"@en ;
+    rdfs:subClassOf cco:ont00000639 ;
+    skos:definition "A Mine that is designed to support the extraction of materials from the ground directly without using tunnels."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Open-pit_mining&oldid=1059271938"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FacilityOntology"^^xsd:anyURI .
+

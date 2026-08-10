@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000692 a owl:Class ;
+    rdfs:label "Probability Measurement Information Content Entity"@en ;
+    rdfs:subClassOf cco:ont00001163 ;
+    skos:altLabel "Likelihood Measurement"@en,
+        "Probability Measurement"@en ;
+    skos:definition "A Measurement Information Content Entity that is a measurement of the likelihood that a Process or Process Aggregate occurs."@en ;
+    skos:scopeNote "Every probability measurement is made within a particular context given certain background assumptions."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Probability&oldid=1059657543"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

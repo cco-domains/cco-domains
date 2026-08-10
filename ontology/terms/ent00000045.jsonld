@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000045",
+  "@type": "owl:ObjectProperty",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "Cyber Ontology (IEEE P3195.1.1)"
+  },
+  "cco:ent00000020": {
+    "@language": "en",
+    "@value": "No existing CCO object property relates Person to UserAccount. \n        Staging here pending Cyber Ontology CCO 2.0 release."
+  },
+  "cco:ent00000022": {
+    "@language": "en",
+    "@value": "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-03-17"
+  },
+  "http://purl.org/dc/elements/1.1/creator": {
+    "@language": "en",
+    "@value": "Global Research, Inc."
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00001017"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "holds user account"
+  },
+  "rdfs:range": {
+    "@id": "cco:ent00000026"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An object property that relates a Person to a User Account \n        that the Person holds at some computer system or online service provider."
+  },
+  "skos:example": {
+    "@language": "en",
+    "@value": "Alice holds her LinkedIn account, her Mastodon account, and her GitHub account."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Use this property to relate a Person (cco:ont00001262) to any subclass \n        of User Account (cco:ent00000026), including Online Service Account (cco:ent00000033). \n        A Person may hold multiple User Accounts simultaneously. This property is broad — \n        application-level SHACL constraints may restrict cardinality or account types \n        as needed."
+  }
+}

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000488 a owl:Class ;
+    rdfs:label "Tripod"@en ;
+    rdfs:subClassOf cco:ont00000995 ;
+    skos:definition "A Material Artifact that consists of three legs and a platform that joins them and which is designed to support the weight and maintain the stability of objects that are attached to or rested on the platform."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Tripod&oldid=1063988190"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

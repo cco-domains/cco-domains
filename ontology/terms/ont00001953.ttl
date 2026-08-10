@@ -1,0 +1,9 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco:ont00001953 a owl:ObjectProperty ;
+    rdfs:label "has parent"@en ;
+    rdfs:subPropertyOf cco:ont00001865 ;
+    owl:inverseOf cco:ont00001995 .
+

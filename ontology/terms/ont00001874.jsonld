@@ -1,0 +1,52 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000015"
+          },
+          {
+            "@id": "obo:BFO_0000035"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "cco:ont00001874",
+      "@type": "owl:ObjectProperty",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+      },
+      "rdfs:domain": {
+        "@id": "obo:BFO_0000008"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "is temporal region of"
+      },
+      "rdfs:range": {
+        "@id": "_:b2"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "x is temporal region of y =Def y occupies temporal region x"
+      },
+      "skos:editorialNote": {
+        "@language": "en",
+        "@value": "Leaving this is in ERO for now since BFO2020 has no inverse of occupies-temporal-region yet."
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000312 a owl:Class ;
+    rdfs:label "Propulsion Process"@en ;
+    rdfs:subClassOf cco:ont00000007 ;
+    skos:definition "A Natural Process in which one or more Forces are generated and applied to a participating Object such that the Object is set in Motion or has the direction or magnitude of its Motion altered."@en ;
+    skos:example "a twin-engine turboprop plane rotating both of its propellers against a portion of atmosphere to propel the plane forward",
+        "an apple falling to the ground under the power of Earth's gravitational force",
+        "burning a portion of fuel to produce exhaust that is ejected through a jet nozzle to propel a rocket and its payload",
+        "heat from a fire causing ashes to rise into the sky",
+        "launching a water balloon using a sling shot",
+        "the wind blowing leaves across a lawn",
+        "turning a paddle wheel against a portion of water to propel the paddle boat forward" ;
+    skos:scopeNote "In each case, a Propulsion Process minimally involves the Object being propelled, a Reaction Mass (e.g. a portion of water, atmosphere, exhaust, etc.), and the Force(s) acting between these two entities."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

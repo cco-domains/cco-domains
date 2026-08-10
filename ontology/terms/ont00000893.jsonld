@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000893",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Information Medium Artifact"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000995"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Material Artifact that is designed to have some Information Bearing Artifact as part."
+  },
+  "skos:example": [
+    "A magnetic hard drive",
+    "A notebook"
+  ],
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "An empty notebook, when manufactured, is a medium but not yet a carrier of information content. However, a book, in the sense of a novel or collection of philosophical essays or poems, depends necessarily on it carrying some information content. Thus, there are no empty books. Likewise, there are no empty databases, only portions of digital storage that have not yet been configured to carry some information content according to a database software application."
+  }
+}

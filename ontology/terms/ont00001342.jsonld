@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001342",
+  "@type": "owl:Class",
+  "cco:ont00001753": "IFV",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Infantry_fighting_vehicle&oldid=1062470745"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Infantry Fighting Vehicle"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000427"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Armored Fighting Vehicle that is designed to carry infantry into battle and to provide fire support for them."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Infantry Fighting Vehicles (IFVs) are differentiated from Armored Personnel Carriers (APCs) because they are designed to give direct fire support to the dismounted infantry and so usually have significantly enhanced armament. IFVs also often have improved armour and firing ports (allowing the infantry to fire personal weapons while mounted)."
+  }
+}

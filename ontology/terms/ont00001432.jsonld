@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001432",
+  "@type": [
+    "cco:ont00001090",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001753": [
+    "kg/cm^2",
+    "kgf/cm^2"
+  ],
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Kilogram Force Per Centimeter Square Measurement Unit"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Kilogram Per Square Centimeter Measurement Unit"
+    },
+    {
+      "@language": "en",
+      "@value": "Kilopond Per Centimeter Square Measurement Unit"
+    }
+  ]
+}

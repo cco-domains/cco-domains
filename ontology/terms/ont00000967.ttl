@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000967 a owl:Class ;
+    rdfs:label "Height"@en ;
+    rdfs:subClassOf cco:ont00001367 ;
+    skos:definition "A One Dimensional Extent that inheres in a bearer in virtue of the bearer's extension in a vertical direction."@en ;
+    cco:ont00001754 "International Organization for Standardization. 2019. Quantities and units -- Part 3: Space and time (ISO 80000-3:2019). International Organization for Standardization. Available at: https://www.iso.org/standard/64974.html."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/QualityOntology"^^xsd:anyURI .
+

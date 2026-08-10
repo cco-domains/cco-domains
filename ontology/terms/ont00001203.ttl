@@ -1,0 +1,21 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001203 a owl:Class ;
+    rdfs:label "Delimiting Domain"@en ;
+    dcterms:created "2022-12-30T21:32:27-05:00"^^xsd:dateTime ;
+    dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
+    rdfs:subClassOf cco:ont00000472 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cco:ont00000472 [ a owl:Restriction ;
+                        owl:onProperty cco:ont00001864 ;
+                        owl:someValuesFrom cco:ont00001180 ] ) ] ;
+    skos:definition "A Geospatial Region that delimits the authority of an Organization to exercise its control within the bounded area."@en ;
+    skos:prefLabel "Delimiting Domain"@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

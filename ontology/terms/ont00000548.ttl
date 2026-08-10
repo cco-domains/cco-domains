@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000548 a owl:Class ;
+    rdfs:label "Vulnerability"@en ;
+    dcterms:bibliographicCitation "Vulnerability | Definition of Vulnerability by Oxford Dictionary on Lexico.Com Also Meaning of Vulnerability. https://web.archive.org/web/20210118111731/https://www.lexico.com/en/definition/vulnerability. Accessed 19 Dec. 2022. " ;
+    dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
+    rdfs:subClassOf cco:ont00000997 ;
+    skos:definition "A Disrupting Disposition the realization of which would disrupt a process that the bearer of the Disrupting Disposition has an interest in."@en ;
+    skos:editorialNote "This is defined class. A Vulnerability is indexed by the interest_in object property. A disposition can be a Vulnerability according to one index and not a Vulnerability according to another index." ;
+    skos:prefLabel "Vulnerability"@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/QualityOntology"^^xsd:anyURI .
+

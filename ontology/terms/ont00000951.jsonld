@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001777"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000514"
+      }
+    },
+    {
+      "@id": "cco:ont00000951",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Electromagnetic Wave Process"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000099"
+        }
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Electromagnetic Radiation"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Wave Process that is produced by charged particles, involves the periodic Oscillation of electric and magnetic fields at right angles to each other and the direction of wave propogation such that it has a Transverse Wave Profile, and which transfers electromagnetic radiant energy through a portion of space or matter."
+      }
+    }
+  ]
+}

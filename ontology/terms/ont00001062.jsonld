@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001062",
+  "@type": "owl:Class",
+  "cco:ont00001754": "https://dictionary.cambridge.org/us/dictionary/english/international-community",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "dcterms:bibliographicCitation": "The International Community. 5 Apr. 2023, https://dictionary.cambridge.org/us/dictionary/english/international-community.",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value": "2022-12-30T21:32:27-05:00"
+  },
+  "dcterms:creator": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://cubrc.org"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "International Community"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000300"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A maximal Group of Geopolitical Organizations engaged in geopolitics with one another."
+  },
+  "skos:prefLabel": {
+    "@language": "en",
+    "@value": "International Community"
+  }
+}

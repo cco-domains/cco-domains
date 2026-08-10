@@ -1,0 +1,28 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000045 a owl:ObjectProperty ;
+    rdfs:label "holds user account"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-17"^^xsd:date ;
+    rdfs:domain cco:ont00001017 ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:range cco:ent00000026 ;
+    skos:definition """An object property that relates a Person to a User Account 
+        that the Person holds at some computer system or online service provider."""@en ;
+    skos:example "Alice holds her LinkedIn account, her Mastodon account, and her GitHub account."@en ;
+    skos:scopeNote """Use this property to relate a Person (cco:ont00001262) to any subclass 
+        of User Account (cco:ent00000026), including Online Service Account (cco:ent00000033). 
+        A Person may hold multiple User Accounts simultaneously. This property is broad — 
+        application-level SHACL constraints may restrict cardinality or account types 
+        as needed."""@en ;
+    cco:ent00000019 "Cyber Ontology (IEEE P3195.1.1)"@en ;
+    cco:ent00000020 """No existing CCO object property relates Person to UserAccount. 
+        Staging here pending Cyber Ontology CCO 2.0 release."""@en ;
+    cco:ent00000022 "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"@en .
+

@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000698 a owl:Class ;
+    rdfs:label "Convergent-Divergent Nozzle"@en ;
+    rdfs:subClassOf cco:ont00000252 ;
+    skos:altLabel "CD Nozzle"@en,
+        "de Laval Nozzle"@en ;
+    skos:definition "A Nozzle that consists of a tube with an asymmetric hourglass shape that is designed to accelerate hot pressurized gas by converting the heat energy of the gas flow into kinetic energy as it passes through the Nozzle Throat to generate increased Exhaust Velocity of the gas as it exits the Nozzle."@en ;
+    skos:scopeNote "By increasing the Exhaust Velocity of the gas, the Nozzle increases the Thrust generated."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=De_Laval_nozzle&oldid=1062746288"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

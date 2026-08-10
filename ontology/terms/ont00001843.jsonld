@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001843",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/FamilialRelationsOntology"
+  },
+  "owl:inverseOf": {
+    "@id": "cco:ont00001894"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is paternal first cousin of"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001806"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "Person A is paternal first cousin of Person B iff Person B has father F and F has sibling P and P is parent of Person A."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "is_paternal_first_cousin_of is not a symmetric relationship as is is_first_cousin_of"
+  }
+}

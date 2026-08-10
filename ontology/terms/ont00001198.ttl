@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001198 a owl:Class ;
+    rdfs:label "Railcar"@en ;
+    rdfs:subClassOf cco:ont00000796 ;
+    skos:definition "A Rail Transport Vehicle that consists of a single self-propelled Vehicle that is not a Train, is designed to transport passengers, and which may also be designed to connect to other Railcars to form a Train."@en ;
+    skos:scopeNote "In American-English, the term 'Railcar' is often used in a broader sense that is interchangeable with 'Railroad Car'."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Railcar&oldid=1063519348"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

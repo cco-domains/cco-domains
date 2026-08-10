@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000205 a owl:Class ;
+    rdfs:label "Object Track"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001855 ;
+            owl:someValuesFrom cco:ont00000170 ],
+        obo:BFO_0000026 ;
+    skos:definition "A One-Dimensional Spatial Region that consists of the idealized line along which an Object has traversed during some motion."@en ;
+    skos:scopeNote "The exact line of the Object Track may be drawn based on the Center of Mass of the Object or another reference point, such as the location of a transponder beacon or the center of a radar cross-section, depending on the Object being tracked."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/GeospatialOntology"^^xsd:anyURI .
+

@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000391 a owl:Class ;
+    rdfs:label "Tremendously High Frequency"@en ;
+    rdfs:subClassOf cco:ont00000754 ;
+    skos:altLabel "ITU Band Number 12"@en,
+        "Submillimeter Band Frequency"@en,
+        "Terahertz Radiation Frequency"@en ;
+    skos:definition "An Electromagnetic Radiation Frequency of some Electromagnetic Wave that is between 300 GHz and 3 THz."@en ;
+    skos:scopeNote "The corresponding Wavelength range is 1–0.1 mm"@en ;
+    cco:ont00001753 "THF" ;
+    cco:ont00001754 "International Telecommunication Union (ITU)" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

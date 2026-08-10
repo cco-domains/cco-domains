@@ -1,0 +1,22 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000731 a owl:Class ;
+    rdfs:label "Deviation Measurement Information Content Entity"@en ;
+    rdfs:subClassOf cco:ont00001163 ;
+    skos:altLabel "Conformance Measurement"@en,
+        "Degree of Conformance"@en,
+        "Degree of Deviation"@en,
+        "Deviation Measurement"@en ;
+    skos:definition "A Measurement Information Content Entity that is a measurement of the extent to which an entity conforms to how it is expected or supposed to be."@en ;
+    skos:example "a missile impact deviates from its target location by 100 feet",
+        "a satellite deviaties from its predicted orbital path by 5 kilometers",
+        "an overweight piece of luggage deviates from an airline's maximum allowed weight by +10 pounds" ;
+    skos:scopeNote "'Deviation Measurement Information Content Entity' and 'Veracity Measurement Information Content Entity' are complementary notions. Deviation is a measure of whether reality conforms to an ICE (e.g., a plan or prediction), whereas Veracity is a measure of whether a Descriptive ICE conforms to reality."@en,
+        "In order for a Deviation to exist, an entity must first be expected, represented, prescribed, or predicted as being a certain way. Then, at a future time, this value can be compared to its actual, reported, or measured value to determine the Deviation between these values."@en,
+        "Note, the term 'accuracy' is avoided due to its ambiguity between: correctness-of-performance (see: 'Reliability Measurement Information Content Entity'), correctness-of-information (see: 'Veracity Measurement Information Content Entity'), and adherance-to-expectations ('Deviation Measurement Information Content Entity')."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

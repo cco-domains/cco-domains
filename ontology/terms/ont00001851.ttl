@@ -1,0 +1,10 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001851 a owl:ObjectProperty ;
+    rdfs:label "is sister of"@en ;
+    rdfs:subPropertyOf cco:ont00001902 ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FamilialRelationsOntology"^^xsd:anyURI .
+

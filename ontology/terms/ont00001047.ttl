@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001047 a owl:Class ;
+    rdfs:label "Frequency"@en ;
+    rdfs:subClassOf obo:BFO_0000144 ;
+    skos:altLabel "Temporal Frequency"@en ;
+    skos:definition "A Process Profile that is characterized by the number of repetitive processes during a particular time period."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Frequency&oldid=1062800545"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

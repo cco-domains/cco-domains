@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000035",
+  "@type": "owl:DatatypeProperty",
+  "dcterms:source": {
+    "@id": "https://www.rfc-editor.org/rfc/rfc9553"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ent00000033"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "has user handle"
+  },
+  "rdfs:range": {
+    "@id": "http://www.w3.org/2001/XMLSchema#string"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "The username or handle by which the account holder is identified at the service provider."
+  },
+  "skos:example": {
+    "@language": "en",
+    "@value": "\"@alice@example2.com\", \"alice-walker\", \"alice\""
+  }
+}

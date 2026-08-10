@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000893 a owl:Class ;
+    rdfs:label "Information Medium Artifact"@en ;
+    rdfs:subClassOf cco:ont00000995 ;
+    skos:definition "A Material Artifact that is designed to have some Information Bearing Artifact as part."@en ;
+    skos:example "A magnetic hard drive",
+        "A notebook" ;
+    skos:scopeNote "An empty notebook, when manufactured, is a medium but not yet a carrier of information content. However, a book, in the sense of a novel or collection of philosophical essays or poems, depends necessarily on it carrying some information content. Thus, there are no empty books. Likewise, there are no empty databases, only portions of digital storage that have not yet been configured to carry some information content according to a database software application."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

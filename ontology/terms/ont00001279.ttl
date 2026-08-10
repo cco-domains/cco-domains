@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001279 a owl:Class ;
+    rdfs:label "Vibration Motion"@en ;
+    rdfs:subClassOf cco:ont00001133 ;
+    skos:altLabel "Mechanical Oscillation"@en,
+        "Oscillation Motion"@en,
+        "Vibration"@en ;
+    skos:definition "A Motion wherein some participant repetitively deviates from a central location to two surrounding locations."@en ;
+    cco:ont00001754 "https://physicsabout.com/motion/"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

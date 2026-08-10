@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000589 a owl:Class ;
+    rdfs:label "Julian Date Fraction"@en ;
+    rdfs:subClassOf cco:ont00000973 ;
+    skos:altLabel "Julian Date Time Identifier"@en,
+        "Julian Day Fraction"@en ;
+    skos:definition "A Decimal Time of Day Identifier that designates an approximate Temporal Instant that is part of some Julian Day."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

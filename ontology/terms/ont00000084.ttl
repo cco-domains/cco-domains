@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000084 a owl:Class ;
+    rdfs:label "Bodily Component"@en ;
+    rdfs:subClassOf obo:BFO_0000024 ;
+    skos:definition "A Fiat Object Part located within or on the surface of an Agent."@en ;
+    skos:example "Bodily Components include anatomical structures, body flora, pathogens, toxins, and their combinations." ;
+    cco:ont00001754 "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3017014/" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

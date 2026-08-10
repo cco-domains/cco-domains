@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001648",
+  "@type": [
+    "cco:ont00000469",
+    "cco:ont00001351",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Earth-centered,_Earth-fixed_coordinate_system&oldid=1062678600"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Earth-Centered Earth-Fixed Coordinate System"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Conventional Terrestrial Coordinate System"
+    },
+    {
+      "@language": "en",
+      "@value": "ECEF"
+    },
+    {
+      "@language": "en",
+      "@value": "ECR"
+    },
+    {
+      "@language": "en",
+      "@value": "Earth Centered Earth Fixed"
+    },
+    {
+      "@language": "en",
+      "@value": "Earth Centered Rotational Coordinate System"
+    },
+    {
+      "@language": "en",
+      "@value": "Earth-Centered Earth-Fixed"
+    },
+    {
+      "@language": "en",
+      "@value": "Earth-Centered, Earth-Fixed"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Geospatial and Cartesian Coordinate System that identifies positions using an x-axis, y-axis, and z-axis coordinate where the zero point is the center of the Earth, the z-Axis extends toward the North Pole but does not always coincide exactly with the Earth's Axis of Rotation, the x-Axis extends through the intersection of the Prime Meridian and the Equator, the y-Axis completes the right-handed system, and all three axes are fixed to the Earth such that they rotate along with the Earth."
+  }
+}

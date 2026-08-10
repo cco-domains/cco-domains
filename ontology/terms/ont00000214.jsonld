@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000214",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Moving Target Indication Artifact Function"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000289"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Radar Imaging Artifact Function that inheres in Material Artifacts that are designed to identify and produce visual representations of moving entities by using a radar to emit successive phase coherent pulses, which are sampled and added to the subsequent pulse to cancel out signals from non-moving entities such that only signals from moving entities remain and are displayed."
+  }
+}

@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001843 a owl:ObjectProperty ;
+    rdfs:label "is paternal first cousin of"@en ;
+    rdfs:subPropertyOf cco:ont00001806 ;
+    owl:inverseOf cco:ont00001894 ;
+    skos:definition "Person A is paternal first cousin of Person B iff Person B has father F and F has sibling P and P is parent of Person A."@en ;
+    skos:scopeNote "is_paternal_first_cousin_of is not a symmetric relationship as is is_first_cousin_of"@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FamilialRelationsOntology"^^xsd:anyURI .
+

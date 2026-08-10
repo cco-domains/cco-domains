@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001342 a owl:Class ;
+    rdfs:label "Infantry Fighting Vehicle"@en ;
+    rdfs:subClassOf cco:ont00000427 ;
+    skos:definition "An Armored Fighting Vehicle that is designed to carry infantry into battle and to provide fire support for them."@en ;
+    skos:scopeNote "Infantry Fighting Vehicles (IFVs) are differentiated from Armored Personnel Carriers (APCs) because they are designed to give direct fire support to the dismounted infantry and so usually have significantly enhanced armament. IFVs also often have improved armour and firing ports (allowing the infantry to fire personal weapons while mounted)."@en ;
+    cco:ont00001753 "IFV" ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Infantry_fighting_vehicle&oldid=1062470745"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

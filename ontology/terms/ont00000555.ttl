@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000555 a owl:Class ;
+    rdfs:label "Enhanced Stasis"@en ;
+    rdfs:subClassOf cco:ont00000135 ;
+    skos:altLabel "Enhanced"@en ;
+    skos:definition "A Stasis of Specifically Dependent Continuant in which some Independent Continuant bears a Quality or Realizable Entity that has undergone improvement (i.e., an increase or gain) due to a previous action or event such that the Independent Continuant is now of greater value, usefulness, or functionality."@en ;
+    cco:ont00001754 "http://www.thefreedictionary.com/enhance" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

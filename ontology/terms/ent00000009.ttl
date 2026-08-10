@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000009 a owl:Class ;
+    rdfs:label "Postal Address"@en ;
+    dcterms:created "2026-06-15"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/AddressOntology> ;
+    rdfs:subClassOf cco:ent00000310 ;
+    skos:altLabel "Mailing Address"@en ;
+    skos:definition "An address that designates a place where physical mail or packages can be sent via the postal service."@en ;
+    skos:exactMatch schema:PostalAddress .
+

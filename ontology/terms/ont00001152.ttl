@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001152 a owl:Class ;
+    rdfs:label "Government Domain"@en ;
+    rdfs:subClassOf cco:ont00001203 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cco:ont00001203 [ a owl:Restriction ;
+                        owl:onProperty cco:ont00001864 ;
+                        owl:someValuesFrom cco:ont00001335 ] ) ] ;
+    skos:definition "A Delimiting Domain that delimits the authority of a Government to exercise its control within the bounded area."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

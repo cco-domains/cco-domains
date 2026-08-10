@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+cco:ent00000073 a owl:ObjectProperty ;
+    rdfs:label "has payment card"@en ;
+    rdfs:domain cco:ont00001017 ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:range cco:ent00000049 ;
+    skos:definition "An object property that relates an Agent to a Payment Card that the Agent has and is authorized to use."@en ;
+    skos:example "Bob has VISA debit card issued by XYZ bank."@en ;
+    skos:scopeNote "Use this property to relate an Agent (cco:ont00001017), often a Person (cco:ont00001262), to any subclass of Payment Card (cco:ent00000049), including Credit Card and Debit Card. An Agent may hold multiple Payment Cards simultaneously. This property is broad — application-level SHACL constraints may restrict the domain to Person or limit cardinality as needed."@en ;
+    cco:ent00000019 "A future Financial domain ontology."@en ;
+    cco:ent00000020 "Promoted from Mee persona:hasPaymentCard. No existing CCO object property relates an Agent to a Payment Card."@en .
+

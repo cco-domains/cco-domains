@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000633 a owl:Class ;
+    rdfs:label "Weight"@en ;
+    rdfs:subClassOf obo:BFO_0000019 ;
+    skos:definition "A Quality that inheres in some material entity with a mass in virtue of its location in some gravitational field."@en ;
+    skos:scopeNote "When an object is \"weighed\", in the typical case, it is done so by taking into account the local force of gravity to determine the object's mass, whose standard of measure is the kilogram. The actual unit of measure of weight is the newton."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/QualityOntology"^^xsd:anyURI .
+

@@ -1,0 +1,53 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000055",
+  "@type": "owl:Class",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "Cyber Ontology (IEEE P3195.1.1)"
+  },
+  "cco:ent00000020": {
+    "@language": "en",
+    "@value": "Migrated from Orphan-Ontology-Dev CCO 1.x."
+  },
+  "cco:ent00000022": {
+    "@language": "en",
+    "@value": "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-07-09"
+  },
+  "http://purl.org/dc/elements/1.1/creator": {
+    "@language": "en",
+    "@value": "Global Research, Inc."
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Telecommunication Network Identifier"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000686"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Designative Information Content Entity that uniquely identifies \n        a Telecommunication Network or some set of information inhering in such a network, \n        often for the purpose of exchanging information with the identified entity."
+  },
+  "skos:exactMatch": {
+    "@id": "http://www.ontologyrepository.com/CommonCoreOntologies/TelecommunicationNetworkIdentifier"
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Superclass of TelephoneNumber (ent00000023) and EmailAddress (ent00000024). \n        Migrated from Orphan-Ontology-Dev to provide the correct parent class."
+  }
+}

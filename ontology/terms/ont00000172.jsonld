@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000172",
+  "@type": "owl:Class",
+  "cco:ont00001753": "MOB",
+  "cco:ont00001754": "http://www.jcs.mil/Portals/36/Documents/Doctrine/pubs/dictionary.pdf?ver=2018-08-27-122235-653",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/FacilityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Base of Operations"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000483"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Main Operating Base"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Military Base with permanently stationed operating forces, robust Infrastructure, and strengthened force protection measures such that it is designed to launch and support large-scale operations, support smaller or less-permanent bases, and organize supply facilities."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000144"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000132"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000099"
+      }
+    },
+    {
+      "@id": "cco:ont00000752",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Wave Process Profile"
+      },
+      "rdfs:subClassOf": {
+        "@id": "obo:BFO_0000144"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Process Profile of a Wave Process."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "This is a defined class used to group process profiles of Wave Processes. Note that not every relevant process profile can be asserted as a subtype, however, because they (e.g. Frequency and Amplitude) are applicable to other processes as well (e.g. Oscillation Process)."
+      }
+    }
+  ]
+}

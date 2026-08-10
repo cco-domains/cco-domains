@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000626",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Predictive Information Content Entity"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000853"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Prediction Information Content Entity"
+    },
+    {
+      "@language": "en",
+      "@value": "Prediction"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Descriptive Information Content Entity that describes an uncertain future event."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Since predictions are inherently about not-yet-existant things, the Modal Relation Ontology term 'describes' (i.e. mro:describes) should be used (instead of the standard cco:describes) to relate instances of Predictive Information Content Entity to the entities they are about."
+  }
+}

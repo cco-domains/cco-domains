@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001918",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000015"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "occurs at"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000029"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "obo:BFO_0000066"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x occurs_at y iff x is an instance of Process and y is an instance of Site, such that x occurs in y."
+  }
+}

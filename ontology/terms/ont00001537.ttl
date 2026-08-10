@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001537 a owl:NamedIndividual,
+        cco:ont00000067,
+        cco:ont00000630 ;
+    rdfs:label "Coordinated Universal Time"@en ;
+    skos:scopeNote "UTC is a variant of Universal Time that is calculated by combining Universal Time 1 with International Atomic Time by occasionally adding leap seconds to TAI in order to maintain UTC within 0.9 seconds of UT1. The difference between UTC and UT1 is called DUT1 and always has a value between -0.9 seconds and +0.9 seconds. Coordinated Universal Time is the current basis for civil time and is the reference time for time zones, whose local times are defined based on an offset from UTC."@en ;
+    cco:ont00001753 "UTC" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

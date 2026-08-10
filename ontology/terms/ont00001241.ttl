@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001241 a owl:Class ;
+    rdfs:label "Sensor Function"@en ;
+    rdfs:subClassOf obo:BFO_0000034 ;
+    skos:definition "A Function that is realized in processes wherein an attribute of its bearer is a proxy for some aspect of its sensing environment."@en ;
+    skos:scopeNote "A proxy in the sense used here is a stand-in used in place of something else, often because the original is unavailable or not directly accessible."@en,
+        "Subtypes of Sensor Function should be differentiated based on the type of modality they sense. Where a modality is a specific type of energy, phenomenon, or information input that the Sensor is designed to detect, measure, or otherwise respond to."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Sensor&oldid=1059883466"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

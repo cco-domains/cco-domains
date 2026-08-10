@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000032",
+  "@type": "owl:Class",
+  "cco:ont00001754": "https://en.wikipedia.org/wiki/Church_(building)",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/FacilityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Church"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000052"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Religious Facility that is designed for Christian worship and prayer."
+  }
+}

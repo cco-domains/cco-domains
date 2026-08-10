@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000445",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Weapon&oldid=1143263715"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Weapon"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000995"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Material Artifact that is designed to destroy or inflict damage to structures or systems, or to kill or wound living things by creating specific lethal or nonlethal effects."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Nonlethal effects include all outcomes short of death or destruction. This is captured by the fact that Damaged Stasis and Wounded Stasis are defined in terms of impairment of the Independent Continuant that participates in them."
+  }
+}

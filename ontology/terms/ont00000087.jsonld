@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000087",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Ordinal_date&oldid=1061989434"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Ordinal Date Identifier"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000894"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Ordinal Date"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Decimal Date Identifier that designates some Day by using a number to indicate the sequential ordering of the Day since the beginning of the Year."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "An Ordinal Date Identifier may or may not also contain a number indicating a specific Year. If both numbers are included, the ISO 8601 ordinal date format stipulates that the two numbers be formatted as YYYY-DDD or YYYYDDD where [YYYY] indicates a year and [DDD] is the day of that year, from 001 through 365 (or 366 in leap years)."
+  }
+}

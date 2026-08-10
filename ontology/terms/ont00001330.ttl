@@ -1,0 +1,21 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001330 a owl:Class ;
+    rdfs:label "Telemetry Process"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom cco:ont00000345 ],
+        [ a owl:Restriction ;
+            owl:onProperty cco:ont00001777 ;
+            owl:someValuesFrom cco:ont00000517 ],
+        cco:ont00000110 ;
+    skos:definition "A Mechanical Process that is highly automated and in which measurements are made or other data is collected and transmitted to receiving equipment to facilitate the monitoring of environmental conditions or equipment parameters at a remote or inaccessible location."@en ;
+    skos:example "using a GPS tag to track a shark's migratory pattern",
+        "using a portable cardiac monitor to remotely collect data on a patient's heart activity (biotelemetry)" ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Telemetry&oldid=1061697851"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

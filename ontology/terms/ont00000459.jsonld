@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000459",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Fluorescence&oldid=1061358510"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/QualityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Fluorescence"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001126"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Luminescent Property that inheres in a bearer in virtue of that bearer's capacity to emit visible light while absorbing shorter wavelength radiation, but not after."
+  }
+}

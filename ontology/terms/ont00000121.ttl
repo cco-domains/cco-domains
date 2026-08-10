@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000121 a owl:Class ;
+    rdfs:label "Act of Conducting Mass Media Interview"@en ;
+    rdfs:subClassOf cco:ont00000588 ;
+    skos:definition "An Act of Mass Media Communication involving a conversation between a reporter and a person of public interest, used as a basis of a broadcast or publication."@en ;
+    cco:ont00001754 "JC3IEDM-MIRD-DMWG-Edition_3.0.2_20090514" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

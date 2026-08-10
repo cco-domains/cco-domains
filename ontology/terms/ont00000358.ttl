@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000358 a owl:Class ;
+    rdfs:label "Geospatial Region Bounding Box"@en ;
+    rdfs:subClassOf cco:ont00001130 ;
+    skos:definition "A Geospatial Polygon that has some Geospatial Region as a non-tangential proper part."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/GeospatialOntology"^^xsd:anyURI .
+

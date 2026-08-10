@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001716 a owl:NamedIndividual,
+        cco:ont00000630 ;
+    rdfs:label "Universal Time 1"@en ;
+    skos:altLabel "Astronomical Time"@en ;
+    skos:scopeNote "UT1 is a derivation of UT0 that takes into account distortions caused by polar motion and is proportional to the rotation angle of the Earth with respect to distant quasars, specifically, the International Celestial Reference Frame (ICRF). UT1 is currently the most widely used variant of Universal Time and has the same value everywhere on Earth."@en ;
+    cco:ont00001753 "UT1" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

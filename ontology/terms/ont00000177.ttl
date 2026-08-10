@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000177 a owl:Class ;
+    rdfs:label "Affordance"@en ;
+    rdfs:subClassOf obo:BFO_0000017 ;
+    skos:definition "A Realizable Entity of an Independent Continuant that creates an opportunity for an Agent to realize some Agent Capability or Disposition in some Act."@en ;
+    cco:ont00001754 "J. J. Gibson, \"The Theory of Affordances,\" in The Ecological Approach to Visual Perception (NY: Taylor & Francis Group, 1986): 127-143. Available at: https://archive.org/details/pdfy-u5hmFOvOM2Civ4Gz/page/n70/mode/1up."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000720 a owl:Class ;
+    rdfs:label "Cryogenic Storage Dewar"@en ;
+    rdfs:subClassOf cco:ont00000020 ;
+    skos:definition "A Container that is designed to store a Portion of Cryogenic Material (such as liquid helium or liquid oxygen) and which consists of, minimally, walls that are constructed from two or more layers that are separated by a high vacuum to provide thermal insulation between the interior and exterior of the dewar."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Cryogenic_storage_dewar&oldid=1021282649"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

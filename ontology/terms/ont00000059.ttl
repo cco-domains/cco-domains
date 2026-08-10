@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000059 a owl:Class ;
+    rdfs:label "Telephone Line"@en ;
+    rdfs:subClassOf cco:ont00000825 ;
+    skos:altLabel "Telephone Circuit"@en ;
+    skos:definition "A Telecommunication Network Line that consists of a physical wire or other signaling medium that is designed to be part of a Telephone Network."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Telephone_line&oldid=1063429738"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

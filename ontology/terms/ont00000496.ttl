@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000496 a owl:Class ;
+    rdfs:label "Natural Language"@en ;
+    rdfs:subClassOf cco:ont00001175 ;
+    skos:definition "A Language that is developed and evolves through use and repetition, rather than through conscious planning or premeditation."@en ;
+    skos:example "English",
+        "Mandarin (Chinese)",
+        "Spanish" ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Natural_language&oldid=1060890461"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

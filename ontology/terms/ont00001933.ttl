@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001933 a owl:ObjectProperty ;
+    rdfs:label "process starts"@en ;
+    rdfs:domain obo:BFO_0000015 ;
+    rdfs:range obo:BFO_0000015 ;
+    rdfs:subPropertyOf cco:ont00001803 ;
+    owl:inverseOf cco:ont00001962 ;
+    skos:definition "x process_starts y iff x and y are instances of processes, and x is_cause_of y, and i is an instance of a temporal instant, and r is an instance of a temporal interval, and y has starting instance i, and x occupies temporal region r, and r has inside instant i."@en ;
+    skos:scopeNote "A process x starts another process y when x causes y while x is still occurring."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"^^xsd:anyURI .
+

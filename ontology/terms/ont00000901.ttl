@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000901 a owl:Class ;
+    rdfs:label "Decontamination Facility"@en ;
+    rdfs:subClassOf cco:ont00001375 ;
+    skos:definition "A Washing Facility that is designed to wash personnel or equipment after (potential) contamination by radioactive, biological, or chemical material."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Decontamination&oldid=1049850150"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FacilityOntology"^^xsd:anyURI .
+

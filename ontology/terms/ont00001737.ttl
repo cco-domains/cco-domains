@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001737 a owl:AnnotationProperty ;
+    rdfs:label "doctrinal definition"@en ;
+    rdfs:subPropertyOf skos:definition ;
+    skos:definition "A Definition that is taken directly from a Doctrinal Source."@en ;
+    skos:scopeNote "There is only one definition for any given term in an ontology; however, a Doctrinal Definition may be provided in addition to the asserted Definition if the preservation of this information is important. When both a Definition and a Doctrinal Definition are provided for a term, the Definition takes precedence."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"^^xsd:anyURI .
+

@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000451",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Collimation Artifact Function"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000323"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Artifact Function that is realized by a Material Artifact participating in a collimation event in which the Material Artifact narrows a beam of particles or waves by either causing the spatial cross-section of the beam to become smaller or by causing the directions of motion of the beam's constituents to be aligned in a specifc direction of Motion."
+  }
+}

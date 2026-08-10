@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000059",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Telephone_line&oldid=1063429738"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Telephone Line"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000825"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Telephone Circuit"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Telecommunication Network Line that consists of a physical wire or other signaling medium that is designed to be part of a Telephone Network."
+  }
+}

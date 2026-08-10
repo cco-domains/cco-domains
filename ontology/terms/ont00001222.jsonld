@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001222",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Photovoltaic_system&oldid=1063366598"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Solar Panel System"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001049"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Photovoltaic System"
+    },
+    {
+      "@language": "en",
+      "@value": "Solar Array"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Electrical Power Source that consists in part of one or more Solar Panels, a power inverter, electrical wiring between the components, a mounting and support structure, and may also include a battery and/or a solar tracking system and is the bearer of functions realized in processes of deriving, transferring, and storing electrical energy derived from light energy."
+  }
+}

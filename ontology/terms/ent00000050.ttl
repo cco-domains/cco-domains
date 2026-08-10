@@ -1,0 +1,25 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000050 a owl:Class ;
+    rdfs:label "Credit Card"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-17"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ent00000049 ;
+    skos:definition """A Payment Card that authorizes its holder to purchase goods or 
+        services on short-term credit extended by the card issuer."""@en ;
+    skos:exactMatch <http://www.ontologyrepository.com/CommonCoreOntologies/CreditCard>,
+        schema:CreditCard ;
+    skos:example "A Visa credit card allowing purchases up to a credit limit."@en ;
+    skos:scopeNote "CreditCard authorizes purchases on short-term credit extended by the issuer. Migrated from Orphan-Ontology-Dev CCO 1.x with corrected parent (PaymentCard not FinancialArtifactFunction directly). Data models: Schema.org (CreditCard), MyDex (Dataset: Credit Card), Mee Foundation Requirements (Credit Card), Orphan-Ontology-Dev — 4+ sources."@en ;
+    cco:ent00000019 "A future Financial domain ontology (IEEE P3195.1.x)"@en ;
+    cco:ent00000020 "Migrated from Orphan-Ontology-Dev CCO 1.x. Parent corrected from FinancialArtifactFunction to PaymentCard."@en ;
+    cco:ent00000022 "Proposed to Financial Domain Ontology WG when formed 2026-Q4"@en .
+
