@@ -1,1 +1,260 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix cco:   <https://w3id.org/cco-domains/cco/> .
+@prefix cco-p: <https://w3id.org/cco-domains/domains/PersonOntology#> .
+@prefix cco-a: <https://w3id.org/cco-domains/domains/AirmanOntology#> .
+@prefix cco-s: <https://w3id.org/cco-domains/domains/StagingOntology#> .
+@prefix addr:  <https://w3id.org/cco-domains/domains/AddressOntology#> .
+@prefix cp:    <https://w3id.org/cco-domains/conformance/> .
+@prefix :      <http://example.org/pds/jane#> .
 
+:JaneDoe
+    a cco:ont00001262 ;
+    cco:ont00001879 :JaneDoe_FullName ;
+    cco:ont00001879 :JaneDoe_SSN .
+
+# ── Full Name designation ────────────────────────────────────────────────────
+
+:JaneDoe_FullName
+    a cco:ent00000001 ;
+    cco:ont00001765 "Jane Doe" .
+
+# ── SSN designation ──────────────────────────────────────────────────────────
+
+:JaneDoe_SSN
+    a cco:ent00000008 ;
+    cco:ont00001765 "123-45-6789" .
+
+# ── Birthdate ────────────────────────────────────────────────────────────────
+
+:JaneDoe_Birthdate
+    a cco:ent00000046 ;
+    cco:ont00001765 "1985-03-15"^^xsd:date .
+
+:JaneDoe
+    cco:ent00000061 :JaneDoe_Birthdate .
+
+# ── Drivers License — two-relation pattern ───────────────────────────────────
+
+:JaneDoe_DLNumber
+    a cco:ent00000065 ;
+    cco:ont00001765 "D1234567" .
+
+:JaneDoe_DLDocument
+    a cco:ont00000895 ;
+    obo:BFO_0000101 :JaneDoe_DLNumber .
+
+:JaneDoe
+    cco:ont00001879 :JaneDoe_DLNumber .
+# ── Email Address ────────────────────────────────────────────────────────────
+
+:JaneDoe_Email
+    a cco:ent00000024 ;
+    cco:ont00001765 "jane.doe@example.com" .
+
+:JaneDoe
+    cco:ont00001879 :JaneDoe_Email .
+
+# ── Telephone Number ─────────────────────────────────────────────────────────
+
+:JaneDoe_Phone
+    a cco:ent00000023 ;
+    cco:ont00001765 "555-867-5309" .
+
+:JaneDoe
+    cco:ont00001879 :JaneDoe_Phone .
+
+# ── Postal Address ───────────────────────────────────────────────────────────
+
+:JaneDoe_Address
+    a cco:ent00000010 .
+
+:JaneDoe_StreetAddress
+    a cco:ent00000011 ;
+    cco:ont00001765 "123 Main Street" .
+
+:JaneDoe_City
+    a cco:ent00000012 ;
+    cco:ont00001765 "Springfield" .
+
+:JaneDoe_State
+    a cco:ent00000013 ;
+    cco:ont00001765 "IL" .
+
+:JaneDoe_PostalCode
+    a cco:ent00000015 ;
+    cco:ont00001765 "62701" .
+
+:JaneDoe_CountryCode
+    a cco:ent00000059 ;
+    cco:ont00001765 "US" .
+
+:JaneDoe_Address
+    cco:ent00000316 :JaneDoe_StreetAddress ;
+    cco:ent00000316 :JaneDoe_City ;
+    cco:ent00000316 :JaneDoe_State ;
+    cco:ent00000316 :JaneDoe_PostalCode ;
+    cco:ent00000316 :JaneDoe_CountryCode .
+
+    # ── Connect Jane to her address ──────────────────────────────────────────────
+
+:JaneDoe
+    :hasAddress :JaneDoe_Address .
+
+# ── Stage 4 — Provenance ─────────────────────────────────────────────────────
+# Terms per DL-017: cco-s:SubjectClaimGraph, cco-s:claimant, cco-s:subject
+# Placeholder IRIs pending formal mint in StagingOntology via Protege.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Self-attested claim ───────────────────────────────────────────────────────
+
+:JaneDoe_SelfAttestedClaim
+    a cco-s:SubjectClaimGraph ;
+    cco-s:claimant :JaneDoe ;
+    cco-s:subject :JaneDoe_FullName ;
+    cco-s:subject :JaneDoe_Email ;
+    cco-s:subject :JaneDoe_Phone ;
+    cco-s:subject :JaneDoe_Address .
+
+# ── Government-issued claim (Illinois DMV) ───────────────────────────────────
+
+:IllinoisDMV
+    a cco:ont000000408 .
+
+:JaneDoe_DMVClaim
+    a cco-s:SubjectClaimGraph ;
+    cco-s:claimant :IllinoisDMV ;
+    cco-s:subject :JaneDoe_DLNumber ;
+    cco-s:subject :JaneDoe_Birthdate .
+
+# ── Stage 5 — Additional provenance claims ───────────────────────────────────
+
+# ── SSA claim (Social Security Administration) ────────────────────────────────
+
+:SocialSecurityAdmin
+    a cco:ont00000408 .
+
+:JaneDoe_SSAClaim
+    a cco-s:SubjectClaimGraph ;
+    cco-s:claimant :SocialSecurityAdmin ;
+    cco-s:subject :JaneDoe_SSN .
+
+# ── Vendor-provided claim (AT&T — phone number) ───────────────────────────────
+
+:ATT
+    a cco:ont00000443 .
+
+:JaneDoe_ATTClaim
+    a cco-s:SubjectClaimGraph ;
+    cco-s:claimant :ATT ;
+    cco-s:subject :JaneDoe_Phone .        
+
+# ── Stage 6 — Identifier strength annotations ────────────────────────────────────────
+# cp:identifierStrength annotates identifier CLASSES, not individuals.
+# Values: "strong" / "weak" / "non"
+# These are working decisions by the author — subject to revision
+# as the CCO-Domains conformance profile develops toward standardization.
+# ─────────────────────────────────────────────────────────────────────────────
+
+cco:ent00000008
+    cp:identifierStrength "weak" .
+
+cco:ent00000065
+    cp:identifierStrength "weak" .
+
+cco:ent00000066
+    cp:identifierStrength "weak" .
+
+cco:ent00000001
+    cp:identifierStrength "non" .
+
+cco:ent00000024
+    cp:identifierStrength "non" .
+
+cco:ent00000023
+    cp:identifierStrength "non" .# ── Stage 7 — DID and Binding Claims ─────────────────────────────────────────
+# Three additions:
+#   (a) DID Identifier — control-tier; proves control, silent on identity
+#   (b) FAA Airman Certificate binding — strong-tier when combined with DID
+#   (c) Email OIDC binding claim — weak-tier; same DID, lower assurance
+#
+# Placeholder namespaces:
+#   cco-a: <https://w3id.org/cco-domains/domains/AirmanOntology#>
+#   FAA-related classes and properties pending formal mint via Protégé.
+#   DID Identifier class pending formal mint in PersonOntology.
+#   OIDCBindingClaim class pending formal mint in StagingOntology.
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── (a) DID Identifier ────────────────────────────────────────────────────────
+# cco-p:DIDIdentifier — subclass of Identifier, pending mint in PersonOntology
+# Jane controls this DID; the DID Document is a separate resolvable artifact.
+
+:JaneDoe_DID
+    a cco-p:DIDIdentifier ;
+    cco:ont00001765 "did:example:jane123abc456" .
+
+:JaneDoe
+    cco:ont00001879 :JaneDoe_DID .
+
+# Identifier strength: "control" — cryptographic control proof, silent on identity
+cco-p:DIDIdentifier
+    cp:identifierStrength "control" .
+
+# ── (b) FAA Airman Certificate — DID binding ──────────────────────────────────
+# Jane is also a certificated pilot.
+# cco-a:FAAAirmanCertificate — subclass of Identity Document, pending mint in AirmanOntology
+# cco-a:FAAAirmanID — subclass of Identifier, pending mint in AirmanOntology
+# cco-a:hasFAAUniqueID — object property, pending mint in AirmanOntology
+# FAA is the single authoritative issuer; FAA registry is publicly queryable.
+
+:JaneDoe_FAAAirmanID
+    a cco-a:FAAAirmanID ;
+    cco:ont00001765 "A4567890" .
+
+:JaneDoe_FAACertificate
+    a cco-a:FAAAirmanCertificate ;
+    obo:BFO_0000101 :JaneDoe_FAAAirmanID .
+
+:JaneDoe
+    cco:ont00001879 :JaneDoe_FAAAirmanID .
+
+# FAA claim — FAA as authoritative issuer
+:FAA
+    a cco:ont00000408 .
+
+:JaneDoe_FAAClaim
+    a cco-s:SubjectClaimGraph ;
+    cco-s:claimant :FAA ;
+    cco-s:subject :JaneDoe_FAAAirmanID .
+
+# DID-to-FAA binding ceremony claim
+# When Jane presents her DID + FAA VC together, the combined assurance is strong.
+# cco-s:DIDBindingClaim — subclass of SubjectClaimGraph, pending mint in StagingOntology
+:JaneDoe_FAA_DID_Binding
+    a cco-s:DIDBindingClaim ;
+    cco-s:claimant :FAA ;
+    cco-s:subject :JaneDoe_FAAAirmanID ;
+    cco-s:subject :JaneDoe_DID .
+
+# Identifier strength: FAA Airman ID alone is strong (single issuer, globally unique, queryable)
+cco-a:FAAAirmanID
+    cp:identifierStrength "strong" .
+
+# ── (c) Email OIDC binding claim ─────────────────────────────────────────────
+# Jane's email provider (OIDC) asserts she controls jane.doe@example.com
+# and that the same person controls her DID.
+# cco-s:OIDCBindingClaim — subclass of SubjectClaimGraph, pending mint in StagingOntology
+# Assurance: weak — OIDC proves account control, not real-world identity
+
+:JaneDoe_OIDC_DID_Binding
+    a cco-s:OIDCBindingClaim ;
+    cco-s:claimant :JaneDoe_EmailProvider ;
+    cco-s:subject :JaneDoe_Email ;
+    cco-s:subject :JaneDoe_DID .
+
+:JaneDoe_EmailProvider
+    a cco:ont00000443 ;
+    cco:ont00001765 "Example Mail Co." .
