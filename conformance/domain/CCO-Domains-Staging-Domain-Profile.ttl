@@ -1,0 +1,151 @@
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix cco:     <https://w3id.org/cco-domains/cco/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix cp:      <https://w3id.org/cco-domains/conformance/> .
+
+cp:StagingDomainProfile
+    a owl:Ontology ;
+    rdfs:label "CCO-Domains Staging Domain Profile"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator "Global Research, Inc., a 501(c)(3) nonprofit organization" ;
+    dcterms:created "2026-08-21"^^xsd:date ;
+    owl:versionIRI <https://w3id.org/cco-domains/conformance/staging/2026-08-19> ;
+    owl:versionInfo "v0.1 — Staging domain profile; tightens over base profile. Temporary profile — shapes migrate to appropriate domain profiles as Staging terms find permanent homes. No presence requirements; structure-only."@en .
+
+cp:TelephoneNumberShape
+    a sh:NodeShape ;
+    rdfs:label "Telephone Number"@en ;
+    sh:targetClass cco:ent00000023 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A Telephone Number node shall carry exactly one literal value."@en ;
+    ] .
+
+cp:EmailAddressShape
+    a sh:NodeShape ;
+    rdfs:label "Email Address"@en ;
+    sh:targetClass cco:ent00000024 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "An Email Address node shall carry exactly one literal value."@en ;
+    ] .
+
+ cp:UserIdentifierShape
+    a sh:NodeShape ;
+    rdfs:label "User Identifier"@en ;
+    sh:targetClass cco:ent00000031 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A User Identifier node shall carry exactly one literal value."@en ;
+    ] .
+
+cp:CreditCardNumberShape
+    a sh:NodeShape ;
+    rdfs:label "Credit Card Number"@en ;
+    sh:targetClass cco:ent00000052 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A Credit Card Number node shall carry exactly one literal value."@en ;
+    ] .
+
+cp:CVVShape
+    a sh:NodeShape ;
+    rdfs:label "CVV"@en ;
+    sh:targetClass cco:ent00000053 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A CVV node shall carry exactly one literal value."@en ;
+    ] .
+
+cp:ExpirationDateShape
+    a sh:NodeShape ;
+    rdfs:label "Expiration Date Identifier"@en ;
+    sh:targetClass cco:ent00000054 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "An Expiration Date Identifier node shall carry exactly one typed xsd:date literal."@en ;
+    ] .
+
+cp:CheckingAccountNumberShape
+    a sh:NodeShape ;
+    rdfs:label "Checking Account Number"@en ;
+    sh:targetClass cco:ent00000071 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A Checking Account Number node shall carry exactly one literal value."@en ;
+    ] .
+
+cp:RoutingNumberShape
+    a sh:NodeShape ;
+    rdfs:label "Routing Number"@en ;
+    sh:targetClass cco:ent00000072 ;
+    sh:property [
+        sh:path cco:ont00001765 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A Routing Number node shall carry exactly one literal value."@en ;
+    ] .
+
+cp:ServiceNameShape
+    a sh:NodeShape ;
+    rdfs:label "Service name"@en ;
+    sh:targetSubjectsOf cco:ent00000034 ;
+    sh:property [
+        sh:path cco:ent00000034 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A node with a service name shall carry exactly one literal value."@en ;
+    ] .
+
+cp:UserHandleShape
+    a sh:NodeShape ;
+    rdfs:label "User handle"@en ;
+    sh:targetSubjectsOf cco:ent00000035 ;
+    sh:property [
+        sh:path cco:ent00000035 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:Literal ;
+        sh:message "A node with a user handle shall carry exactly one literal value."@en ;
+    ] .                           
+
+cp:ServiceURIShape
+    a sh:NodeShape ;
+    rdfs:label "Service URI"@en ;
+    sh:targetSubjectsOf cco:ent00000036 ;
+    sh:property [
+        sh:path cco:ent00000036 ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A node with a service URI shall carry exactly one IRI value."@en ;
+    ] .
+
+    
+    

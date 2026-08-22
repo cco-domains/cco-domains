@@ -1,0 +1,89 @@
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix cco:     <https://w3id.org/cco-domains/cco/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix cp:      <https://w3id.org/cco-domains/conformance/> .
+
+cp:AddressDomainProfile
+    a owl:Ontology ;
+    rdfs:label "CCO-Domains Address Domain Profile"@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:creator "Global Research, Inc., a 501(c)(3) nonprofit organization" ;
+    dcterms:created "2026-08-21"^^xsd:date ;
+    owl:versionIRI <https://w3id.org/cco-domains/conformance/address/2026-08-19> ;
+    owl:versionInfo "v0.1 — Address domain profile; tightens over base profile. Component model: address components are composite nodes; each component present shall carry exactly one literal value. No presence requirements and no content constraints — address data is locale-specific and content normalization is an application concern."@en .
+    
+
+
+
+cp:StreetAddressShape
+    a sh:NodeShape ;
+    rdfs:label "Street Address"@en ;
+sh:targetClass cco:ent00000011 ;
+sh:property [
+    sh:path cco:ont00001765 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:message "A Street Address node shall carry exactly one literal value."@en ;
+] .
+cp:CityShape
+    a sh:NodeShape ;
+    rdfs:label "City"@en ;
+sh:targetClass cco:ent00000012 ;
+sh:property [
+    sh:path cco:ont00001765 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:message "A City node shall carry exactly one literal value."@en ;
+] .
+cp:StateShape
+    a sh:NodeShape ;
+    rdfs:label "State"@en ;
+sh:targetClass cco:ent00000013 ;
+sh:property [
+    sh:path cco:ont00001765 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:message "A State node shall carry exactly one literal value."@en ;
+] .
+cp:PostalCodeShape
+    a sh:NodeShape ;
+    rdfs:label "Postal Code"@en ;
+sh:targetClass cco:ent00000015 ;
+sh:property [
+    sh:path cco:ont00001765 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:message "A Postal Code node shall carry exactly one literal value."@en ;
+] .
+cp:CountryNameShape
+    a sh:NodeShape ;
+    rdfs:label "Country Name"@en ;
+sh:targetClass cco:ent00000014 ;
+sh:property [
+    sh:path cco:ont00001765 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:message "A Country Name node shall carry exactly one literal value."@en ;
+] .
+cp:CountryCodeShape
+    a sh:NodeShape ;
+    rdfs:label "CountryCode"@en ;
+sh:targetClass cco:ent00000059 ;
+sh:property [
+    sh:path cco:ont00001765 ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:Literal ;
+    sh:message "A Country Code shall carry exactly one literal value."@en ;
+
+] .
+
+
