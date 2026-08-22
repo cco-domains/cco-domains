@@ -1,0 +1,10 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco:ent00000022 a owl:AnnotationProperty ;
+    rdfs:label "proposal status"@en ;
+    rdfs:comment "Current status of proposal to migrate this term to permanent home."@en ;
+    rdfs:domain owl:Class ;
+    rdfs:range rdfs:Literal .
+

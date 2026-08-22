@@ -1,0 +1,42 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001916",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00000686"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "designates"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000001"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001808"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x designates y iff x is an instance of a Designative Information Content Entity, and y is an instance of an Entity, such that given some context, x uniquely distinguishes y from other entities."
+  },
+  "skos:example": [
+    "a URL designates the location of a Web Page on the internet",
+    "a person's name designates that person",
+    "a vehicle identification number designates some vehicle"
+  ],
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions."
+  }
+}

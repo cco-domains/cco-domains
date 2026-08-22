@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000832 a owl:Class ;
+    rdfs:label "Year"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cco:ont00001869 ;
+            owl:someValuesFrom cco:ont00001088 ],
+        obo:BFO_0000202 ;
+    skos:definition "A Temporal Interval that is equal to the approximate length of time required for an Astronomical Body to complete one Orbital Revolution around its Primary Body as specified relative to a particular Temporal Reference System."@en ;
+    skos:scopeNote "Unless otherwise specified, a Year is assumed to be relative to the Orbiting of the Earth around the Sun and is approximately equal to 12 Months or 365 Days."@en ;
+    cco:ont00001754 "http://wordnetweb.princeton.edu/perl/webwn?s=year" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/TimeOntology"^^xsd:anyURI .
+

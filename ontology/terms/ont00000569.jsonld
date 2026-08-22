@@ -1,0 +1,76 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b4",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000040"
+          },
+          {
+            "@id": "_:b6"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b5",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00001241"
+          },
+          {
+            "@id": "cco:ont00002073"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b6",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000196"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b5"
+      }
+    },
+    {
+      "@id": "cco:ont00000569",
+      "@type": "owl:Class",
+      "cco:ont00001754": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://en.wikipedia.org/w/index.php?title=Sensor&oldid=1059883466"
+      },
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b4"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Sensor"
+      },
+      "rdfs:subClassOf": {
+        "@id": "obo:BFO_0000040"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Material Entity that bears a Sensor Function or Sensor Role."
+      }
+    }
+  ]
+}

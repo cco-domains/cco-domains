@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000453",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Environment Control System"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000995"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Material Artifact that is designed to control the temperature, air quality, or other feature of a Site that is relevant to the comfort or operation of entities located within that Site."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Controlling air quality typically involves temperature control, oxygen replenishment, and removal of moisture, odor, smoke, heat, dust, airborne bacteria, carbon dioxide, and other undesired gases or particulates."
+  }
+}

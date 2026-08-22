@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001015 a owl:Class ;
+    rdfs:label "Controlled-Access Highway"@en ;
+    rdfs:subClassOf cco:ont00000646 ;
+    skos:altLabel "Expressway"@en,
+        "Freeway"@en,
+        "Motorway"@en ;
+    skos:definition "A Highway that is designed for high-speed vehicular traffic, with traffic flow and ingress/egress regulated."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Controlled-access_highway&oldid=1063655601"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

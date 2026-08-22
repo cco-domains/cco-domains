@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000506",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Contractor Role"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000023"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Role that inheres in an Agent or Group of Agents by virtue of that Agent or Group of Agents entering into a Contract to provide materials or labor to perform a service or complete a task."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "A Contractor Role differs from an Occupation Role in at least two ways. First, the Contract that binds the two parties together is not one of employment. Second, a Contractor Role is occupationally neutral in that an Agent can be contracted to perform any number of Occupational Roles."
+  }
+}

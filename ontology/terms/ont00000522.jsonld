@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000522",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Pulsejet&oldid=1050473545"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Pulsejet Engine"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000294"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Pulse Jet"
+    },
+    {
+      "@language": "en",
+      "@value": "Pulsejet"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Air-Breathing Jet Engine that is capable of operating statically and uses intermittent (pulsing) Combustion of the fuel-oxidizer mixture before expelling the exhaust out through the rear Propelling Nozzle to generate Thrust."
+  }
+}

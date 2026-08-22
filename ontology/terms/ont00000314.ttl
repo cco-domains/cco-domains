@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000314 a owl:Class ;
+    rdfs:label "Information Quality Entity"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000197 ;
+            owl:someValuesFrom cco:ont00000253 ],
+        obo:BFO_0000019 ;
+    skos:altLabel "IQE"@en ;
+    skos:definition "A Quality that concretizes some Information Content Entity."@en ;
+    skos:scopeNote "Typically, an IQE will be a complex pattern made up of multiple qualities joined together spatially."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

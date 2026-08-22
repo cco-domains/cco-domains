@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000679",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Attitude Control Artifact Function"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000323"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Orientation Control Artifact Function"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Artifact Function that is realized by a Material Artifact participating in an attitude control process."
+  }
+}

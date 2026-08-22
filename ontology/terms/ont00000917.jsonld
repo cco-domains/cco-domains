@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000917",
+  "@type": "owl:Class",
+  "cco:ont00001754": "https://en.wikipedia.org/wiki/Permanent_residency",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "dcterms:bibliographicCitation": "Permanent Residency - Wikipedia. https://en.wikipedia.org/wiki/Permanent_residency. Accessed 10 Feb. 2023.",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value": "2023-03-29T20:17:54-04:00"
+  },
+  "dcterms:creator": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://cubrc.org"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Permanent Resident Role"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000023"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A role inhering in a Person by virtue of that Person being recognized as having legal resident status in a Government Domain in which that person is not a citizen but where they have the right to reside on a permanent basis."
+  },
+  "skos:prefLabel": {
+    "@language": "en",
+    "@value": "Permanent Resident Role"
+  }
+}

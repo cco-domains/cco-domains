@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000046",
+  "@type": "owl:Class",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-04-14"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/PersonOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Birthdate"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001340"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "DOB"
+    },
+    {
+      "@language": "en",
+      "@value": "date of birth"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Calendar Date Identifier designating when a Person was born."
+  }
+}

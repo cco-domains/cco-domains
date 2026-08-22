@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001141",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://archive.org/details/economicsprincip00osul/page/n489/mode/2up"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Infrastructure Role"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000023"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Role that inheres in the bearer of a Disposition and has been assigned to an Infrastructure System such that the realization of that Disposition is sometimes part of the functioning of the Infrastructure System."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "The disposition will typically be a function of an artifact, which is often designed to be part of some Infrastructure system. But not always. In some cases an entity may be repurposed to be an element of some Infrastructure. In those cases it is a capability of that entity that supports the functioning of the system."
+  }
+}

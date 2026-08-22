@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000051",
+  "@type": "owl:Class",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "A future Financial domain ontology (IEEE P3195.1.x)"
+  },
+  "cco:ent00000020": {
+    "@language": "en",
+    "@value": "Migrated from Orphan-Ontology-Dev CCO 1.x. Parent corrected from BankAccount to PaymentCard."
+  },
+  "cco:ent00000022": {
+    "@language": "en",
+    "@value": "Proposed to Financial Domain Ontology WG when formed 2026-Q4"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-03-17"
+  },
+  "http://purl.org/dc/elements/1.1/creator": {
+    "@language": "en",
+    "@value": "Global Research, Inc."
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Debit Card"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ent00000049"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Payment Card that authorizes purchases by drawing directly \n        on funds held in a linked bank account."
+  },
+  "skos:exactMatch": {
+    "@id": "http://www.ontologyrepository.com/CommonCoreOntologies/DebitCard"
+  },
+  "skos:example": {
+    "@language": "en",
+    "@value": "A Chase debit card linked to a checking account."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "DebitCard parent has been corrected from BankAccount (Orphan-Ontology-Dev \n        CCO 1.x) to PaymentCard. A DebitCard is not itself a BankAccount — it is an \n        artifact function that provides access to a BankAccount."
+  }
+}

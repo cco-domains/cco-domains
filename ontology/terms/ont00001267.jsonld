@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001267",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Propaganda&oldid=1062472484"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Act of Propaganda"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000971"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Act of Deceptive Communication Propaganda intended to influence the attitude of a mass audience toward some cause or position by presenting facts selectively (thus possibly lying by omission) or by using loaded messages to produce an emotional rather than rational response to the information presented."
+  }
+}

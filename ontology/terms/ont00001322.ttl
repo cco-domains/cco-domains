@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001322 a owl:Class ;
+    rdfs:label "Decrease of Generically Dependent Continuant"@en ;
+    rdfs:subClassOf cco:ont00000726 ;
+    skos:definition "A Decrease of Dependent Continuant in which some Independent Continuant has a decrease in the level of a Generically Dependent Continuant that it bears."@en ;
+    skos:scopeNote "For the most part Generically Dependent Continuants do not inhere in their bearers over some continuous scale. The primary exception is religion and this class allows annotation of those cases where an Agent is described as becoming less religious. Other cases would include the decrease of an organization's bearing of some objective."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

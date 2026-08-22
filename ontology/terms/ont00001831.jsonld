@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001831",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "owl:inverseOf": {
+    "@id": "cco:ont00001951"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000023"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is subordinate role to"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000023"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "For all x,y,t: y is subordinate role to x at t iff: x is an instance of Role at time t, and y is an instance of Role at time t, and there is some z such that x is realized by z and z is an instance of Process which creates, modifies, transfers, or eliminates some u such that u is a Process Regulation at time t, and u is addressed to the bearer of y."
+  }
+}

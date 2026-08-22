@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001067",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Laser&oldid=1059215159"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Laser"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000995"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Material Artifact that is designed to emit light coherently through a process of optical amplification based on the stimulated emission of electromagnetic radiation."
+  }
+}

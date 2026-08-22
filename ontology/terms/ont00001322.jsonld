@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001322",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Decrease of Generically Dependent Continuant"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000726"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Decrease of Dependent Continuant in which some Independent Continuant has a decrease in the level of a Generically Dependent Continuant that it bears."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "For the most part Generically Dependent Continuants do not inhere in their bearers over some continuous scale. The primary exception is religion and this class allows annotation of those cases where an Agent is described as becoming less religious. Other cases would include the decrease of an organization's bearing of some objective."
+  }
+}

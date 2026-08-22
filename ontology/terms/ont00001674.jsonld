@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001674",
+  "@type": [
+    "cco:ont00000276",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Gregorian_calendar&oldid=1062360692"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Gregorian Calendar"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Solar Calendar System that has a regular Year of 365 24-Hour Days divided into 12 Months with a leap day added at the end of February every 4 Years except Years that are evenly divisible by 100 but not 400 such that there are 97 leap Years every 400 Years and the average length of a Gregorian Year is 365.2425 Days (365 Days 5 Hours 49 Minutes 12 Seconds)."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "The Gregorian Calendar was instituted by Pope Gregory XIII via papal bull on 24 February 1582 as a reform of the Julian Calendar to stop the drift of the calendar with respect to the equinoxes and solstices. The Gregorian Calendar is currently the most widely used civil Calendar System in the world and is 13 days ahead of the Julian Calendar Date."
+  }
+}

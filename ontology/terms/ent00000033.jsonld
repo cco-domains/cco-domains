@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000033",
+  "@type": "owl:Class",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "Cyber Ontology (IEEE P3195.1.1)"
+  },
+  "cco:ent00000020": {
+    "@language": "en",
+    "@value": "CyberOntology v1.5 has UserAccount but no subclass for \n        named-service accounts with the RFC 9553 service/handle/URI pattern. \n        RFC 9553 JSContact establishes this as a standard representation."
+  },
+  "cco:ent00000022": {
+    "@language": "en",
+    "@value": "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q3"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-03-16"
+  },
+  "dcterms:source": {
+    "@id": "https://www.rfc-editor.org/rfc/rfc9553"
+  },
+  "http://purl.org/dc/elements/1.1/creator": {
+    "@language": "en",
+    "@value": "Global Research, Inc."
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Online Service Account"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ent00000026"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A User Account that represents a person's account at a named \n        online service provider, characterized by a service name, user handle, and URI, \n        consistent with the JSContact specification (RFC 9553 Section 2.6.3)."
+  },
+  "skos:example": [
+    {
+      "@language": "en",
+      "@value": "A LinkedIn account with user handle 'alice-walker' and URI https://linkedin.com/in/alice-walker"
+    },
+    {
+      "@language": "en",
+      "@value": "A Mastodon account at example2.com with user handle @alice@example2.com and URI https://example2.com/@alice"
+    },
+    {
+      "@language": "en",
+      "@value": "An XMPP account identified by the URI xmpp:alice@example.com"
+    }
+  ],
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "OnlineServiceAccount is distinguished from the more general UserAccount \n        by its association with a publicly named external service provider (e.g., Mastodon, \n        LinkedIn, GitHub) and the RFC 9553 triple of service name, user handle, and URI. \n        Not all three components need be present; the URI alone is sufficient to identify \n        the account. Compare SocialNetworkingSite (the site artifact) vs OnlineServiceAccount \n        (the account a person holds at that site)."
+  }
+}

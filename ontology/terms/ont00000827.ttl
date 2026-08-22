@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000827 a owl:Class ;
+    rdfs:label "Time of Day Identifier"@en ;
+    rdfs:subClassOf cco:ont00000540 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cco:ont00000540 [ a owl:Restriction ;
+                        owl:onProperty cco:ont00001916 ;
+                        owl:someValuesFrom cco:ont00000223 ] ) ] ;
+    skos:definition "A Temporal Instant Identifier that designates some Time of Day."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

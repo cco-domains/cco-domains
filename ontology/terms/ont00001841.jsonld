@@ -1,0 +1,78 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b5",
+      "@type": "owl:Class",
+      "owl:complementOf": {
+        "@id": "obo:BFO_0000006"
+      }
+    },
+    {
+      "@id": "_:b6",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000004"
+          },
+          {
+            "@id": "_:b5"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b7",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000020"
+          },
+          {
+            "@id": "obo:BFO_0000031"
+          },
+          {
+            "@id": "_:b6"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "cco:ont00001841",
+      "@type": "owl:ObjectProperty",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+      },
+      "owl:inverseOf": {
+        "@id": "cco:ont00001921"
+      },
+      "rdfs:domain": {
+        "@id": "_:b7"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "is input of"
+      },
+      "rdfs:range": {
+        "@id": "obo:BFO_0000015"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "obo:BFO_0000056"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "x is input of y =Def x participates in y, x is an Independent Continuant (but not a Spatial Region), y is a Process, and the presence of x at the beginning of y is a necessary condition for the start of y."
+      }
+    }
+  ]
+}

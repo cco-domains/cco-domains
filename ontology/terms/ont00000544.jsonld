@@ -1,0 +1,62 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000040"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001936"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000741"
+      }
+    },
+    {
+      "@id": "cco:ont00000544",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Target"
+      },
+      "rdfs:subClassOf": {
+        "@id": "obo:BFO_0000040"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Material Entity that is the object of an Act of Targeting."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Although people speak of targeting a process, say, a parade, what in fact are being targeted are the material participants of that process. The disruption or ceasing of the process is the objective of some plan, but not technically a target. Only material things can be targeted for action. Even if some dependent entity is described as being the target, the material thing for which that dependent entity depends is the object of a targeting process."
+      }
+    }
+  ]
+}

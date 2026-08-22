@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00002000",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@language": "en",
+    "@value": "Asimov, Isaac. Understanding Physics. New York: Barnes and Noble, 1993. 76-79. Available at: https://archive.org/details/understandingphy00isaa/page/n91/mode/2up"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/GeospatialOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Center of Mass"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000147"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Fiat Point that is where the weighted position vectors of the distributed Mass of a Material Entity relative to this point sum to zero."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000106",
+  "@type": "owl:Class",
+  "cco:ont00001753": [
+    "EOL",
+    "EoL"
+  ],
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "End of Life Stasis"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001213"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Stasis of Artifact Operationality that holds during a Temporal Interval when the participating Material Artifact is no longer capable of realizing all of its designed primary Artifact Functions."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "An End of Life Stasis (EoL) is distinguished from a Stasis of Partially Mission Capable or Stasis of Non-Mission Capable in that EoL is more inclusive such that the participating Material Artifact may be either Partially or Non-Mission Capable. Additionally, EoL applies only to Artifacts and is typically determined in relation to its original mission and designed primary functions. In contrast, an Artifact's level of Mission Capability depends on the requirements of the mission under consideration such that a given Artifact may simultaneously be Fully Mission Capable for mission1, Partially Mission Capable for mission2, and Non-Mission Capable for mission3."
+  }
+}

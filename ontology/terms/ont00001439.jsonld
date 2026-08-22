@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001439",
+  "@type": [
+    "cco:ont00000263",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=24-hour_clock&oldid=1063744105"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Twenty-Four-Hour Clock Time System"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "24-Hour Clock Time System"
+    },
+    {
+      "@language": "en",
+      "@value": "24-Hour Clock"
+    },
+    {
+      "@language": "en",
+      "@value": "Military Time System"
+    },
+    {
+      "@language": "en",
+      "@value": "Military Time"
+    },
+    {
+      "@language": "en",
+      "@value": "Twenty-Four Hour Clock Time System"
+    },
+    {
+      "@language": "en",
+      "@value": "Twenty-Four-Hour Clock"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Clock Time System for time keeping in which the Day runs from midnight to midnight and is divided into 24 Hours, indicated by the Hours passed since midnight, from 0 to 23."
+  }
+}

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001083 a owl:Class ;
+    rdfs:label "Air-Breathing Combustion Engine"@en ;
+    rdfs:subClassOf cco:ont00000056 ;
+    skos:definition "A Reaction Engine that functions by drawing a continuous stream of air into and through the Engine where it is compressed, mixed with a Portion of Fuel, ignited, and then expelled as exhaust gas."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Engine&oldid=1063879193"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

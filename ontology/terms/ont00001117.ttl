@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001117 a owl:Class ;
+    rdfs:label "Propelling Nozzle"@en ;
+    rdfs:subClassOf cco:ont00000252 ;
+    skos:altLabel "Jet Nozzle"@en ;
+    skos:definition "A Nozzle that is used to convert a propulsion Engine into a Jet Engine and functions by using its narrowest part, the throat, to increase Pressure within the Engine by constricting flow, usually until the flow chokes, then expanding the exhaust stream to, or near to, atmospheric pressure, while forming it into a high speed jet to propel the Vehicle."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Propelling_nozzle&oldid=1061239812"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

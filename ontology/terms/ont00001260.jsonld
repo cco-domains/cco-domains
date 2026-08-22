@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000101"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00002032"
+      }
+    },
+    {
+      "@id": "cco:ont00001260",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/BarcodeOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Material Copy of a Code 39 Barcode"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000258"
+        }
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Code 39 Barcode"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Material Copy of a One-Dimensional Barcode that consists of 39 characters that are numbers 0-9, capital letters A-Z, or the symbols -.$/+% and space and is used primarily in automotive and defense industries."
+      }
+    }
+  ]
+}

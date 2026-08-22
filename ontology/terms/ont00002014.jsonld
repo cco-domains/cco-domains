@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00002014",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Barcode&oldid=1059844765"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Barcode"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00002001"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Media Content Entity that represents one or more geometric shapes that have, as part, some Prescriptive Information Content Entity."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "For information on types of barcodes, see: https://www.scandit.com/types-barcodes-choosing-right-barcode/"
+  }
+}

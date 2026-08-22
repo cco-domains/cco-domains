@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+cco:TimeOntology a owl:Ontology ;
+    rdfs:label "Time Ontology"@en ;
+    dcterms:license "BSD 3-Clause: https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/LICENSE"@en ;
+    dcterms:rights "CUBRC Inc., see full license."@en ;
+    rdfs:comment "This ontology is designed to represent temporal regions and the relations that hold between them."@en ;
+    owl:imports cco:ExtendedRelationOntology ;
+    owl:versionIRI <https://w3id.org/cco-domains/cco/2026-04-04/TimeOntology> ;
+    owl:versionInfo "Adapted from open-source CCO 2.1 (NCOR); IRIs re-based to w3id.org/cco-domains, redirectable to an IEEE-hosted platform for OSWG contribution"@en .
+

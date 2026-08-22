@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000649 a owl:Class ;
+    rdfs:label "Non-Name Identifier"@en ;
+    rdfs:subClassOf cco:ont00000686 ;
+    skos:altLabel "ID"@en,
+        "Identifier"@en ;
+    skos:definition "A Designative Information Content Entity that consists of a string of characters that designates an entity within a specified namespace or context, is not a Designative Name, may be automatically or randomly generated, and typically has no preexisting cultural or social significance."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

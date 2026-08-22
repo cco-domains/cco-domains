@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00002070 a owl:Class ;
+    rdfs:label "Email Address"@en ;
+    rdfs:altLabel "Email Box Identifier"@en ;
+    rdfs:subClassOf cco:ont00000003 ;
+    skos:definition "A Designative Name created in order to identify some Email Box as the destination of an email message for the purpose of Email Messaging."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

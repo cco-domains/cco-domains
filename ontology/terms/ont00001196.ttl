@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001196 a owl:Class ;
+    rdfs:label "Act of Artifact Assembly"@en ;
+    rdfs:subClassOf cco:ont00000908 ;
+    skos:definition "An Act of Material Artifact Processing wherein a new Material Artifact are created by fitting component parts together."@en ;
+    skos:example "putting together a piece of furniture purchased from Ikea" ;
+    skos:scopeNote "Many Acts of Manufacturing and Construction involve one or more Acts of Artifact Assembly, but Acts of Artifact Assembly can also occur in isolation from these activities."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

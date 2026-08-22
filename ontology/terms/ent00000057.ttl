@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000057 a owl:Class ;
+    rdfs:label "Title"@en ;
+    dcterms:created "2026-05-01"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/PersonOntology> ;
+    rdfs:subClassOf cco:ont00000003 ;
+    skos:altLabel "Honorific"@en,
+        "Name Prefix"@en ;
+    skos:definition "A designative name added before the person's given name to add more information (professional, marital status or religious)."@en ;
+    skos:example "\"Mr.\". \"Dr.\". \"Prof.\""@en .
+

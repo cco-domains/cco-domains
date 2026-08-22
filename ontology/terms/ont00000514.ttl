@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000514 a owl:Class ;
+    rdfs:label "Transverse Wave Profile"@en ;
+    rdfs:subClassOf cco:ont00000752 ;
+    skos:altLabel "Transverse Wave"@en ;
+    skos:definition "A Wave Process Profile in which the displacement of participating particles is perpendicular to the direction of the Wave Process' propogation."@en ;
+    cco:ont00001754 "http://www.acs.psu.edu/drussell/Demos/waves/wavemotion.html" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

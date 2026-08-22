@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000279 a owl:Class ;
+    rdfs:label "Enemy Role"@en ;
+    rdfs:subClassOf cco:ont00000392 ;
+    skos:definition "An Allegiance Role that inheres in an Agent by virtue of that Agent having committed offensive Acts or exhibited intent to perform such Acts towards a particular Agent or Group of Agents or has been declared as hostile by some appropriate authority."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

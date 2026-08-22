@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001340",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Calendar Date Identifier"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000529"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Date Identifier that designates some Day by using a combination of Day, Week, Month, or Year Identifiers formatted according to an implementation of a Calendar System."
+  },
+  "skos:example": "January 1, 2018; 1 January 2018; 01/01/18; 01Jan18"
+}

@@ -1,0 +1,79 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b5",
+      "@type": "owl:Class",
+      "owl:complementOf": {
+        "@id": "obo:BFO_0000006"
+      }
+    },
+    {
+      "@id": "_:b6",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000004"
+          },
+          {
+            "@id": "_:b5"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b7",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000020"
+          },
+          {
+            "@id": "obo:BFO_0000031"
+          },
+          {
+            "@id": "_:b6"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "cco:ont00001986",
+      "@type": "owl:ObjectProperty",
+      "cco:ont00001754": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://en.wikipedia.org/w/index.php?title=IPO_model&oldid=1024398398"
+      },
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+      },
+      "rdfs:domain": {
+        "@id": "obo:BFO_0000015"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has output"
+      },
+      "rdfs:range": {
+        "@id": "_:b7"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "obo:BFO_0000057"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "x has output y =Def y is output of x"
+      }
+    }
+  ]
+}

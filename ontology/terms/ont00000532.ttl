@@ -1,0 +1,23 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000532 a owl:Class ;
+    rdfs:label "Government of a Country"@en ;
+    dcterms:bibliographicCitation "Convention on Rights and Duties of States (inter-American); December 26, 1933. https://avalon.law.yale.edu/20th_century/intam03.asp. Accessed 6 Apr. 2023." ;
+    dcterms:created "2023-02-08T19:54:46-05:00"^^xsd:dateTime ;
+    dcterms:creator "https://cubrc.org"^^xsd:anyURI ;
+    rdfs:subClassOf cco:ont00001335 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cco:ont00001335 [ a owl:Restriction ;
+                        owl:onProperty cco:ont00001859 ;
+                        owl:someValuesFrom cco:ont00000139 ] ) ] ;
+    skos:definition "A Government that has legitimate authority within and is delimited by a Domain of a Country."@en ;
+    skos:prefLabel "Government of a Country"@en ;
+    cco:ont00001754 "https://avalon.law.yale.edu/20th_century/intam03.asp" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

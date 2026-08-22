@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000101"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00002037"
+      }
+    },
+    {
+      "@id": "cco:ont00001156",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Material Copy of a Information Line"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000798"
+        }
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Information Line"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "An Information Bearing Artifact that consists of a single line or row of some larger Information Bearing Artifact of which it is a part."
+      },
+      "skos:example": [
+        "a line in a computer file that bears a portion of code for some computer program",
+        "a line of data in a database",
+        "a line of text in a book"
+      ]
+    }
+  ]
+}

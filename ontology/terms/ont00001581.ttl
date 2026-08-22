@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001581 a owl:NamedIndividual,
+        cco:ont00000469 ;
+    rdfs:label "International Terrestrial Reference System"@en ;
+    skos:scopeNote """The ITRS definition fulfills the following conditions:
+1. It is geocentric, the center of mass being defined for the whole earth, including oceans and atmosphere.
+2. The unit of length is the metre (SI). This scale is consistent with the TCG time coordinate for a geocentric local frame, in agreement with IAU and IUGG (1991) resolutions. This is obtained by appropriate relativistic modelling.
+3. Its orientation was initially given by the BIH orientation at 1984.0.
+4. The time evolution of the orientation is ensured by using a no-net-rotation condition with regards to horizontal tectonic motions over the whole earth.
+From: (https://www.iers.org/IERS/EN/Science/ITRS/ITRS.html)"""@en ;
+    cco:ont00001753 "ITRS" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

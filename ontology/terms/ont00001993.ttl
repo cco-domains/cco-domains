@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001993 a owl:ObjectProperty ;
+    rdfs:label "sends"@en ;
+    rdfs:domain cco:ont00001017 ;
+    rdfs:range cco:ont00000402 ;
+    rdfs:subPropertyOf obo:BFO_0000056 ;
+    skos:definition "x sends y iff x is an instance of Agent and y is an instance of Act Of Communication, such that x is the initiator and encoder of the InformationContentEntity intended for communication in y."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

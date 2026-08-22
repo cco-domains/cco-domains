@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001348 a owl:Class ;
+    rdfs:label "Three-Dimensional Position"@en ;
+    rdfs:subClassOf obo:BFO_0000028 ;
+    skos:definition "A Three-Dimensional Spatial Region that encompasses the (minimal) spatial region in which some object is located at a particular time."@en ;
+    skos:scopeNote "For an object in motion, its Three-Dimensional Position is part of its Three-Dimensional Path."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/GeospatialOntology"^^xsd:anyURI .
+

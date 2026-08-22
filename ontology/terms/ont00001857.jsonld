@@ -1,0 +1,187 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b12",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000008"
+          },
+          {
+            "@id": "_:b18"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b13",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000008"
+          },
+          {
+            "@id": "_:b20"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b14",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000015"
+          },
+          {
+            "@id": "_:b21"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b15",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000015"
+          },
+          {
+            "@id": "_:b22"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b16",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000202"
+          },
+          {
+            "@id": "_:b19"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b17",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000202"
+          },
+          {
+            "@id": "_:b23"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b18",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "_:b24"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000015"
+      }
+    },
+    {
+      "@id": "_:b19",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000117"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b12"
+      }
+    },
+    {
+      "@id": "_:b20",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000132"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b17"
+      }
+    },
+    {
+      "@id": "_:b21",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000199"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b13"
+      }
+    },
+    {
+      "@id": "_:b22",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000199"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b16"
+      }
+    },
+    {
+      "@id": "_:b23",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001874"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000015"
+      }
+    },
+    {
+      "@id": "_:b24",
+      "owl:inverseOf": {
+        "@id": "obo:BFO_0000199"
+      }
+    },
+    {
+      "@id": "cco:ont00001857",
+      "@type": "owl:ObjectProperty",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+      },
+      "rdfs:domain": {
+        "@id": "_:b14"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "is part of process"
+      },
+      "rdfs:range": {
+        "@id": "_:b15"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "obo:BFO_0000132"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "x is part of process y iff x is occurrent part of y, x and y are Processes, and x occupies a temporal region that is a proper occurrent part of the temporal interval of y."
+      }
+    }
+  ]
+}

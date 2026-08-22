@@ -1,0 +1,54 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000101"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00002045"
+      }
+    },
+    {
+      "@id": "cco:ont00001228",
+      "@type": "owl:Class",
+      "cco:ont00001754": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://en.wikipedia.org/w/index.php?title=Academic_journal&oldid=1059723283"
+      },
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Material Copy of a Journal Article"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00001298"
+        }
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Journal Article"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Material Copy of a Document that is designed to carry a specific brief composition on a specific topic as part of a Journal Issue."
+      }
+    }
+  ]
+}

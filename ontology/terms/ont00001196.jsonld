@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001196",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Act of Artifact Assembly"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000908"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Act of Material Artifact Processing wherein a new Material Artifact are created by fitting component parts together."
+  },
+  "skos:example": "putting together a piece of furniture purchased from Ikea",
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Many Acts of Manufacturing and Construction involve one or more Acts of Artifact Assembly, but Acts of Artifact Assembly can also occur in isolation from these activities."
+  }
+}

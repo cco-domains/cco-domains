@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000996 a owl:Class ;
+    rdfs:label "Ramjet Engine"@en ;
+    rdfs:subClassOf cco:ont00000294 ;
+    skos:altLabel "Ramjet"@en ;
+    skos:definition "An Air-Breathing Jet Engine that uses the forward motion of the Engine to compress incoming air (without the use of an axial compressor) and decelerate it to subsonic speeds before adding the fuel and constantly combusting the mixture then expelling the exhaust out through the rear Propelling Nozzle to generate Thrust."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Ramjet&oldid=1062836331"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

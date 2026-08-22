@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000364 a owl:Class ;
+    rdfs:label "Pneumatic Motor"@en ;
+    rdfs:subClassOf cco:ont00001221 ;
+    skos:altLabel "Air Motor"@en,
+        "Compressed Air Engine"@en ;
+    skos:definition "A Physically Powered Engine that converts potential energy stored in a portion of compressed air into mechanical energy."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

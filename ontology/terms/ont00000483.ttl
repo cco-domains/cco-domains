@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000483 a owl:Class ;
+    rdfs:label "Military Base"@en ;
+    rdfs:subClassOf cco:ont00001052 ;
+    skos:definition "A Military Facility that is designed to shelter military equipment and personnel and to facilitate training and operations."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Military_base&oldid=1047077734"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FacilityOntology"^^xsd:anyURI .
+

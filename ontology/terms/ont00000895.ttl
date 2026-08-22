@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000895 a owl:Class ;
+    rdfs:label "Married"@en ;
+    rdfs:subClassOf cco:ont00000335 ;
+    skos:altLabel "Married Stasis"@en ;
+    skos:definition "A Stasis of Generically Dependent Continuant that consists of a socially, culturally, or ritually recognized union or legal contract between spouses that establishes rights and obligations between them, between them and their children, and between them and their in-laws."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Marriage&oldid=1064076951"^^xsd:anyURI,
+        "Haviland, William A.; Prins, Harald E. L.; McBride, Bunny; Walrath, Dana (2011). Cultural Anthropology: The Human Challenge (13th ed.). Cengage Learning. ISBN 978-0-495-81178-7" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

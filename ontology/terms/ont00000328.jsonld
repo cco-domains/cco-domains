@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000328",
+  "@type": "owl:Class",
+  "cco:ont00001754": "http://www.cfr.org/infrastructure/transportation-infrastructure-moving-america/p18611",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Transportation Infrastructure"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000870"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Infrastructure System that has continuant part one or more Transportation Artifacts and bears a function that, if realized, is realized in Acts of Cargo Transportation"
+  }
+}

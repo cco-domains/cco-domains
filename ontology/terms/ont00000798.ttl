@@ -1,0 +1,21 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000798 a owl:Class ;
+    rdfs:label "Information Bearing Artifact"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000101 ;
+            owl:someValuesFrom cco:ont00000958 ],
+        [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000176 ;
+            owl:someValuesFrom cco:ont00000893 ],
+        cco:ont00000995 ;
+    skos:altLabel "Information Carrying Artifact"@en ;
+    skos:definition "A Material Artifact that carries an Information Content Entity and is designed to do so using a particular format or structure."@en ;
+    skos:scopeNote "This class continues to use the word ‘bearing’ in its rdfs:label for legacy reasons. It should be understood that all instances of this class are carriers of information content entities and only, strictly speaking, a bearer of their concretizations."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

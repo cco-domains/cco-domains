@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001530 a owl:NamedIndividual,
+        cco:ont00000374 ;
+    rdfs:label "Cubic Meter Per Second Measurement Unit"@en ;
+    cco:ont00001740 "m^3/s" ;
+    cco:ont00001753 "cumec" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"^^xsd:anyURI .
+

@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001836 a owl:ObjectProperty ;
+    rdfs:label "aggregate bearer of"@en ;
+    rdfs:domain obo:BFO_0000027 ;
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( obo:BFO_0000020 obo:BFO_0000031 ) ] ;
+    skos:definition "x aggregate bearer of y =Def y inheres in aggregate x"@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"^^xsd:anyURI .
+

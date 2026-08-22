@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000698",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=De_Laval_nozzle&oldid=1062746288"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Convergent-Divergent Nozzle"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000252"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "CD Nozzle"
+    },
+    {
+      "@language": "en",
+      "@value": "de Laval Nozzle"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Nozzle that consists of a tube with an asymmetric hourglass shape that is designed to accelerate hot pressurized gas by converting the heat energy of the gas flow into kinetic energy as it passes through the Nozzle Throat to generate increased Exhaust Velocity of the gas as it exits the Nozzle."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "By increasing the Exhaust Velocity of the gas, the Nozzle increases the Thrust generated."
+  }
+}

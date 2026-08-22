@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000702 a owl:Class ;
+    rdfs:label "Material Copy of an Image"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000101 ;
+            owl:someValuesFrom cco:ont00002004 ],
+        cco:ont00000798 ;
+    skos:altLabel "Image"@en ;
+    skos:definition "An Information Bearing Artifact that is designed to carry an Information Content Entity that represents some entity owing to a visual isomorphism between the carrying artifact and the entity."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Image&oldid=1062709732"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

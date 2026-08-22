@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001158",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Act of Data Transformation"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000366"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Act of Information Processing in which an algorithm is executed to act upon one or more input Information Content Entities into one or more output Information Content Entities."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "It is not a requirement that the output Information Content Entity(ies) be qualitatively distinct from the input(s) as a result of an Act of Data Transformation, though doing so is typically the goal of performing this Act. Consider, for example, selecting a column in an Excel spreadsheet then executing the \\\"Remove Duplicates\\\" Algorithm on it. The intent is to remove rows in that column containing duplicate content. If no duplicate values are present, the information in the column remains unchanged but an Act of Data Transformation was nonetheless performed."
+  }
+}

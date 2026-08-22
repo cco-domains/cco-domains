@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000431 a owl:Class ;
+    rdfs:label "External Combustion Engine"@en ;
+    rdfs:subClassOf cco:ont00000746 ;
+    skos:definition "A Combustion Engine that is designed to have an external Combustion Chamber where portions of Fuel and Oxidizer mixture are burned to generate thermal energy to heat the working fluid, which transfers energy to the Engine where it is converted into mechanical energy."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=External_combustion_engine&oldid=1063941809"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

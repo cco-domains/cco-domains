@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001942"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000995"
+      }
+    },
+    {
+      "@id": "cco:ont00000319",
+      "@type": "owl:Class",
+      "cco:ont00001754": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://en.wikipedia.org/w/index.php?title=Design&oldid=1063941625"
+      },
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Artifact Design"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000965"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Prescriptive Information Content Entity that is a specification of an object, manifested by an agent, intended to accomplish goals, in a particular environment, using a set of primitive components, satisfying a set of requirements, subject to constraints."
+      }
+    }
+  ]
+}

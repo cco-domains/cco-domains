@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000059 a owl:Class ;
+    rdfs:label "Country Code"@en ;
+    dcterms:created "2026-07-06"^^xsd:date ;
+    rdfs:comment "Value is an ISO 3166-1 alpha-2 code, e.g. 'US', 'PK'. Alpha-3 forms exist in ISO 3166-1 but are not the selected form of this address component."@en ;
+    rdfs:seeAlso schema:addressCountry ;
+    rdfs:subClassOf cco:ent00000312 ;
+    skos:definition "An Address Component that cites the ISO 3166-1 alpha-2 code of a country."@en .
+

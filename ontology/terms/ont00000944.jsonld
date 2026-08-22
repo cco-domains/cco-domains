@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000944",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Thermal Imaging Artifact Function"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000601"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Imaging Artifact Function that is realized during events in which a Material Artifact is used to create a visual representation of an entity using radiation from the far infrared region of the electromagnetic spectrum that the entity emits"
+  }
+}

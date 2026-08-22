@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000545 a owl:Class ;
+    rdfs:label "Seat of Local Government"@en ;
+    rdfs:subClassOf cco:ont00000946 ;
+    skos:altLabel "City Hall"@en,
+        "Town Hall"@en ;
+    skos:definition "A Government Building that is designed for the administration of a local community."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Seat_of_government&oldid=1063047501"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FacilityOntology"^^xsd:anyURI .
+

@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000035 a owl:DatatypeProperty ;
+    rdfs:label "has user handle"@en ;
+    dcterms:source <https://www.rfc-editor.org/rfc/rfc9553> ;
+    rdfs:domain cco:ent00000033 ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:range xsd:string ;
+    skos:definition "The username or handle by which the account holder is identified at the service provider."@en ;
+    skos:example "\"@alice@example2.com\", \"alice-walker\", \"alice\""@en .
+

@@ -1,0 +1,72 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00001335"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001859"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000139"
+      }
+    },
+    {
+      "@id": "cco:ont00000532",
+      "@type": "owl:Class",
+      "cco:ont00001754": "https://avalon.law.yale.edu/20th_century/intam03.asp",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+      },
+      "dcterms:bibliographicCitation": "Convention on Rights and Duties of States (inter-American); December 26, 1933. https://avalon.law.yale.edu/20th_century/intam03.asp. Accessed 6 Apr. 2023.",
+      "dcterms:created": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-02-08T19:54:46-05:00"
+      },
+      "dcterms:creator": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://cubrc.org"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Government of a Country"
+      },
+      "rdfs:subClassOf": {
+        "@id": "cco:ont00001335"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Government that has legitimate authority within and is delimited by a Domain of a Country."
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Government of a Country"
+      }
+    }
+  ]
+}

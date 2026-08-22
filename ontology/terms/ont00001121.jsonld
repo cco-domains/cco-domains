@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001121",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Scramjet&oldid=1062429697"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Scramjet Engine"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000294"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Scramjet"
+    },
+    {
+      "@language": "en",
+      "@value": "Supersonic Combusting Ramjet"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Air-Breathing Jet Engine that uses the forward motion of the Engine to compress incoming air at supersonic speeds before adding the fuel and constantly combusting the mixture then expelling the exhaust out through the rear Propelling Nozzle to generate Thrust."
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000362",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Rocket_engine&oldid=1063879464"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Rocket Engine"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000533"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Thruster"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Jet Engine that is designed to use only stored Rocket Propellant to form a high speed propulsive jet in order to generate Thrust."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Most rocket engines are also Internal Combustion Engines, however non-combusting forms also exist. For example, an untied balloon full of air that is released and allowed to zoom around the room may be both a Rocket Engine and a Physically Powered Engine."
+  }
+}

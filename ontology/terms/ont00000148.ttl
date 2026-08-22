@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000148 a owl:Class ;
+    rdfs:label "Clockwise Rotational Motion"@en ;
+    rdfs:subClassOf cco:ont00000368 ;
+    skos:altLabel "CW Rotational Motion"@en,
+        "Clockwise Rotation"@en ;
+    skos:definition "A Rotational Motion in which the direction of rotation is toward the right as seen relative to the designated side of the plane of rotation."@en ;
+    skos:example "the axial rotation of the Earth as seen from above the South Pole" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

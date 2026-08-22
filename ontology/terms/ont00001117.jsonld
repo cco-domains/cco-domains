@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001117",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Propelling_nozzle&oldid=1061239812"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Propelling Nozzle"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000252"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Jet Nozzle"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Nozzle that is used to convert a propulsion Engine into a Jet Engine and functions by using its narrowest part, the throat, to increase Pressure within the Engine by constricting flow, usually until the flow chokes, then expanding the exhaust stream to, or near to, atmospheric pressure, while forming it into a high speed jet to propel the Vehicle."
+  }
+}

@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001289 a owl:Class ;
+    rdfs:label "Damaged Stasis"@en ;
+    rdfs:subClassOf cco:ont00000135 ;
+    skos:altLabel "Compromised"@en,
+        "Damaged"@en,
+        "Injured"@en ;
+    skos:definition "A Stasis of Specifically Dependent Continuant in which some Independent Continuant bears a Quality or Realizable Entity that has suffered impairment (i.e., a decrease or loss) due to a previous action or event such that the Independent Continuant is now of lesser value, usefulness, or functionality."@en ;
+    skos:scopeNote "This class can be used to instantiate instances that might otherwise be treated by defined classes such as Damaged Vehicle or Wounded Person. The Independent Continuant and Quality or Realizable Entity are participants of the stasis which can in turn be related to the temporal interval via the occupies temporal region property. "@en ;
+    cco:ont00001754 "http://www.thefreedictionary.com/damaged" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

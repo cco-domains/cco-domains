@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00002009 a owl:Class ;
+    rdfs:label "Video"@en ;
+    rdfs:subClassOf cco:ont00002001 ;
+    skos:definition "A Media Content Entity that contains a sequence of representations that are presented sufficiently rapidly to create the appearance of motion and continuity."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Video&oldid=1049376249"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

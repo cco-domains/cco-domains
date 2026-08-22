@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000445 a owl:Class ;
+    rdfs:label "Weapon"@en ;
+    rdfs:subClassOf cco:ont00000995 ;
+    skos:definition "A Material Artifact that is designed to destroy or inflict damage to structures or systems, or to kill or wound living things by creating specific lethal or nonlethal effects."@en ;
+    skos:scopeNote "Nonlethal effects include all outcomes short of death or destruction. This is captured by the fact that Damaged Stasis and Wounded Stasis are defined in terms of impairment of the Independent Continuant that participates in them."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Weapon&oldid=1143263715"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

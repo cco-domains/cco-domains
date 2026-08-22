@@ -1,0 +1,34 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001857 a owl:ObjectProperty ;
+    rdfs:label "is part of process"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000015 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000199 ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:intersectionOf ( obo:BFO_0000008 [ a owl:Restriction ;
+                                            owl:onProperty obo:BFO_0000132 ;
+                                            owl:someValuesFrom [ a owl:Class ;
+                                                    owl:intersectionOf ( obo:BFO_0000202 [ a owl:Restriction ;
+                                                                owl:onProperty cco:ont00001874 ;
+                                                                owl:someValuesFrom obo:BFO_0000015 ] ) ] ] ) ] ] ) ] ;
+    rdfs:range [ a owl:Class ;
+            owl:intersectionOf ( obo:BFO_0000015 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000199 ;
+                        owl:someValuesFrom [ a owl:Class ;
+                                owl:intersectionOf ( obo:BFO_0000202 [ a owl:Restriction ;
+                                            owl:onProperty obo:BFO_0000117 ;
+                                            owl:someValuesFrom [ a owl:Class ;
+                                                    owl:intersectionOf ( obo:BFO_0000008 [ a owl:Restriction ;
+                                                                owl:onProperty [ owl:inverseOf obo:BFO_0000199 ] ;
+                                                                owl:someValuesFrom obo:BFO_0000015 ] ) ] ] ) ] ] ) ] ;
+    rdfs:subPropertyOf obo:BFO_0000132 ;
+    skos:definition "x is part of process y iff x is occurrent part of y, x and y are Processes, and x occupies a temporal region that is a proper occurrent part of the temporal interval of y."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"^^xsd:anyURI .
+

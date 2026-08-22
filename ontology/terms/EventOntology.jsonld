@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:EventOntology",
+  "@type": "owl:Ontology",
+  "dcterms:license": {
+    "@language": "en",
+    "@value": "BSD 3-Clause: https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/LICENSE"
+  },
+  "dcterms:rights": {
+    "@language": "en",
+    "@value": "CUBRC Inc., see full license."
+  },
+  "owl:imports": {
+    "@id": "cco:InformationEntityOntology"
+  },
+  "owl:versionIRI": {
+    "@id": "https://w3id.org/cco-domains/cco/2026-04-04/EventOntology"
+  },
+  "owl:versionInfo": {
+    "@language": "en",
+    "@value": "Adapted from open-source CCO 2.1 (NCOR); IRIs re-based to w3id.org/cco-domains, redirectable to an IEEE-hosted platform for OSWG contribution"
+  },
+  "rdfs:comment": {
+    "@language": "en",
+    "@value": "This ontology is designed to represent processes, especially those performed by agents, that occur within multiple domains."
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Event Ontology"
+  }
+}

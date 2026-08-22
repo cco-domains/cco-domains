@@ -1,0 +1,64 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000024",
+  "@type": "owl:Class",
+  "cco:ent00000019": {
+    "@language": "en",
+    "@value": "Primary: Cyber Ontology (IEEE P3195.1.1) - EmailAddress fits with existing IP Address, URI, Email Message Header patterns. Awaiting Cyber Ontology working group acceptance."
+  },
+  "cco:ent00000020": {
+    "@language": "en",
+    "@value": "Cyber Ontology already has Email Software Application and Email Message Header. EmailAddress would complete the cyber communication pattern. Proposed to Cyber WG for inclusion."
+  },
+  "cco:ent00000022": {
+    "@language": "en",
+    "@value": "To be proposed to Cyber Ontology (IEEE P3195.1.1) 2026-Q2"
+  },
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-02-19"
+  },
+  "dcterms:source": {
+    "@id": "https://datatracker.ietf.org/doc/html/rfc5322"
+  },
+  "http://purl.org/dc/elements/1.1/creator": {
+    "@language": "en",
+    "@value": "Global Research, Inc."
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Email Address"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ent00000055"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Electronic Mail Address"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Code Identifier designating electronic mailbox for receiving email messages, \n                       formatted according to RFC 5322 as local-part@domain."
+  },
+  "skos:exactMatch": {
+    "@id": "https://schema.org/email"
+  },
+  "skos:example": {
+    "@language": "en",
+    "@value": "The string 'john.doe@example.com' designates an email address."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "EmailAddress designates an Email Box (artifact defined in CCO ArtifactOntology). \n                      The address itself is information; the mailbox is the artifact being designated. \n                      EmailAddresses are not person-specific; they can designate mailboxes for persons, \n                      organizations, departments, or automated systems. Format must conform to RFC 5322 \n                      (local part is case-sensitive, domain is case-insensitive). EmailAddress follows \n                      encoding rules (structured format with @ separator, domain resolution) making it \n                      a Code Identifier rather than arbitrary."
+  }
+}

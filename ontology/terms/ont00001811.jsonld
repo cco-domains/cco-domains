@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001811",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "owl:inverseOf": {
+    "@id": "cco:ont00001963"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00001010"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is an ordinal measurement of"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000001"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001966"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x is_an_ordinal_measurement_of y iff x is an instance of Ordinal Measurement Information Content Entity and y is an instance of Entity and y is_measured_by_ordinal x."
+  }
+}

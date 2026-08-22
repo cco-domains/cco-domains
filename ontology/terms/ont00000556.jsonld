@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000556",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Payload&oldid=1035953573"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Payload"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000040"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Material Entity that is transported by a Vehicle during an Act of Location Change for the purpose of being delivered to or performing one or more functions at a predefined location."
+  },
+  "skos:scopeNote": [
+    {
+      "@language": "en",
+      "@value": "Depending on the nature of the Flight or Mission, the Payload of a Vehicle may include cargo, passengers, flight crew, munitions, scientific instruments or experiments, or other equipment. Extra fuel, when optionally carried, is also considered part of the payload."
+    },
+    {
+      "@language": "en",
+      "@value": "In each case, the Payload is what provides the immediate reason for performing the Act of Location Change (e.g. transporting the passengers of a commercial airline flight to their destination; transporting food, fuel, oxygen, research equipment, and spare parts to the International Space Station; or conveying an array of sensors, cameras, and communications systems so they can operate during a Sun-Synchronous Earth Orbit)."
+    }
+  ]
+}

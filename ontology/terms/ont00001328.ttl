@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001328 a owl:Class ;
+    rdfs:label "Temporal Reference System"@en ;
+    rdfs:subClassOf cco:ont00000398 ;
+    skos:altLabel "Temporal Reference Frame"@en,
+        "Time Scale"@en ;
+    skos:definition "A Reference System that describes a set of standards for measuring time as well as understanding the context of and organizing temporal data."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

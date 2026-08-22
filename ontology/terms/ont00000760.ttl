@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000760 a owl:Class ;
+    rdfs:label "Surface Wave Profile"@en ;
+    rdfs:subClassOf cco:ont00000752 ;
+    skos:altLabel "Surface Wave"@en ;
+    skos:definition "A Wave Process Profile in which the Wave Process propogates along the surface of a medium and which involves both transverse and longitudinal wave profiles such that the motion of the displacement of participating particles is circular or elliptical."@en ;
+    skos:example "the motion of an ocean wave" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001748",
+  "@type": "owl:AnnotationProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "doctrinal label"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "skos:altLabel"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Alternative Label that consists of the preferred term or phrase used by a Doctrinal Source to denote the entity."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "When the cco:doctrinal_label is identical to the rdfs:label, the cco:doctrinal_label annotation is superfluous. As a subclass of 'alternative label', 'doctrinal label' is intended to be used to provide additional information about the entity when its preferred doctrinal designator is ambiguous or otherwise inappropriate for use as the rdfs:label."
+  }
+}

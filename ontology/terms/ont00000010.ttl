@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000010 a owl:Class ;
+    rdfs:label "Incorporated Organization"@en ;
+    rdfs:subClassOf cco:ont00001180 ;
+    skos:altLabel "Corporation"@en ;
+    skos:definition "An Organization formed by an Act of Incorporation that consists of an association of individuals, created by law or under authority of law, having a continuous existence independent of the existences of its members and owners, and having powers and liabilities distinct from those of its members and owners."@en ;
+    cco:ont00001754 "http://www.dictionary.com/browse/corporation" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

@@ -1,0 +1,46 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001819"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000950"
+      }
+    },
+    {
+      "@id": "cco:ont00000783",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Stasis of Non-Mission Capable Maintenance"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000557"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Stasis of Non-Mission Capable during which the participating Continuant is not capable of performing its primary functions for the specified Mission due to participating in an Act Of Maintenance."
+      }
+    }
+  ]
+}

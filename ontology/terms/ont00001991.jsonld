@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001991",
+  "@type": "owl:ObjectProperty",
+  "owl:inverseOf": {
+    "@id": "cco:ont00001861"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000030"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is made of"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000030"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An object o is made of an object m when m is the material that o consists of and that material does not undergo a change of kind during the creation of o"
+  }
+}

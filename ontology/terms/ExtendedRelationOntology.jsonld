@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ExtendedRelationOntology",
+  "@type": "owl:Ontology",
+  "dcterms:license": {
+    "@language": "en",
+    "@value": "BSD 3-Clause: https://github.com/CommonCoreOntology/CommonCoreOntologies/blob/master/LICENSE"
+  },
+  "dcterms:rights": {
+    "@language": "en",
+    "@value": "CUBRC Inc., see full license."
+  },
+  "owl:imports": {
+    "@id": "http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl"
+  },
+  "owl:versionIRI": {
+    "@id": "https://w3id.org/cco-domains/cco/2026-04-04/ExtendedRelationOntology"
+  },
+  "owl:versionInfo": {
+    "@language": "en",
+    "@value": "Adapted from open-source CCO 2.1 (NCOR); IRIs re-based to w3id.org/cco-domains, redirectable to an IEEE-hosted platform for OSWG contribution"
+  },
+  "rdfs:comment": {
+    "@language": "en",
+    "@value": "This ontology is designed to represent many of the relations (i.e. object properties) that hold between entities at the level of the mid-level Common Core Ontologies."
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Extended Relation Ontology"
+  }
+}

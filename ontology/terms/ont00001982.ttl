@@ -1,0 +1,19 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001982 a owl:ObjectProperty ;
+    rdfs:label "describes"@en ;
+    rdfs:domain cco:ont00000853 ;
+    rdfs:range obo:BFO_0000001 ;
+    rdfs:subPropertyOf cco:ont00001808 ;
+    skos:definition "x describes y iff x is an instance of Descriptive Information Content Entity, and y is an instance of Entity, such that x is_about the characteristics that identify y."@en ;
+    skos:example "the content of a newspaper article describes some current event",
+        "the content of a visitor's log describes some facility visit",
+        "the content of an accident report describes some accident" ;
+    skos:scopeNote "It is possible that this relation should be a functional property, that is for all x, y, z if x describes y and x describes z then y = z. For example, if a financial report x describes the quarterly results of a company y and that same financial report describes the quarterly results of a company z, then it should be inferred that companies y and z are the same. We refrained from classifying the relation as a functional property on the concern that descriptions are multifaceted and so consequently it may be that the same report would contain descriptions of multiple entities."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

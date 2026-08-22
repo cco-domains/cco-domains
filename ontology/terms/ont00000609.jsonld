@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000004"
+          },
+          {
+            "@id": "_:b4"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000057"
+      },
+      "owl:someValuesFrom": {
+        "@id": "_:b2"
+      }
+    },
+    {
+      "@id": "_:b4",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000196"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000016"
+      }
+    },
+    {
+      "@id": "cco:ont00000609",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Gain of Disposition"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b3"
+        },
+        {
+          "@id": "cco:ont00000642"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Gain of Realizable Entity in which some Independent Continuant becomes the bearer of some Disposition."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "This class should be used to demarcate the start of the temporal interval (through the BFO 'occupies temporal region' property) that the Entity bears the Disposition."
+      }
+    }
+  ]
+}

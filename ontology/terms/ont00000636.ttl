@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000636 a owl:Class ;
+    rdfs:label "Act of Appraisal"@en ;
+    rdfs:subClassOf cco:ont00000345 ;
+    skos:definition "An Act of Measuring that involves evaluating, assessing, estimating, or judging the nature, value, importance, condition, or quality of something or someone."@en ;
+    skos:example "a food critic rating the quality of a restaurant's ambiance, service, and food",
+        "a mechanic assessing whether a damaged vehicle is repairable",
+        "an insurance agent appraising the financial value of a building" ;
+    skos:scopeNote "In the context of an Act of Appraisal, the terms 'value', 'condition', and 'quality' do not have the same meanings as their counterparts that are defined in the Common Core Ontologies. For example, a knife may be appraised to be of high quality if it is sharp and sturdy or to be of inferior quality if it is dull or fragile."@en,
+        "Note that, while most if not all Acts of Appraisal involve some estimating and many Acts of Estimation involve some appraising (i.e. these classes are not disjoint), neither class subsumes the other. For example, some Acts of Appraisal (e.g. a tax assessor appraising the value of a building) impart a normative element to the measured value while others (e.g. a gustatory appraisal that fresh green beans taste better than canned green beans) involve complete information. Furthermore, many Acts of Estimation (e.g. estimating the height of a tree) are concerned solely with determining a numerical value (as opposed to the nature, value, importance, condition, or quality)."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

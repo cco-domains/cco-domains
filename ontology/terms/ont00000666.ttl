@@ -1,0 +1,19 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000666 a owl:Class ;
+    rdfs:label "Neutral Person"@en ;
+    rdfs:subClassOf cco:ont00001262 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cco:ont00001262 [ a owl:Restriction ;
+                        owl:onProperty obo:BFO_0000196 ;
+                        owl:someValuesFrom cco:ont00000486 ] ) ] ;
+    skos:altLabel "Unallied Person" ;
+    skos:definition "A Person who is the bearer of some Neutral Role."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

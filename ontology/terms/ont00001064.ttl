@@ -1,0 +1,19 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001064 a owl:Class ;
+    rdfs:label "Material Copy of a Barcode"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000101 ;
+            owl:someValuesFrom cco:ont00002014 ],
+        cco:ont00000798 ;
+    skos:altLabel "Barcode"@en ;
+    skos:definition "An Information Bearing Artifact that is designed to carry one or more geometric shapes that concretize some Prescriptive Information Content Entity."@en ;
+    skos:scopeNote "For information on types of barcodes, see: https://www.scandit.com/types-barcodes-choosing-right-barcode/"@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Barcode&oldid=1059844765"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000425 a owl:Class ;
+    rdfs:label "Gregorian Year"@en ;
+    rdfs:subClassOf cco:ont00000674 ;
+    skos:definition "A Calendar Year in the Gregorian Calendar."@en ;
+    skos:scopeNote "A Gregorian Year begins concurrently with January 1, ends concurrently with December 31, and has an average duration of exactly 365.2425 Gregorian Days. The Gregorian Year is based upon the vernal equinox year. Unless otherwise stated, instances of Calendar Year are assumed to be instances of Gregorian Year since the Gregorian Calendar is the most widely used civil Calendar System."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/TimeOntology"^^xsd:anyURI .
+

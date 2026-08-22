@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000315 a owl:Class ;
+    rdfs:label "Telecommunication Switching Node"@en ;
+    rdfs:subClassOf cco:ont00000918 ;
+    skos:definition "A Telecommunication Network Node that is capable of redirecting a communication transmission to another Telecommunication Network Node."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Telecommunications_network&oldid=1063347482"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

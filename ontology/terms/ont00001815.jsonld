@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001815",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001754": "http://www.austlii.edu.au/legis/cth/consol_act/ca2001172/s50aa.html)",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00001180"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is subsidiary of"
+  },
+  "rdfs:range": {
+    "@id": "cco:ont00001180"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001939"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x is_subsidiary_of y iff x and y are both instances of Organization and y controls x by having the capacity to determine the outcome of decisions about the financial and operating policies of x. "
+  }
+}

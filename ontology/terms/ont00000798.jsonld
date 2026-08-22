@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000101"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000958"
+      }
+    },
+    {
+      "@id": "_:b1",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000176"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000893"
+      }
+    },
+    {
+      "@id": "cco:ont00000798",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/ArtifactOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Information Bearing Artifact"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "_:b1"
+        },
+        {
+          "@id": "cco:ont00000995"
+        }
+      ],
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "Information Carrying Artifact"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Material Artifact that carries an Information Content Entity and is designed to do so using a particular format or structure."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "This class continues to use the word ‘bearing’ in its rdfs:label for legacy reasons. It should be understood that all instances of this class are carriers of information content entities and only, strictly speaking, a bearer of their concretizations."
+      }
+    }
+  ]
+}

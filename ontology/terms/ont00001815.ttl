@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001815 a owl:ObjectProperty ;
+    rdfs:label "is subsidiary of"@en ;
+    rdfs:domain cco:ont00001180 ;
+    rdfs:range cco:ont00001180 ;
+    rdfs:subPropertyOf cco:ont00001939 ;
+    skos:definition "x is_subsidiary_of y iff x and y are both instances of Organization and y controls x by having the capacity to determine the outcome of decisions about the financial and operating policies of x. "@en ;
+    cco:ont00001754 "http://www.austlii.edu.au/legis/cth/consol_act/ca2001172/s50aa.html)" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

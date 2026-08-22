@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001121 a owl:Class ;
+    rdfs:label "Scramjet Engine"@en ;
+    rdfs:subClassOf cco:ont00000294 ;
+    skos:altLabel "Scramjet"@en,
+        "Supersonic Combusting Ramjet"@en ;
+    skos:definition "An Air-Breathing Jet Engine that uses the forward motion of the Engine to compress incoming air at supersonic speeds before adding the fuel and constantly combusting the mixture then expelling the exhaust out through the rear Propelling Nozzle to generate Thrust."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Scramjet&oldid=1062429697"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

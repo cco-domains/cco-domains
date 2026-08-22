@@ -1,0 +1,41 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000154",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Mode Point Estimate Information Content Entity"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000745"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Mode"
+    },
+    {
+      "@language": "en",
+      "@value": "Statistical Mode"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Point Estimate Information Content Entity that is a measurement of a set of values and is equal to the value or values that occur most often in the set."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "While there is always at least one Mode for every set of data, it is possible for any given set of data to have multiple Modes. The Mode is typically most useful when the members of the set are all Nominal Measurement Information Content Entities."
+  }
+}

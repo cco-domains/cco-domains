@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001658",
+  "@type": [
+    "cco:ont00001328",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001753": "Teph",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Jet Propulsion Laboratory Ephemeris Time Argument"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "JPL Ephemeris Time"
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Teph (the 'eph' is written as subscript) is an ephemeris time argument developed and calculated at the Jet Propulsion Laboratory (JPL) and implemented in a series of numerically integrated Development Ephemerides (DE), including the currently used DE405. Teph is characterized as a relativistic coordinate time that is nearly equivalent to the IAU's definition of TCB, though Teph is not currently an IAU time standard. Teph is used by the JPL to generate the ephemerides it publishes to support spacecraft navigation and astronomy."
+  }
+}

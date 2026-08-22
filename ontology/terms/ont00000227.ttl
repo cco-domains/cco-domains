@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000227 a owl:Class ;
+    rdfs:label "Julian Year"@en ;
+    rdfs:subClassOf cco:ont00000674 ;
+    skos:definition "A Calendar Year in the Julian Calendar."@en ;
+    skos:scopeNote "A Julian Year begins concurrently with January 1, ends concurrently with December 31, and has an average duration of exactly 365.25 Julian Days. Julian Years are typically indicated by prefixing a capital 'J' in front of the Year number, e.g. J2000.0 or J2018."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/TimeOntology"^^xsd:anyURI .
+

@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000008 a owl:Class ;
+    rdfs:label "Social Security Number"@en ;
+    dcterms:created "2026-04-20"^^xsd:date ;
+    dcterms:source <https://www.ssa.gov/employer/ssnvshandbk/glossary.htm> ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/PersonOntology> ;
+    rdfs:subClassOf cco:ent00000062 ;
+    skos:altLabel "SSN"@en ;
+    skos:definition "A Person Identifier issued by the U.S. Social Security Administration."@en ;
+    skos:example "123-45-6789 (dashes common but not required)"@en .
+

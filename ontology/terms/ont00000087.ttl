@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000087 a owl:Class ;
+    rdfs:label "Ordinal Date Identifier"@en ;
+    rdfs:subClassOf cco:ont00000894 ;
+    skos:altLabel "Ordinal Date"@en ;
+    skos:definition "A Decimal Date Identifier that designates some Day by using a number to indicate the sequential ordering of the Day since the beginning of the Year."@en ;
+    skos:scopeNote "An Ordinal Date Identifier may or may not also contain a number indicating a specific Year. If both numbers are included, the ISO 8601 ordinal date format stipulates that the two numbers be formatted as YYYY-DDD or YYYYDDD where [YYYY] indicates a year and [DDD] is the day of that year, from 001 through 365 (or 366 in leap years)."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Ordinal_date&oldid=1061989434"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

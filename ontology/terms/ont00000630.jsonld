@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000630",
+  "@type": "owl:Class",
+  "cco:ont00001753": "UT",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Universal Time Reference System"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000124"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Solar Time Reference System that is based on the average speed of the Earth's rotation and which uses the prime meridian at 0° longitude as a reference point."
+  }
+}

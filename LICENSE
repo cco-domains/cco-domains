@@ -1,28 +1,28 @@
-BSD 3-Clause License
+Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-Copyright (c) 2026, Global Research, Inc, 501(c)(3) Non-Profit, Tax-Exempt Corporation.
+Copyright © 2026 Global Research, Inc.
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+This work is licensed under the Creative Commons Attribution 4.0 International License.
 
-1. Redistributions of source code must retain the above copyright notice, this
-   list of conditions and the following disclaimer.
+You are free to:
+  Share — copy and redistribute the material in any medium or format
+  Adapt — remix, transform, and build upon the material for any purpose, even commercially
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-   this list of conditions and the following disclaimer in the documentation
-   and/or other materials provided with the distribution.
+Under the following terms:
+  Attribution — You must give appropriate credit, provide a link to the license,
+  and indicate if changes were made. You may do so in any reasonable manner,
+  but not in any way that suggests the licensor endorses you or your use.
 
-3. Neither the name of the copyright holder nor the names of its
-   contributors may be used to endorse or promote products derived from
-   this software without specific prior written permission.
+No additional restrictions — You may not apply legal terms or technological measures
+that legally restrict others from doing anything the license permits.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+NOTE ON THIRD-PARTY CONTENT:
+
+The files in ontology/cco/ are adapted from the Common Core Ontologies (CCO) v2.1,
+published by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies.
+That content is licensed under BSD 3-Clause by CUBRC Inc. — see LICENSE-CCO-BSD3.txt.
+Only IRIs were changed; all axioms, definitions, and license annotations are preserved.

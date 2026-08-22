@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "obo:BFO_0000031"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001808"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000001"
+      }
+    },
+    {
+      "@id": "cco:ont00000958",
+      "@type": "owl:Class",
+      "cco:ont00001754": "http://purl.obolibrary.org/obo/IAO_0000030",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Information Content Entity"
+      },
+      "rdfs:subClassOf": {
+        "@id": "obo:BFO_0000031"
+      },
+      "skos:altLabel": {
+        "@language": "en",
+        "@value": "ICE"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."
+      }
+    }
+  ]
+}

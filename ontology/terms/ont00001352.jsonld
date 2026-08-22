@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001352",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Greenwich Mean Time Zone Identifier"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000829"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Time Zone Identifier that designates a spatial region where the local time is calculated according to the specified offset from Greenwich Mean Time."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Greenwich Mean Time (GMT) is the mean solar time at the Royal Observatory in Greenwich, London and has been superseded by Coordinated Universal Time (UTC)."
+  }
+}

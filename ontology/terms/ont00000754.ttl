@@ -1,0 +1,18 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000754 a owl:Class ;
+    rdfs:label "Electromagnetic Radiation Frequency"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty obo:BFO_0000132 ;
+            owl:someValuesFrom cco:ont00000951 ],
+        cco:ont00001047 ;
+    skos:definition "A Frequency that is characterized by the rate of Oscillations per second of an Electromagnetic Wave."@en ;
+    skos:scopeNote "Divisions between EM radiation frequencies are fiat and sources vary on where to draw boundaries."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Electromagnetic_spectrum&oldid=1063851392"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/EventOntology"^^xsd:anyURI .
+

@@ -1,0 +1,48 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001256",
+  "@type": "owl:Class",
+  "cco:ont00001754": "https://en.wikipedia.org/wiki/Reliability_(statistics)",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Reliability Measurement Information Content Entity"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001163"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Accuracy of Process"
+    },
+    {
+      "@language": "en",
+      "@value": "Reliability Measurement"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Measurement Information Content Entity that is a measurement of the extent to which an entity can consistently produce an outcome."
+  },
+  "skos:scopeNote": [
+    {
+      "@language": "en",
+      "@value": "Note, the term 'accuracy' is avoided due to its ambiguity between: correctness-of-performance ('Reliability Measurement Information Content Entity'), correctness-of-information (see: 'Veracity Measurement Information Content Entity'), and adherance-to-expectations (see: 'Deviation Measurement Information Content Entity')."
+    },
+    {
+      "@language": "en",
+      "@value": "Reliability concerns both a measure of past performance and the expectation that future performance will conform to the range of past performances."
+    }
+  ]
+}

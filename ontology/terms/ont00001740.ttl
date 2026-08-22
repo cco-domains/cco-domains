@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001740 a owl:AnnotationProperty ;
+    rdfs:label "SI unit symbol"@en ;
+    rdfs:subPropertyOf cco:ont00001753 ;
+    skos:definition "An Acronym that is officially accepted for use in the International System of Units (SI) as denoting a Measurement Unit."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"^^xsd:anyURI .
+

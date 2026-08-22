@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001961",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00000120"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is measurement unit of"
+  },
+  "rdfs:range": {
+    "@id": "cco:ont00000253"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "obo:BFO_0000084"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x is_measurement_unit_of y iff y is an instance of Information Bearing Entity and x is an instance of Measurement Unit, such that x describes the magnitude of measured physical quantity mentioned in y."
+  }
+}

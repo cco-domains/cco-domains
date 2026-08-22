@@ -1,0 +1,29 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000084",
+  "@type": "owl:Class",
+  "cco:ont00001754": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3017014/",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Bodily Component"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000024"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Fiat Object Part located within or on the surface of an Agent."
+  },
+  "skos:example": "Bodily Components include anatomical structures, body flora, pathogens, toxins, and their combinations."
+}

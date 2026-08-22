@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00002000 a owl:Class ;
+    rdfs:label "Center of Mass"@en ;
+    rdfs:subClassOf obo:BFO_0000147 ;
+    skos:definition "A Fiat Point that is where the weighted position vectors of the distributed Mass of a Material Entity relative to this point sum to zero."@en ;
+    cco:ont00001754 "Asimov, Isaac. Understanding Physics. New York: Barnes and Noble, 1993. 76-79. Available at: https://archive.org/details/understandingphy00isaa/page/n91/mode/2up"@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/GeospatialOntology"^^xsd:anyURI .
+

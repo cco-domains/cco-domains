@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000533 a owl:Class ;
+    rdfs:label "Jet Engine"@en ;
+    rdfs:subClassOf cco:ont00000056 ;
+    skos:definition "A Reaction Engine that discharges a fast moving jet that generates Thrust by jet propulsion."@en ;
+    skos:scopeNote "Some (most) jet engines utilize turbines, but some do not. Most rocket engines do not utilize turbines, but some do."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Jet_engine&oldid=1060157063"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

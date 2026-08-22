@@ -1,0 +1,32 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001716",
+  "@type": [
+    "cco:ont00000630",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001753": "UT1",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Universal Time 1"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Astronomical Time"
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "UT1 is a derivation of UT0 that takes into account distortions caused by polar motion and is proportional to the rotation angle of the Earth with respect to distant quasars, specifically, the International Celestial Reference Frame (ICRF). UT1 is currently the most widely used variant of Universal Time and has the same value everywhere on Earth."
+  }
+}

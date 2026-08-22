@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000285 a owl:Class ;
+    rdfs:label "Emergency Locator Transmitter"@en ;
+    rdfs:subClassOf cco:ont00000269 ;
+    skos:definition "A Radio Transmitter that is designed to signal distress and provide positional data for the entity it is located on."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Emergency_position-indicating_radiobeacon&oldid=1063407242"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

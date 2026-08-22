@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000275",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Coordinate_system&oldid=1060461397"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Spatial Reference System"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000398"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Coordinate System"
+    },
+    {
+      "@language": "en",
+      "@value": "Spatial Coordinate System"
+    },
+    {
+      "@language": "en",
+      "@value": "Spatial Reference Frame"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Reference System that describes a set of standards for uniquely identifying the position of an entity or the direction of a vector within a defined spatial region by means of measurements along one or more Coordinate System Axes."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Note that, while reference systems and reference frames are treated as synonyms here, some people treat them as related but separate entities. See: http://www.ggos-portal.org/lang_en/GGOS-Portal/EN/Topics/GeodeticApplications/GeodeticReferenceSystemsAndFrames/GeodeticReferenceSystemsAndFrames.html"
+  }
+}

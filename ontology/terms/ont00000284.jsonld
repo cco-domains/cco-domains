@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000284",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/QualityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Strength"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000017"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Realizable Entity that is realized when its bearer exerts or resists some power, influence, or force."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Strength is intended to be understood broadly here. Physical strength is only one type of Strength. Other subtypes of Strength may include military strength, psychological strength, emotional strength, political strength, technological strength, and so on."
+  }
+}

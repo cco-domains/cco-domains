@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001666 a owl:NamedIndividual,
+        cco:ont00001328 ;
+    rdfs:label "Barycentric Coordinate Time"@en ;
+    skos:scopeNote """"Barycentric Coordinate Time (TCB, from the French Temps-coordonnée barycentrique) is a coordinate time standard intended to be used as the independent variable of time for all calculations pertaining to orbits of planets, asteroids, comets, and interplanetary spacecraft in the Solar system. It is equivalent to the proper time experienced by a clock at rest in a coordinate frame co-moving with the barycenter of the Solar system: that is, a clock that performs exactly the same movements as the Solar system but is outside the system's gravity well. It is therefore not influenced by the gravitational time dilation caused by the Sun and the rest of the system."
+From: (https://en.wikipedia.org/wiki/Barycentric_Coordinate_Time)"""@en ;
+    cco:ont00001753 "TCB" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

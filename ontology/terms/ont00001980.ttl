@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001980 a owl:ObjectProperty ;
+    rdfs:label "describes condition"@en ;
+    rdfs:domain cco:ont00000127 ;
+    rdfs:range obo:BFO_0000001 ;
+    rdfs:subPropertyOf cco:ont00001808 ;
+    owl:propertyChainAxiom ( obo:BFO_0000178 cco:ont00001982 ) ;
+    skos:definition "p describes_condition c iff p is an instance of a Performance Specification and c is an instance of Entity and p has part d, and d is an instance of a Descriptive Information Content Entity, and p prescribes an entity s, and d describes c, and c is an entity that is causally relevant to s existing as prescribed by p."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

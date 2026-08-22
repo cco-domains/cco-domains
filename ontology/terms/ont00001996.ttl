@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001996 a owl:ObjectProperty ;
+    rdfs:label "is step-sibling of"@en ;
+    rdfs:subPropertyOf cco:ont00001865 ;
+    owl:inverseOf cco:ont00001996 ;
+    skos:scopeNote "Given a stronger temporal interpretation, this property may be symmetric. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/FamilialRelationsOntology"^^xsd:anyURI .
+

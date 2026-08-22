@@ -1,0 +1,24 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ent00000025 a owl:Class ;
+    rdfs:label "Digital File"@en ;
+    dc:creator "Global Research, Inc."@en ;
+    dcterms:created "2026-03-16"^^xsd:date ;
+    rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
+    rdfs:subClassOf cco:ont00000798 ;
+    skos:definition """An Information Bearing Artifact that consists of a one-dimensional 
+        array of bytes on a Digital Storage Device, and which is designed to be easily 
+        opened, read, changed, and closed by an Information Processing Artifact."""@en ;
+    skos:exactMatch <http://www.ontologyrepository.com/CommonCoreOntologies/DigitalFile> ;
+    cco:ent00000019 "Cyber Ontology (IEEE P3195.1.1) — bridge class pending CCO 2.0 migration"@en ;
+    cco:ent00000020 """CyberOntology v1.5 uses old ontologyrepository.com namespace. 
+        Re-declared here under CCO 2.0 namespace so UserAccount subtree is usable 
+        with CCO 2.0 imports. Delete when CyberOntology CCO 2.0 is published."""@en ;
+    cco:ent00000022 "Bridge — awaiting CyberOntology CCO 2.0 release"@en .
+

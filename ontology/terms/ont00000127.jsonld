@@ -1,0 +1,47 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001980"
+      },
+      "owl:someValuesFrom": {
+        "@id": "obo:BFO_0000001"
+      }
+    },
+    {
+      "@id": "cco:ont00000127",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/InformationEntityOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Performance Specification"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "cco:ont00000965"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Prescriptive Information Content Entity that prescribes some aspect of the behavior of a participant in a Process given one or more operating conditions."
+      },
+      "skos:example": "Maximum Speed at high altitude; Rate of Ascent at 10 degrees celsius with nominal payload."
+    }
+  ]
+}

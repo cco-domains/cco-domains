@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000620",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Radiodensity&oldid=1048274724"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/QualityOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Radiopacity"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001384"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Radiodensity"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Opacity that inheres in a bearer in virtue of its capacity to allow or prevent X-rays to pass through it."
+  }
+}

@@ -1,0 +1,17 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000275 a owl:Class ;
+    rdfs:label "Spatial Reference System"@en ;
+    rdfs:subClassOf cco:ont00000398 ;
+    skos:altLabel "Coordinate System"@en,
+        "Spatial Coordinate System"@en,
+        "Spatial Reference Frame"@en ;
+    skos:definition "A Reference System that describes a set of standards for uniquely identifying the position of an entity or the direction of a vector within a defined spatial region by means of measurements along one or more Coordinate System Axes."@en ;
+    skos:scopeNote "Note that, while reference systems and reference frames are treated as synonyms here, some people treat them as related but separate entities. See: http://www.ggos-portal.org/lang_en/GGOS-Portal/EN/Topics/GeodeticApplications/GeodeticReferenceSystemsAndFrames/GeodeticReferenceSystemsAndFrames.html"@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Coordinate_system&oldid=1060461397"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

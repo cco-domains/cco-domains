@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000177",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@language": "en",
+    "@value": "J. J. Gibson, \"The Theory of Affordances,\" in The Ecological Approach to Visual Perception (NY: Taylor & Francis Group, 1986): 127-143. Available at: https://archive.org/details/pdfy-u5hmFOvOM2Civ4Gz/page/n70/mode/1up."
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Affordance"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000017"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Realizable Entity of an Independent Continuant that creates an opportunity for an Agent to realize some Agent Capability or Disposition in some Act."
+  }
+}

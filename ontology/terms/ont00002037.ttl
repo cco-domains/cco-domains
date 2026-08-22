@@ -1,0 +1,15 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00002037 a owl:Class ;
+    rdfs:label "Information Line"@en ;
+    rdfs:subClassOf cco:ont00002001 ;
+    skos:definition "A Media Content entity consisting of a single line or row in some Document Content entity of which it is a part."@en ;
+    skos:example "a line in a computer file that bears a portion of code for some computer program",
+        "a line of data in a database",
+        "a line of text in a book" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/InformationEntityOntology"^^xsd:anyURI .
+

@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000030 a owl:Class ;
+    rdfs:label "Nuclear Reactor"@en ;
+    rdfs:subClassOf cco:ont00000288 ;
+    skos:definition "A Power Source that is designed to initiate and control a self-sustained nuclear chain reaction to produce power in the form of heat, which can be transferred to a working fluid for further conversion to mechanical or electrical energy."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Nuclear_reactor&oldid=1063370273"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

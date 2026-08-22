@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000187",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Authority Role"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000023"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Role that is realized by Processes which create, modify, transfer, or eliminate Process Regulations or other Authority Roles, and inheres in an Agent in virtue of collective acceptance of that Agent's ability to issue binding directives."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "Authority Roles are externally grounded in a social group's collective acceptance of the binding force of the agent's directives. This acceptance can be direct or indirect (e.g., by accepting a procedure for deputizing authority). Such collective acceptance need not be explicit or cognized; rather, collective acceptance can be expressed in the dispositions and attitudes of people toward that agent's directives. In many cases, the directives issued by Authority Roles are backed by threats of punishment or sanction for failure to comply, but the issuing of a directive plus a threat is not sufficient for authority. Rather, an agent's authority must be accepted either directly or indirectly through the acceptance of a procedure for bestowing authority (e.g., elections)."
+  }
+}

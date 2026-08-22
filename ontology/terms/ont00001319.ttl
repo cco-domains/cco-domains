@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001319 a owl:Class ;
+    rdfs:label "Tank"@en ;
+    rdfs:subClassOf cco:ont00000427 ;
+    skos:definition "An Armored Fighting Vehicle that is designed to carry heavy firepower, have a powerful Engine, and travel on one or more continuous tracks such that it is suitable for front-line combat and can provide operational maneuverability as well as tactical offensive and defensive capabilities."@en ;
+    skos:scopeNote "Tank firepower is normally provided by a large-caliber main gun mounted in a rotating turret, which is supported by secondary machine guns. A tank's heavy armour and all-terrain mobility provide protection for both the tank and its crew, allowing it to perform all primary tasks of the armoured troops on the battlefield."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Tank&oldid=1060527612"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

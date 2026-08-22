@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001341 a owl:Class ;
+    rdfs:label "Portion of Geosphere"@en ;
+    rdfs:subClassOf obo:BFO_0000024 ;
+    skos:definition "A fiat object part that is composed of one or more portions of the atmosphere, cryosphere, hydrosphere, or lithosphere"@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Geosphere&oldid=1137306949"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/GeospatialOntology"^^xsd:anyURI .
+

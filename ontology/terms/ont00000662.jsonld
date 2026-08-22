@@ -1,0 +1,68 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00001341"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "obo:BFO_0000171"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00001152"
+      }
+    },
+    {
+      "@id": "cco:ont00000662",
+      "@type": "owl:Class",
+      "cco:ont00001754": "https://avalon.law.yale.edu/20th_century/intam03.asp",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+      },
+      "dcterms:bibliographicCitation": "Convention on Rights and Duties of States (inter-American); December 26, 1933. https://avalon.law.yale.edu/20th_century/intam03.asp. Accessed 6 Apr. 2023.",
+      "dcterms:created": {
+        "@language": "en",
+        "@value": "2023-02-06T10:14:09-05:00"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Material Territory of a Government Domain"
+      },
+      "rdfs:subClassOf": {
+        "@id": "cco:ont00001341"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "The portions of lithosphere, hydrosphere, or atmosphere that together exactly occupy a Government Domain"
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Material Territory of a Government Domain"
+      }
+    }
+  ]
+}

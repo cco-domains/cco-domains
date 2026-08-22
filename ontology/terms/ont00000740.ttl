@@ -1,0 +1,21 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000740 a owl:Class ;
+    rdfs:label "Resource"@en ;
+    rdfs:subClassOf obo:BFO_0000002 ;
+    skos:definition "A Continuant that is owned by, in the possession of, or is otherwise controlled by an Agent such that it could be used by that Agent."@en ;
+    skos:example "a group of interns",
+        "a knowledge base",
+        "a plot of land",
+        "a software program",
+        "a sum of money",
+        "a vehicle" ;
+    skos:scopeNote "Resources are Resources for some Agent. If no instance of Agent existed, no instance of Resource would exist either. It is not a requirement that something be valuable in order for it to be a Resource. Thus the value of something can drastically change without altering whether that thing is a Resource."@en,
+        "This class is designed to group continuants according to a very broad criterion and is not intended to be used as a parent class for entities that can be more specifically represented under another class. Hence, Natural Resource may be an appropriate subtype but Money, Oil, and Gold Mine are not."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

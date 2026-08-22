@@ -1,0 +1,13 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001077 a owl:Class ;
+    rdfs:label "Heavy Machine Gun"@en ;
+    rdfs:subClassOf cco:ont00000848 ;
+    skos:definition "A Mounted Gun that is designed to fire ammunition greater than .50 caliber or 12.7mm ammunition in quick succession from an ammunition belt, and which typically weighs more than 30lbs."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Heavy_machine_gun&oldid=1047303735"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

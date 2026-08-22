@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000058",
+  "@type": "owl:Class",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-05-01"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/PersonOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Surname2"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000003"
+  },
+  "skos:altLabel": [
+    {
+      "@language": "en",
+      "@value": "Maternal Name"
+    },
+    {
+      "@language": "en",
+      "@value": "Second Family Name"
+    },
+    {
+      "@language": "en",
+      "@value": "Second Surname"
+    }
+  ],
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A designative name that represents the second family name, commonly a maternal surname."
+  }
+}

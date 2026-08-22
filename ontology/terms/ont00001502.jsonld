@@ -1,0 +1,45 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001502",
+  "@type": [
+    "cco:ont00000229",
+    "owl:NamedIndividual"
+  ],
+  "cco:ont00001740": "dBi",
+  "cco:ont00001754": [
+    {
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "@value": "https://shopdelta.eu/dbi-power-gain-of-isotropic-antenna_l2_aid836.html"
+    },
+    {
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "@value": "https://www.techtarget.com/whatis/definition/decibels-relative-to-isotropic-radiator-dBi"
+    }
+  ],
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"
+  },
+  "dcterms:contributor": [
+    "Donna Jones",
+    "Olivia Hobai"
+  ],
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Decibel Isotropic Measurement Unit"
+  },
+  "skos:altLabel": [
+    "Decibels Over Isotropic Antenna",
+    "Decibels Over Isotropic",
+    "Decibels Relative to Isotrope",
+    "Decibels Relative to Isotropic Radiator",
+    "Decibels Relative to an Isotropic Reference Antenna"
+  ]
+}

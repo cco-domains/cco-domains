@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001276 a owl:Class ;
+    rdfs:label "Carrier Air Wing"@en ;
+    rdfs:subClassOf cco:ont00000426 ;
+    skos:definition "A Military Force that is trained and equipped to conduct air operations while embarked on an aircraft carrier."@en ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/AgentOntology"^^xsd:anyURI .
+

@@ -1,0 +1,16 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000465 a owl:Class ;
+    rdfs:label "Modified Julian Date"@en ;
+    rdfs:subClassOf cco:ont00000223 ;
+    skos:definition "A Time of Day as specified according to the Julian Calendar using the Modified Julian Date epoch."@en ;
+    skos:scopeNote """A Day begins at midnight GMT within the Modified Julian Date reference system. The Modified Julian Date (MJD) is related to the Julian Date (JD) by the formula:
+MJD = JD - 2400000.5"""@en ;
+    cco:ont00001753 "MJD" ;
+    cco:ont00001754 "http://aa.usno.navy.mil/data/docs/JulianDate.php" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/TimeOntology"^^xsd:anyURI .
+

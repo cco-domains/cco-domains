@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001777"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000345"
+      }
+    },
+    {
+      "@id": "_:b1",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001777"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000517"
+      }
+    },
+    {
+      "@id": "cco:ont00001330",
+      "@type": "owl:Class",
+      "cco:ont00001754": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://en.wikipedia.org/w/index.php?title=Telemetry&oldid=1061697851"
+      },
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Telemetry Process"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "_:b1"
+        },
+        {
+          "@id": "cco:ont00000110"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Mechanical Process that is highly automated and in which measurements are made or other data is collected and transmitted to receiving equipment to facilitate the monitoring of environmental conditions or equipment parameters at a remote or inaccessible location."
+      },
+      "skos:example": [
+        "using a GPS tag to track a shark's migratory pattern",
+        "using a portable cardiac monitor to remotely collect data on a patient's heart activity (biotelemetry)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00000377",
+  "@type": "owl:Class",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Disability"
+  },
+  "rdfs:subClassOf": {
+    "@id": "obo:BFO_0000019"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Quality inhering in an Agent by virtue a physical or mental condition that limits the Agent's movements, senses, or activities."
+  }
+}

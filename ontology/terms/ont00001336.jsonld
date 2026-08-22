@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001336",
+  "@type": "owl:Class",
+  "cco:ont00001754": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://en.wikipedia.org/w/index.php?title=Ownership&oldid=1058224617"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/EventOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Act of Ownership"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00001232"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "An Act of Possession that includes an agent having certain rights and duties over the property owned."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "The relation between the owner and property may be private, collective, or common and the property may be objects, land, real estate, or intellectual property."
+  }
+}

@@ -1,0 +1,14 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00000075 a owl:Class ;
+    rdfs:label "Optical Microscope"@en ;
+    rdfs:subClassOf cco:ont00000304 ;
+    skos:altLabel "Light Microscope"@en ;
+    skos:definition "A Microscope that is designed to use visible light and a system of Optical Lenses to produce a significantly enlarged image of the Object."@en ;
+    cco:ont00001754 "https://en.wikipedia.org/w/index.php?title=Optical_microscope&oldid=1063131242"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/ArtifactOntology"^^xsd:anyURI .
+

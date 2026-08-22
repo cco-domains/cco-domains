@@ -1,0 +1,34 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001928",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/ExtendedRelationOntology"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000004"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "is predecessor of"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000004"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x is_predecessor_of y iff x and y are both instances of Independent Continuant and there is some process p and x is an input to p and y is an output of p."
+  },
+  "skos:scopeNote": {
+    "@language": "en",
+    "@value": "More informally, x is_predecessor_of y iff y follows or replaces x."
+  }
+}

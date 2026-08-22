@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000061",
+  "@type": "owl:ObjectProperty",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-04-18"
+  },
+  "rdfs:domain": {
+    "@id": "cco:ont00001262"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/PersonOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "has birthdate"
+  },
+  "rdfs:range": {
+    "@id": "cco:ent00000046"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "hasBirthdate"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "Each instance of Person has an instance of Birthdate."
+  }
+}

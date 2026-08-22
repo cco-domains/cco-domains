@@ -1,0 +1,22 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001502 a owl:NamedIndividual,
+        cco:ont00000229 ;
+    rdfs:label "Decibel Isotropic Measurement Unit"@en ;
+    dcterms:contributor "Donna Jones",
+        "Olivia Hobai" ;
+    skos:altLabel "Decibels Over Isotropic",
+        "Decibels Over Isotropic Antenna",
+        "Decibels Relative to Isotrope",
+        "Decibels Relative to Isotropic Radiator",
+        "Decibels Relative to an Isotropic Reference Antenna" ;
+    cco:ont00001740 "dBi" ;
+    cco:ont00001754 "https://shopdelta.eu/dbi-power-gain-of-isotropic-antenna_l2_aid836.html"^^xsd:anyURI,
+        "https://www.techtarget.com/whatis/definition/decibels-relative-to-isotropic-radiator-dBi"^^xsd:anyURI ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"^^xsd:anyURI .
+

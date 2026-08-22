@@ -1,0 +1,40 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ont00001795",
+  "@type": "owl:ObjectProperty",
+  "cco:ont00001754": {
+    "@language": "en",
+    "@value": "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"
+  },
+  "cco:ont00001760": {
+    "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value": "https://w3id.org/cco-domains/cco/TimeOntology"
+  },
+  "owl:inverseOf": {
+    "@id": "cco:ont00001869"
+  },
+  "rdfs:domain": {
+    "@id": "obo:BFO_0000202"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "has inside interval"
+  },
+  "rdfs:range": {
+    "@id": "obo:BFO_0000202"
+  },
+  "rdfs:subPropertyOf": {
+    "@id": "cco:ont00001924"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "x has inside interval y =Def y interval during x"
+  }
+}

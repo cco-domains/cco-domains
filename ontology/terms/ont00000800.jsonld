@@ -1,0 +1,51 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001869"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00000619"
+      }
+    },
+    {
+      "@id": "cco:ont00000800",
+      "@type": "owl:Class",
+      "cco:ont00001754": "http://wordnetweb.princeton.edu/perl/webwn?s=day",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/TimeOntology"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Day"
+      },
+      "rdfs:subClassOf": [
+        {
+          "@id": "_:b0"
+        },
+        {
+          "@id": "obo:BFO_0000202"
+        }
+      ],
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Temporal Interval that is equal to the approximate length of time required for an Astronomical Body to complete one rotation around its Rotational Axis as specified relative to a particular Temporal Reference System."
+      },
+      "skos:scopeNote": {
+        "@language": "en",
+        "@value": "Unless otherwise specified, a Day is assumed to be relative to the rotational motion of the Earth and is approximately equal to a twenty-four hour temporal region for which the start and end times are specified by the Temporal Reference System used."
+      }
+    }
+  ]
+}

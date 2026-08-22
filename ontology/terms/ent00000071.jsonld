@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@id": "cco:ent00000071",
+  "@type": "owl:Class",
+  "dcterms:created": {
+    "@type": "http://www.w3.org/2001/XMLSchema#date",
+    "@value": "2026-07-14"
+  },
+  "http://purl.org/dc/elements/1.1/date": {
+    "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value": "2026-07-14T18:42:19+00:00"
+  },
+  "rdfs:isDefinedBy": {
+    "@id": "https://w3id.org/cco-domains/domains/StagingOntology"
+  },
+  "rdfs:label": {
+    "@language": "en",
+    "@value": "Checking Account Number"
+  },
+  "rdfs:subClassOf": {
+    "@id": "cco:ont00000077"
+  },
+  "skos:altLabel": {
+    "@language": "en",
+    "@value": "Bank Account Number"
+  },
+  "skos:definition": {
+    "@language": "en",
+    "@value": "A Code Identifier that designates a checking account within a financial institution's system of record."
+  }
+}

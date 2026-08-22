@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "cco": "https://w3id.org/cco-domains/cco/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "obo": "http://purl.obolibrary.org/obo/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "_:b2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "cco:ont00000472"
+          },
+          {
+            "@id": "_:b3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "cco:ont00001864"
+      },
+      "owl:someValuesFrom": {
+        "@id": "cco:ont00001180"
+      }
+    },
+    {
+      "@id": "cco:ont00001203",
+      "@type": "owl:Class",
+      "cco:ont00001760": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://w3id.org/cco-domains/cco/AgentOntology"
+      },
+      "dcterms:created": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2022-12-30T21:32:27-05:00"
+      },
+      "dcterms:creator": {
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI",
+        "@value": "https://cubrc.org"
+      },
+      "owl:equivalentClass": {
+        "@id": "_:b2"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Delimiting Domain"
+      },
+      "rdfs:subClassOf": {
+        "@id": "cco:ont00000472"
+      },
+      "skos:definition": {
+        "@language": "en",
+        "@value": "A Geospatial Region that delimits the authority of an Organization to exercise its control within the bounded area."
+      },
+      "skos:prefLabel": {
+        "@language": "en",
+        "@value": "Delimiting Domain"
+      }
+    }
+  ]
+}

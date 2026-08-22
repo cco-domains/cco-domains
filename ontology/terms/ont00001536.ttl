@@ -1,0 +1,12 @@
+@prefix cco: <https://w3id.org/cco-domains/cco/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cco:ont00001536 a owl:NamedIndividual,
+        cco:ont00001357 ;
+    rdfs:label "Second Measurement Unit"@en ;
+    cco:ont00001738 "second" ;
+    cco:ont00001740 "s" ;
+    cco:ont00001760 "https://w3id.org/cco-domains/cco/UnitsOfMeasureOntology"^^xsd:anyURI .
+
