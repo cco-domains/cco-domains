@@ -1,12 +1,12 @@
 @prefix sh:      <http://www.w3.org/ns/shacl#> .
 @prefix cco:     <https://w3id.org/cco-domains/cco/> .
 @prefix obo:     <http://purl.obolibrary.org/obo/> .
-@prefix topic:   <http://mee.foundation/ontologies/topic#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix cp:      <https://w3id.org/cco-domains/conformance/> .
+@prefix cco-s: <https://w3id.org/cco-domains/domains/StagingOntology#> .
 
 cp:BaseConformanceProfile
     a owl:Ontology ;
@@ -17,10 +17,10 @@ cp:BaseConformanceProfile
     owl:versionIRI <https://w3id.org/cco-domains/conformance/2026-08-19> ;
     owl:versionInfo "v0.1 — base conformance profile."@en .
 
-cp:keyingTier
+cp:identifierStrength
     a owl:AnnotationProperty ;
-    rdfs:label "keying tier"@en ;
-    rdfs:comment "Identity-keying tier (strong/weak/non)."@en .
+    rdfs:label "identifier strength"@en ;
+    rdfs:comment "Identifier strength: strong = auto-merge permitted; weak = merge suggestion only; control = cryptographic control proof, silent on identity; non = corroboration only."@en .
 
 cp:DesignationNodeShape
     a sh:NodeShape ;
@@ -89,28 +89,29 @@ cp:MeasurementNodeShape
 cp:SCtopicShape
     a sh:NodeShape ;
     rdfs:label "Subject-claimant topic"@en ;
-    sh:targetClass topic:SCTopicGraph ;
+    sh:targetClass cco-s:SubjectClaimGraph ;
     sh:property [
-        sh:path topic:claimant ;
+        sh:path cco-s:claimant ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:message "An SCTopicGraph shall have exactly one claimant."@en ;
+        sh:message "A SubjectClaimGraph shall have exactly one claimant."@en ;
     ] ;
     sh:property [
-        sh:path topic:subject ;
+        sh:path cco-s:subject ;
         sh:minCount 1 ;
-        sh:message "An SCTopicGraph shall have at least one subject."@en ;
+        sh:nodeKind sh:IRI ;
+        sh:message "A SubjectClaimGraph shall have at least one subject."@en ;
     ] .
 
-cp:KeyingTierShape
+cp:IdentifierStrengthShape
     a sh:NodeShape ;
-    rdfs:label "Keying-tier declaration"@en ;
-    sh:targetSubjectsOf cp:keyingTier ;
+    rdfs:label "Identifier-strength declaration"@en ;
+    sh:targetSubjectsOf cp:identifierStrength ;
     sh:property [
-        sh:path cp:keyingTier ;
+        sh:path cp:identifierStrength ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
-        sh:in ( "strong" "weak" "non" ) ;
-        sh:message "keyingTier shall be exactly one of: strong, weak, non."@en ;
+        sh:in ( "strong" "weak" "control" "non" ) ;
+        sh:message "identifierStrength shall be exactly one of: strong, weak, control, non."@en ;
     ] .
