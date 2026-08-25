@@ -10,6 +10,7 @@ cco:ent00000031 a owl:Class ;
     rdfs:label "User Identifier"@en ;
     dc:creator "Global Research, Inc."@en ;
     dcterms:created "2026-03-16"^^xsd:date ;
+    dcterms:source "Definition reused verbatim from Common Core Ontologies Cyber Ontology (CUBRC, Inc.), BSD 3-Clause; see ontology-level dcterms:rights."@en ;
     rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
     rdfs:subClassOf cco:ont00000077 ;
     skos:altLabel "UID"@en ;
