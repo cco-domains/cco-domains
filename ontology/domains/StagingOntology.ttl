@@ -689,7 +689,20 @@ cco:ont00001340 rdf:type owl:Class .
              rdfs:comment "A named graph or reification structure that associates a set of claims with a single claimant and one or more subjects." ;
              skos:example "A SubjectClaimGraph asserted by the SSA claiming that a given SSN designates a given person."@en ;
              rdfs:label "SubjectClaimGraph" .
+###  https://w3id.org/cco-domains/domains/StagingOntology#ent00000328
+<https://w3id.org/cco-domains/domains/StagingOntology#ent00000328> rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/cco-domains/domains/StagingOntology#ent00000325> ;
+             dcterms:created "2026-08-22"^^xsd:date ;
+             rdfs:comment "A SubjectClaimGraph that asserts a binding between a Decentralized Identifier and one or more identity credentials, witnessed by a verifier in a single session." ;
+             rdfs:label "DIDBindingClaim" .
 
+
+###  https://w3id.org/cco-domains/domains/StagingOntology#ent00000329
+<https://w3id.org/cco-domains/domains/StagingOntology#ent00000329> rdf:type owl:Class ;
+             rdfs:subClassOf <https://w3id.org/cco-domains/domains/StagingOntology#ent00000325> ;
+             dcterms:created "2026-08-22"^^xsd:date ;
+             rdfs:comment "A SubjectClaimGraph that asserts a binding between a Decentralized Identifier and an email account, established via an OpenID Connect authentication flow." ;
+             rdfs:label "OIDCBindingClaim" .
 
 #################################################################
 #    Annotations
