@@ -27,7 +27,7 @@
                                                                    cco:UnitsOfMeasureOntology ;
                                                        dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                                       rdfs:comment "Person Ontology extends from the open source Common Core Ontologies (CCO) v2.1, posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies."@en ;
+                                                       rdfs:comment "Person Ontology extends from the CCO-Domains mirror of Common Core Ontologies (CCO) v2.1, originally posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies. The mirror re-IRIs CCO terms from commoncoreontologies.org to w3id.org/cco-domains/cco/ and is maintained at https://github.com/cco-domains/cco-domains."@en ;
                                                        rdfs:label "Person Ontology"@en ;
                                                        owl:priorVersion <https://w3id.org/cco-domains/domains/PersonOntology/2026-08-05> ;
                                                        owl:versionInfo "Namespace migrated from purl.org/cco to w3id.org/cco-domains; CCO mirror updated to v2.1.    Copyright © 2026 Global Research, Inc."@en .
