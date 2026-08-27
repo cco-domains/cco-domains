@@ -20,7 +20,7 @@
                                             cco:InformationEntityOntology ;
                                 dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
                                 dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                rdfs:comment "Staging Ontology extends from the CCO-Domains mirror of Common Core Ontologies (CCO) v2.1, originally posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies. The mirror re-IRIs CCO terms from commoncoreontologies.org to w3id.org/cco-domains/cco/ and is maintained at https://github.com/cco-domains/cco-domains."@en                     
+                                rdfs:comment "Staging Ontology extends from the CCO-Domains mirror of Common Core Ontologies (CCO) v2.1, originally posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies. The mirror re-IRIs CCO terms from commoncoreontologies.org to w3id.org/cco-domains/cco/ and is maintained at https://github.com/cco-domains/cco-domains."@en ;                    
                                 dcterms:rights """PORTIONS OF THIS ONTOLOGY (the classes User Identifier [ent00000031] and User Group Identifier [ent00000032]) reuse content from the Common Core Ontologies Cyber Ontology, Copyright (c) CUBRC, Inc., used under the following license:
 
 BSD 3-Clause License
