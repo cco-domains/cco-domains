@@ -13,15 +13,14 @@
 @base <https://w3id.org/cco-domains/domains/StagingOntology/> .
 
 <https://w3id.org/cco-domains/domains/StagingOntology> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://w3id.org/cco-domains/domains/StagingOntology/2026-08-14> ;
-                                owl:imports obo:bfo.owl ,
-                                            cco:AgentOntology ,
-                                            cco:ArtifactOntology ,
-                                            cco:InformationEntityOntology ;
-                                dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
-                                dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
-                                rdfs:comment "Staging Ontology extends from the CCO-Domains mirror of Common Core Ontologies (CCO) v2.1, originally posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies. The mirror re-IRIs CCO terms from commoncoreontologies.org to w3id.org/cco-domains/cco/ and is maintained at https://github.com/cco-domains/cco-domains."@en ;                    
-                                dcterms:rights """PORTIONS OF THIS ONTOLOGY (the classes User Identifier [ent00000031] and User Group Identifier [ent00000032]) reuse content from the Common Core Ontologies Cyber Ontology, Copyright (c) CUBRC, Inc., used under the following license:
+                                                        owl:versionIRI <https://w3id.org/cco-domains/domains/StagingOntology/2026-08-14> ;
+                                                        owl:imports obo:bfo.owl ,
+                                                                    cco:AgentOntology ,
+                                                                    cco:ArtifactOntology ,
+                                                                    cco:InformationEntityOntology ;
+                                                        dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
+                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+                                                        dcterms:rights """PORTIONS OF THIS ONTOLOGY (the classes User Identifier [ent00000031] and User Group Identifier [ent00000032]) reuse content from the Common Core Ontologies Cyber Ontology, Copyright (c) CUBRC, Inc., used under the following license:
 
 BSD 3-Clause License
 
@@ -41,7 +40,7 @@ modification, are permitted provided that the following conditions are met:
    contributors may be used to endorse or promote products derived from
    this software without specific prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
@@ -51,10 +50,11 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."""@en ;
-                                rdfs:comment "Staging Ontology extends from the open source Common Core Ontologies (CCO). It holds domain terms in active use by adopters that are not yet either migrated to a  draft domain ontology or promoted to CCO.  The intent is for the entities to have stable IRIs (if possible) even after migration, to enable trial use of them, but there is no intent for Staging Ontology to be proposed as a standard domain ontology."@en ;
-                                rdfs:label "Staging Ontology"@en ;
-                                owl:priorVersion <https://w3id.org/cco-domains/domains/StagingOntology/2026-08-10> ;
-                                owl:versionInfo "Added CUBRC BSD 3-Clause attribution for CyberOntology-derived terms (User Identifier, User Group Identifier). Copyright © 2026 Global Research, Inc."@en .
+                                                        rdfs:comment "Staging Ontology extends from the CCO-Domains mirror of Common Core Ontologies (CCO) v2.1, originally posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies. The mirror re-IRIs CCO terms from commoncoreontologies.org to w3id.org/cco-domains/cco/ and is maintained at https://github.com/cco-domains/cco-domains."@en ,
+                                                                     "Staging Ontology extends from the open source Common Core Ontologies (CCO). It holds domain terms in active use by adopters that are not yet either migrated to a  draft domain ontology or promoted to CCO.  The intent is for the entities to have stable IRIs (if possible) even after migration, to enable trial use of them, but there is no intent for Staging Ontology to be proposed as a standard domain ontology."@en ;
+                                                        rdfs:label "Staging Ontology"@en ;
+                                                        owl:priorVersion <https://w3id.org/cco-domains/domains/StagingOntology/2026-08-10> ;
+                                                        owl:versionInfo "Added CUBRC BSD 3-Clause attribution for CyberOntology-derived terms (User Identifier, User Group Identifier). Copyright © 2026 Global Research, Inc."@en .
 
 #################################################################
 #    Annotation properties
@@ -74,9 +74,6 @@ dcterms:created rdf:type owl:AnnotationProperty .
 
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/modified
 
 
 ###  http://purl.org/dc/terms/source
@@ -196,6 +193,23 @@ cco:ent00000073 rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/cco-domains/cco/ont00001879
 cco:ont00001879 rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/cco-domains/domains/StagingOntology#ent00000326
+<https://w3id.org/cco-domains/domains/StagingOntology#ent00000326> rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://w3id.org/cco-domains/domains/StagingOntology#ent00000325> ;
+             rdfs:range cco:ont00001180 ;
+             dcterms:created "2026-08-22"^^xsd:date ;
+             rdfs:comment "Relates a SubjectClaimGraph to the Agent that asserts the claims it contains. Exactly one claimant per SubjectClaimGraph." ;
+             rdfs:label "claimant" .
+
+
+###  https://w3id.org/cco-domains/domains/StagingOntology#ent00000327
+<https://w3id.org/cco-domains/domains/StagingOntology#ent00000327> rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://w3id.org/cco-domains/domains/StagingOntology#ent00000325> ;
+             dcterms:created "2026-08-22"^^xsd:date ;
+             rdfs:comment "Relates a SubjectClaimGraph to a resource that the claims within it are about. At least one subject per SubjectClaimGraph; uncapped." ;
+             rdfs:label "subject" .
 
 
 #################################################################
@@ -414,12 +428,12 @@ cco:ent00000031 rdf:type owl:Class ;
                 rdfs:subClassOf cco:ont00000077 ;
                 dc:creator "Global Research, Inc."@en ;
                 dcterms:created "2026-03-16"^^xsd:date ;
+                dcterms:source "Definition reused verbatim from Common Core Ontologies Cyber Ontology (CUBRC, Inc.), BSD 3-Clause; see ontology-level dcterms:rights."@en ;
                 rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
                 rdfs:label "User Identifier"@en ;
                 skos:altLabel "UID"@en ;
                 skos:definition "A Code Identifier that identifies the account of a registered user of a computer system."@en ;
                 skos:exactMatch <http://www.ontologyrepository.com/CommonCoreOntologies/UserIdentifier> ;
-                dcterms:source "Definition reused verbatim from Common Core Ontologies Cyber Ontology (CUBRC, Inc.), BSD 3-Clause; see ontology-level dcterms:rights."@en ;
                 cco:ent00000019 "Cyber Ontology (IEEE P3195.1.1) — bridge class pending CCO 2.0 migration"@en ;
                 cco:ent00000020 "Bridge class from CyberOntology v1.5. Delete when CyberOntology CCO 2.0 is published."@en ;
                 cco:ent00000022 "Bridge — awaiting CyberOntology CCO 2.0 release"@en .
@@ -430,13 +444,13 @@ cco:ent00000032 rdf:type owl:Class ;
                 rdfs:subClassOf cco:ont00000077 ;
                 dc:creator "Global Research, Inc."@en ;
                 dcterms:created "2026-03-16"^^xsd:date ;
+                dcterms:source "Definition reused verbatim from Common Core Ontologies Cyber Ontology (CUBRC, Inc.), BSD 3-Clause; see ontology-level dcterms:rights."@en ;
                 rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/StagingOntology> ;
                 rdfs:label "User Group Identifier"@en ;
                 skos:altLabel "GID"@en ;
                 skos:definition """A Code Identifier that identifies a group of registered users of a 
         computer system for the purposes of managing access to that system."""@en ;
                 skos:exactMatch <http://www.ontologyrepository.com/CommonCoreOntologies/UserGroupIdentifier> ;
-                dcterms:source "Definition reused verbatim from Common Core Ontologies Cyber Ontology (CUBRC, Inc.), BSD 3-Clause; see ontology-level dcterms:rights."@en ;
                 cco:ent00000019 "Cyber Ontology (IEEE P3195.1.1) — bridge class pending CCO 2.0 migration"@en ;
                 cco:ent00000020 "Bridge class from CyberOntology v1.5. Delete when CyberOntology CCO 2.0 is published."@en ;
                 cco:ent00000022 "Bridge — awaiting CyberOntology CCO 2.0 release"@en .
@@ -667,6 +681,14 @@ cco:ont00001017 rdf:type owl:Class .
 
 ###  https://w3id.org/cco-domains/cco/ont00001340
 cco:ont00001340 rdf:type owl:Class .
+
+
+###  https://w3id.org/cco-domains/domains/StagingOntology#ent00000325
+<https://w3id.org/cco-domains/domains/StagingOntology#ent00000325> rdf:type owl:Class ;
+             dcterms:created "2026-08-22"^^xsd:date ;
+             rdfs:comment "A named graph or reification structure that associates a set of claims with a single claimant and one or more subjects." ;
+             skos:example "A SubjectClaimGraph asserted by the SSA claiming that a given SSN designates a given person."@en ;
+             rdfs:label "SubjectClaimGraph" .
 
 
 #################################################################
