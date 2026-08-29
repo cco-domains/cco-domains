@@ -12,7 +12,7 @@
 @base <https://w3id.org/cco-domains/domains/PersonOntology/> .
 
 <https://w3id.org/cco-domains/domains/PersonOntology> rdf:type owl:Ontology ;
-                                                       owl:versionIRI <https://w3id.org/cco-domains/domains/PersonOntology/2026-08-10> ;
+                                                       owl:versionIRI <https://w3id.org/cco-domains/domains/PersonOntology/2026-08-29> ;
                                                        owl:imports obo:bfo.owl ,
                                                                    cco:AgentOntology ,
                                                                    cco:ArtifactOntology ,
@@ -24,13 +24,15 @@
                                                                    cco:InformationEntityOntology ,
                                                                    cco:QualityOntology ,
                                                                    cco:TimeOntology ,
-                                                                   cco:UnitsOfMeasureOntology ;
+                                                                   cco:UnitsOfMeasureOntology ,
+                                                                    <https://w3id.org/cco-domains/domains/StagingOntology> ;
                                                        dc:creator "Global Research, Inc., a 501(c)(3) nonprofit organization"@en ;
                                                        dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
                                                        rdfs:comment "Person Ontology extends from the CCO-Domains mirror of Common Core Ontologies (CCO) v2.1, originally posted by NCOR at https://github.com/CommonCoreOntology/CommonCoreOntologies. The mirror re-IRIs CCO terms from commoncoreontologies.org to w3id.org/cco-domains/cco/ and is maintained at https://github.com/cco-domains/cco-domains."@en ;
                                                        rdfs:label "Person Ontology"@en ;
-                                                       owl:priorVersion <https://w3id.org/cco-domains/domains/PersonOntology/2026-08-05> ;
-                                                       owl:versionInfo "Namespace migrated from purl.org/cco to w3id.org/cco-domains; CCO mirror updated to v2.1.    Copyright © 2026 Global Research, Inc."@en .
+                                                       owl:priorVersion <https://w3id.org/cco-domains/domains/PersonOntology/2026-08-14> ;
+                                                       owl:versionInfo "Re-parented DID Identifier (ent00000330) from Person Identifier to Non-Name Identifier (ont00000649), removing an erroneous Independent Continuant superclass and generalizing the definition to be holder-neutral (Person, Organization, or other entity).    Copyright © 2026 Global Research, Inc."@en .
+
 
 #################################################################
 #    Annotation properties
@@ -346,16 +348,6 @@ cco:ent00000067 rdf:type owl:Class ;
                 rdfs:label "Place of Birth"@en ;
                 skos:definition "A Designative Information Content Entity that cites the civil jurisdiction in which a person's birth was registered as taking place, as recorded on an identity document. The registering jurisdiction may differ from the geographic location of the birth."@en .
 
-
-###  https://w3id.org/cco-domains/cco/ent00000068
-cco:ent00000068 rdf:type owl:Class ;
-                rdfs:subClassOf cco:ont00000686 ;
-                dcterms:created "2026-07-11"^^xsd:date ;
-                rdfs:isDefinedBy <https://w3id.org/cco-domains/domains/PersonOntology> ;
-                rdfs:label "Issuing Jurisdiction"@en ;
-                skos:definition "A Designative Information Content Entity that cites the governmental jurisdiction that issued an identity document, as recorded on that document. Designates a governing authority (e.g., national, state, provincial, agency, county, municipal, utility, etc.), not a postal address component."@en .
-
-
 ###  https://w3id.org/cco-domains/cco/ont00000003
 cco:ont00000003 rdf:type owl:Class .
 
@@ -379,11 +371,13 @@ cco:ont00001262 rdf:type owl:Class .
 ###  https://w3id.org/cco-domains/cco/ont00001340
 cco:ont00001340 rdf:type owl:Class .
 
+
 ###  https://w3id.org/cco-domains/domains/PersonOntology#ent00000330
 <https://w3id.org/cco-domains/domains/PersonOntology#ent00000330> rdf:type owl:Class ;
-             rdfs:subClassOf cco:ent00000062 ;
+             rdfs:subClassOf cco:ont00000649 ;
              dcterms:created "2026-08-22"^^xsd:date ;
-             rdfs:comment "A Person Identifier whose value is a Decentralized Identifier (DID) string, providing cryptographic proof of control by the holder without asserting real-world identity." ;
+             rdfs:comment "An Identifier whose value is a Decentralized Identifier (DID) string, providing cryptographic proof of control by the holder without asserting real-world identity. Holder-neutral: the same class serves a Person, an Organization, or any other entity capable of being designated-by an identifier, including inanimate objects bearing a digital twin." ;
              rdfs:label "DID Identifier" .
-             
+
+
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
