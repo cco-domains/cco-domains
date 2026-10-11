@@ -13,9 +13,9 @@ cp:BaseConformanceProfile
     rdfs:label "CCO-Domains Base Conformance Profile"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator "Global Research, Inc., a 501(c)(3) nonprofit organization" ;
-    dcterms:created "2026-08-19"^^xsd:date ;
-    owl:versionIRI <https://w3id.org/cco-domains/conformance/2026-08-19> ;
-    owl:versionInfo "v0.1 — base conformance profile."@en .
+    dcterms:created "2026-10-09"^^xsd:date ;
+    owl:versionIRI <https://w3id.org/cco-domains/conformance/2026-10-09> ;
+    owl:versionInfo "v0.2 — base conformance profile."@en .
 
 cp:identifierStrength
     a owl:AnnotationProperty ;
@@ -26,11 +26,11 @@ cp:DesignationNodeShape
     a sh:NodeShape ;
     rdfs:label "Designation node"@en ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001765 ) ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
-        sh:message "A designation node shall have exactly one has-text-value literal."@en ;
+        sh:message "A designation shall have exactly one text value, held by its carrier (is carrier of)."@en ;
     ] .
 
 cp:DesignatedSubjectShape
@@ -43,25 +43,12 @@ cp:DesignatedSubjectShape
         sh:message "Every value of designated-by shall be a well-formed designation node."@en ;
     ] .
 
-cp:CarriedIdentifierShape
-    a sh:NodeShape ;
-    rdfs:label "Carried identifier"@en ;
-    sh:targetObjectsOf obo:BFO_0000101 ;
-    sh:node cp:DesignationNodeShape ;
-    sh:message "An identifier carried by a document shall be a well-formed designation node."@en .
-
-cp:MatchableIdentifierShape
-    a sh:NodeShape ;
-    rdfs:label "Matchable identifier"@en ;
-    sh:node cp:DesignationNodeShape .
-
-
 cp:CalendarDateNodeShape
     a sh:NodeShape ;
     rdfs:label "Calendar date node"@en ;
     sh:targetClass cco:ont00001340 ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001765 ) ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:datatype xsd:date ;
@@ -73,17 +60,21 @@ cp:MeasurementNodeShape
     a sh:NodeShape ;
     rdfs:label "Measurement node"@en ;
     sh:targetClass cco:ont00001163 ;
+    sh:xone (
+        [ sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001769 ) ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:datatype xsd:decimal ]
+        [ sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001773 ) ;
+          sh:minCount 1 ;
+          sh:maxCount 1 ;
+          sh:datatype xsd:integer ]
+    ) ;
+    sh:message "A measurement shall have exactly one value, held by its carrier: either one xsd:decimal (has decimal value) or one xsd:integer (has integer value), not both."@en ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001863 ) ;
         sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:nodeKind sh:Literal ;
-        sh:message "A measurement shall carry exactly one literal value."@en ;
-    ] ;
-    sh:property [
-        sh:path cco:ont00001863 ;
-        sh:minCount 1 ;
-        sh:message "A measurement shall reference a measurement unit."@en ;
+        sh:message "A measurement's carrier shall reference a measurement unit."@en ;
     ] .
 
 cp:SCtopicShape
