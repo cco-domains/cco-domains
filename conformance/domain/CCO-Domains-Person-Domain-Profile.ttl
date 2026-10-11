@@ -2,6 +2,7 @@
 @prefix cco:     <https://w3id.org/cco-domains/cco/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix cp:      <https://w3id.org/cco-domains/conformance/> .
@@ -11,16 +12,16 @@ cp:PersonDomainProfile
     rdfs:label "CCO-Domains Person Domain Profile"@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:creator "Global Research, Inc., a 501(c)(3) nonprofit organization" ;
-    dcterms:created "2026-08-21"^^xsd:date ;
-    owl:versionIRI <https://w3id.org/cco-domains/conformance/person/2026-08-19> ;
-    owl:versionInfo "v0.1 — Person domain profile; tightens over base profile. Makes no presence requirements — personal data is irreducibly diverse; presence requirements belong in use-case profiles."@en .
+    dcterms:created "2026-10-09"^^xsd:date ;
+    owl:versionIRI <https://w3id.org/cco-domains/conformance/person/2026-10-09> ;
+    owl:versionInfo "v0.2 — Person domain profile; tightens over base profile. Makes no presence requirements — personal data is irreducibly diverse; presence requirements belong in use-case profiles."@en .
 
 cp:PersonIdentifierNodeShape
     a sh:NodeShape ;
     rdfs:label "Person Identifier node"@en ;
     sh:targetClass cco:ent00000062 ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001765 ) ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
@@ -32,7 +33,7 @@ cp:BirthdateNodeShape
     rdfs:label "Birthdate node"@en ;
     sh:targetClass cco:ent00000046 ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001765 ) ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:datatype xsd:date ;
@@ -44,11 +45,12 @@ cp:SSNNodeShape
     rdfs:label "Social Security Number node"@en ;
     sh:targetClass cco:ent00000008 ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001765 ) ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:datatype xsd:string ;
-        sh:message "A Social Security Number node shall carry exactly one string value."@en ;
+        sh:pattern "^\\d{3}-\\d{2}-\\d{4}$" ;
+        sh:message "A Social Security Number node shall match the pattern DDD-DD-DDDD."@en ;
     ] .
 
 cp:PassportNumberNodeShape
@@ -56,7 +58,7 @@ cp:PassportNumberNodeShape
     rdfs:label "Passport Number node"@en ;
     sh:targetClass cco:ent00000066 ;
     sh:property [
-        sh:path cco:ont00001765 ;
+        sh:path ( [ sh:inversePath obo:BFO_0000101 ] cco:ont00001765 ) ;
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
