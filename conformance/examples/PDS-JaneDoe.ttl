@@ -11,61 +11,63 @@
 @prefix cp:    <https://w3id.org/cco-domains/conformance/> .
 @prefix :      <http://example.org/pds/jane#> .
 
-:JaneDoe
-    a cco:ont00001262 ;
-    cco:ont00001879 :JaneDoe_FullName ;
-    cco:ont00001879 :JaneDoe_SSN .
-
-# ── Full Name designation ────────────────────────────────────────────────────
-
 :JaneDoe_FullName
-    a cco:ent00000001 ;
-    cco:ont00001765 "Jane Doe" .
+    a cco:ent00000001 .
 
-# ── SSN designation ──────────────────────────────────────────────────────────
+:JaneDoe_FullName_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "Jane Doe" ;
+    obo:BFO_0000101 :JaneDoe_FullName .
 
 :JaneDoe_SSN
-    a cco:ent00000008 ;
-    cco:ont00001765 "123-45-6789" .
+    a cco:ent00000008 .
 
-# ── Birthdate ────────────────────────────────────────────────────────────────
+:JaneDoe_SSN_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "123-45-6789" ;
+    obo:BFO_0000101 :JaneDoe_SSN .
 
 :JaneDoe_Birthdate
-    a cco:ent00000046 ;
-    cco:ont00001765 "1985-03-15"^^xsd:date .
+    a cco:ent00000046 .
 
-:JaneDoe
-    cco:ent00000061 :JaneDoe_Birthdate .
+:JaneDoe_Birthdate_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "1985-03-15"^^xsd:date ;
+    obo:BFO_0000101 :JaneDoe_Birthdate .
 
 # ── Drivers License — two-relation pattern ───────────────────────────────────
 
 :JaneDoe_DLNumber
-    a cco:ent00000065 ;
-    cco:ont00001765 "D1234567" .
+    a cco:ent00000065 .
+
+:JaneDoe_DLNumber_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "D1234567" ;
+    obo:BFO_0000101 :JaneDoe_DLNumber ;
+    obo:BFO_0000176 :JaneDoe_DLDocument .
 
 :JaneDoe_DLDocument
-    a cco:ont00000895 ;
-    obo:BFO_0000101 :JaneDoe_DLNumber .
+    a cco:ont00000189 .
 
 :JaneDoe
     cco:ont00001879 :JaneDoe_DLNumber .
 # ── Email Address ────────────────────────────────────────────────────────────
 
 :JaneDoe_Email
-    a cco:ent00000024 ;
-    cco:ont00001765 "jane.doe@example.com" .
+    a cco:ent00000024 .
 
-:JaneDoe
-    cco:ont00001879 :JaneDoe_Email .
-
-# ── Telephone Number ─────────────────────────────────────────────────────────
+:JaneDoe_Email_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "jane.doe@example.com" ;
+    obo:BFO_0000101 :JaneDoe_Email .
 
 :JaneDoe_Phone
-    a cco:ent00000023 ;
-    cco:ont00001765 "555-867-5309" .
+    a cco:ent00000023 .
 
-:JaneDoe
-    cco:ont00001879 :JaneDoe_Phone .
+:JaneDoe_Phone_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "555-867-5309" ;
+    obo:BFO_0000101 :JaneDoe_Phone .
 
 # ── Postal Address ───────────────────────────────────────────────────────────
 
@@ -73,24 +75,44 @@
     a cco:ent00000010 .
 
 :JaneDoe_StreetAddress
-    a cco:ent00000011 ;
-    cco:ont00001765 "123 Main Street" .
+    a cco:ent00000011 .
+
+:JaneDoe_StreetAddress_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "123 Main Street" ;
+    obo:BFO_0000101 :JaneDoe_StreetAddress .
 
 :JaneDoe_City
-    a cco:ent00000012 ;
-    cco:ont00001765 "Springfield" .
+    a cco:ent00000012 .
+
+:JaneDoe_City_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "Springfield" ;
+    obo:BFO_0000101 :JaneDoe_City .
 
 :JaneDoe_State
-    a cco:ent00000013 ;
-    cco:ont00001765 "IL" .
+    a cco:ent00000013 .
+
+:JaneDoe_State_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "IL" ;
+    obo:BFO_0000101 :JaneDoe_State .
 
 :JaneDoe_PostalCode
-    a cco:ent00000015 ;
-    cco:ont00001765 "62701" .
+    a cco:ent00000015 .
+
+:JaneDoe_PostalCode_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "62701" ;
+    obo:BFO_0000101 :JaneDoe_PostalCode .
 
 :JaneDoe_CountryCode
-    a cco:ent00000059 ;
-    cco:ont00001765 "US" .
+    a cco:ent00000059 .
+
+:JaneDoe_CountryCode_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "US" ;
+    obo:BFO_0000101 :JaneDoe_CountryCode .
 
 :JaneDoe_Address
     cco:ent00000316 :JaneDoe_StreetAddress ;
@@ -122,7 +144,7 @@
 # ── Government-issued claim (Illinois DMV) ───────────────────────────────────
 
 :IllinoisDMV
-    a cco:ont000000408 .
+    a cco:ont00000408 .
 
 :JaneDoe_DMVClaim
     a cco-s:SubjectClaimGraph ;
@@ -193,11 +215,12 @@ cco:ent00000023
 # Jane controls this DID; the DID Document is a separate resolvable artifact.
 
 :JaneDoe_DID
-    a cco-p:DIDIdentifier ;
-    cco:ont00001765 "did:example:jane123abc456" .
+    a cco-p:DIDIdentifier .
 
-:JaneDoe
-    cco:ont00001879 :JaneDoe_DID .
+:JaneDoe_DID_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "did:example:jane123abc456" ;
+    obo:BFO_0000101 :JaneDoe_DID .
 
 # Identifier strength: "control" — cryptographic control proof, silent on identity
 cco-p:DIDIdentifier
@@ -211,12 +234,16 @@ cco-p:DIDIdentifier
 # FAA is the single authoritative issuer; FAA registry is publicly queryable.
 
 :JaneDoe_FAAAirmanID
-    a cco-a:FAAAirmanID ;
-    cco:ont00001765 "A4567890" .
+    a cco-a:FAAAirmanID .
+
+:JaneDoe_FAAAirmanID_Bearer
+    a cco:ont00000253 ;
+    cco:ont00001765 "A4567890" ;
+    obo:BFO_0000101 :JaneDoe_FAAAirmanID ;
+    obo:BFO_0000176 :JaneDoe_FAACertificate .
 
 :JaneDoe_FAACertificate
-    a cco-a:FAAAirmanCertificate ;
-    obo:BFO_0000101 :JaneDoe_FAAAirmanID .
+    a cco-a:FAAAirmanCertificate .
 
 :JaneDoe
     cco:ont00001879 :JaneDoe_FAAAirmanID .
